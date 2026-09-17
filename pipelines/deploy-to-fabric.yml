@@ -46,7 +46,7 @@ stages:
               - task: PythonScript@0
                 inputs:
                   scriptSource: 'filePath'
-                  scriptPath: '.deploy/deploy-to-fabric.py'
+                  scriptPath: 'scripts/deploy-to-fabric.py'
                   arguments: '--aztenantid $(aztenantid) --azclientid $(azclientid) --azspsecret $(azspnsecret) --items_in_scope ${{ parameters.items_in_scope }} --target_env $(target_env)'
                   #failOnStderr: true 
                 displayName: 'Run deployment using fabric-cicd'
