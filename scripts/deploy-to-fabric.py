@@ -104,4 +104,25 @@ print(f'Publish branch to workspace...')
 publish_all_items(target_workspace)
 
 # Unpublish orphaned items from the workspace
-unpublish_all_orphan_items(target_workspace)
+############# IMPORTANT ########################
+# ⚠️ IMPORTANT — Understanding unpublish_all_orphan_items():
+#  This method will delete items of the types specified in items_in_scope 
+# from the target workspace that are not present in the release branch 
+# (i.e., the branch used as the source for the fabric-cicd package). 
+# It will not touch items of other types. 
+# If the test branch contains all the items intended for the TEST workspace, 
+# then it is safe to call unpublish_all_orphan_items() — 
+# as it will only remove items that have been intentionally deleted from the branch.
+# However, if you're doing a selective deployment (for example, deploying only notebooks 
+# via a narrowed items_in_scope), be cautious with unpublish_all_orphan_items(). 
+# It deletes any notebooks in the workspace that aren't in the branch, 
+# even if they're still valid and were simply not part of the selective release.
+
+# SEE MORE HERE: 
+# https://learn.microsoft.com/en-us/fabric/cicd/tutorial-fabric-cicd-azure-devops#67-initialize-fabricworkspace--deploy
+
+# Uncomment this line ONLY if you understand the implications:
+#unpublish_all_orphan_items(target_workspace)
+#
+
+#####################################################
