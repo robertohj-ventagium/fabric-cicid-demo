@@ -1,9 +1,10 @@
 trigger:
   branches:
-    include: [preprod,prod]
-  #paths:
-  #  include:
-  #  - fabric/Fabric_CICD/**
+    include:
+    - preprod
+  paths:
+    include:
+    - fabric/Fabric_CICD/**
 
 parameters:
 - name: items_in_scope
