@@ -3,7 +3,7 @@ trigger:
     include: [preprod,prod]
   paths:
     include:
-    - fabric/Fabric_CICD**
+    - fabric/Fabric_CICD/**
 
 parameters:
 - name: items_in_scope
