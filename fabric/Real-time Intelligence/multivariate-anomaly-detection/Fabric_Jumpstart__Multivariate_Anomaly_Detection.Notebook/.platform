@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Notebook",
+    "displayName": "Fabric_Jumpstart__Multivariate_Anomaly_Detection"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "4223e6a8-c528-9b9c-4491-c0108896dadc"
+  }
+}

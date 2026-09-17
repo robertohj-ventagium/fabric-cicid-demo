@@ -1,0 +1,119 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/plan/definition/Planning/DataInput/1.0.0/schema.json",
+  "columns": [
+    {
+      "boundToFilterContext": 10,
+      "columnMeta": {
+        "data_type": "Number",
+        "description": null,
+        "id": "5323005294781697606",
+        "label": "Future Forecast Qty",
+        "measure_type": {
+          "Native": {
+            "measure_role": "ACMeasure"
+          }
+        }
+      },
+      "dataInputType": 6,
+      "description": null,
+      "measureGuid": "5323005294781697606",
+      "name": "Future Forecast Qty",
+      "sidecarHydrationLeaseAt": null,
+      "sidecarHydrationStatus": 10,
+      "status": 10,
+      "visualId": "019f6bdc-d160-7c5c-a3af-c3e646c66de9"
+    },
+    {
+      "boundToFilterContext": 10,
+      "columnMeta": {
+        "data_type": "Number",
+        "description": "",
+        "id": "7593935772472892329",
+        "label": "Forecast Adjusted",
+        "measure_type": {
+          "VisualColumn": {
+            "DataInput": {
+              "allow_input": "ReadAndEdit",
+              "column_type": {
+                "Number": {
+                  "default_value": null,
+                  "distribute_parent_value_to_children": true,
+                  "max_value": null,
+                  "min_value": null
+                }
+              },
+              "disable_write_access": false,
+              "id": "",
+              "on_change_formula": "",
+              "title": "Forecast Adjusted"
+            }
+          }
+        }
+      },
+      "dataInputType": 6,
+      "description": null,
+      "measureGuid": "7593935772472892329",
+      "name": "Forecast Adjusted",
+      "sidecarHydrationLeaseAt": null,
+      "sidecarHydrationStatus": 20,
+      "status": 10,
+      "visualId": "019f6bdc-d160-7c5c-a3af-c3e646c66de9"
+    },
+    {
+      "boundToFilterContext": 10,
+      "columnMeta": {
+        "data_type": "Number",
+        "description": null,
+        "id": "7005637378476917934",
+        "label": "Actual Sales",
+        "measure_type": {
+          "Native": {
+            "measure_role": "ACMeasure"
+          }
+        }
+      },
+      "dataInputType": 6,
+      "description": null,
+      "measureGuid": "7005637378476917934",
+      "name": "Actual Sales",
+      "sidecarHydrationLeaseAt": null,
+      "sidecarHydrationStatus": 10,
+      "status": 10,
+      "visualId": "019f6bdc-d160-7c5c-a3af-c3e646c66de9"
+    },
+    {
+      "boundToFilterContext": 10,
+      "columnMeta": {
+        "data_type": "Number",
+        "description": "",
+        "id": "4209751151105921852",
+        "label": "Adjusted Forecast",
+        "measure_type": {
+          "DataInput": {
+            "allow_input": "ReadAndEdit",
+            "column_type": {
+              "Number": {
+                "default_value": null,
+                "distribute_parent_value_to_children": true,
+                "max_value": null,
+                "min_value": null
+              }
+            },
+            "disable_write_access": false,
+            "id": "",
+            "on_change_formula": "",
+            "title": "Adjusted Forecast"
+          }
+        }
+      },
+      "dataInputType": 6,
+      "description": null,
+      "measureGuid": "4209751151105921852",
+      "name": "Adjusted Forecast",
+      "sidecarHydrationLeaseAt": null,
+      "sidecarHydrationStatus": 20,
+      "status": 10,
+      "visualId": "019f6bdc-d160-7c5c-a3af-c3e646c66de9"
+    }
+  ]
+}

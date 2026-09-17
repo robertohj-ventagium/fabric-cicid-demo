@@ -1,0 +1,74 @@
+table DocumentationRequests
+	lineageTag: 49aabcf2-f10a-4d29-97c5-8753fc09baf2
+	sourceLineageTag: [dbo].[DocumentationRequests]
+
+	column id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 69b9cf47-cbc5-4775-8bea-edd39d21ac6a
+		sourceLineageTag: id
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column ApplicationID
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 675b35b6-a1ff-4ca9-9afe-3ca69880c8a0
+		sourceLineageTag: ApplicationID
+		summarizeBy: none
+		sourceColumn: ApplicationID
+
+		annotation SummarizationSetBy = Automatic
+
+	column RequestID
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 6cf1b6c1-78dc-42ad-95b4-aa5ce2158269
+		sourceLineageTag: RequestID
+		summarizeBy: none
+		sourceColumn: RequestID
+
+		annotation SummarizationSetBy = Automatic
+
+	column RequestText
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 1e2f29d8-3ac4-4191-8555-e05f7338b97c
+		sourceLineageTag: RequestText
+		summarizeBy: none
+		sourceColumn: RequestText
+
+		annotation SummarizationSetBy = Automatic
+
+	column RequestedAt
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 4218d857-6818-4d22-8bd6-0659967ba85a
+		sourceLineageTag: RequestedAt
+		summarizeBy: none
+		sourceColumn: RequestedAt
+
+		annotation SummarizationSetBy = Automatic
+
+	column RequestedBy
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 5a94644d-c7b8-4924-86a6-d2bc733874f8
+		sourceLineageTag: RequestedBy
+		summarizeBy: none
+		sourceColumn: RequestedBy
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DocumentationRequests = entity
+		mode: directLake
+		source
+			entityName: DocumentationRequests
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

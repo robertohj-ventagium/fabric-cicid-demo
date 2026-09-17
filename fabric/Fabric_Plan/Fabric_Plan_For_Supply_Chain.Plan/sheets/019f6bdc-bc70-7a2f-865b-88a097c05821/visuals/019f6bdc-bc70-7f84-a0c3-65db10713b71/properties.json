@@ -1,0 +1,375 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/plan/definition/Planning/Properties/1.0.0/schema.json",
+  "properties": {
+    "dimension": {
+      "height": 0.49,
+      "width": 0.99
+    },
+    "layerProperties": {
+      "layerProperties": {
+        "groupIds": [],
+        "isHidden": false,
+        "name": "Planning"
+      },
+      "order": 0
+    },
+    "pivotAssignments": [
+      {
+        "bucketId": "rows",
+        "columnName": "ForecastID",
+        "columnType": "Column",
+        "contents": "",
+        "dataRoleType": "Grouping",
+        "dataType": "Int64",
+        "distinctValueCount": 0,
+        "formatString": "0",
+        "id": "fact_forecast[ForecastID]",
+        "isFlatHierarchy": false,
+        "name": "ForecastID",
+        "order": 0,
+        "sourceId": "fact_forecast[ForecastID]",
+        "sourceType": "PowerBI",
+        "tableName": "fact_forecast"
+      }
+    ],
+    "position": {
+      "x": 0.005,
+      "y": 0.40500000000000025
+    },
+    "splitByCategory": {
+      "pivotValueAssignments": [],
+      "splitByCategoryAssignments": [],
+      "splitByCategoryItems": [],
+      "splitByDelimiter": "-"
+    },
+    "superFilterAssignments": [
+      {
+        "bucketId": "rows",
+        "configuration": {
+          "alphaNumericValues": {
+            "equalValue": null,
+            "maxValue": null,
+            "minValue": null
+          },
+          "enableNumericToFacet": false,
+          "filterMode": "basic",
+          "filterOperator": "is",
+          "hide": false,
+          "isExpanded": false,
+          "locked": false,
+          "measureSearch": true,
+          "name": "ForecastID",
+          "regex": "",
+          "scale": "none",
+          "selectAll": true,
+          "sheetDataItemAggregationType": "sum",
+          "singleSelect": false,
+          "slider": false,
+          "sort": [
+            {
+              "columnId": "fact_forecast[ForecastID]",
+              "columnName": "ForecastID",
+              "direction": "ASC",
+              "id": "fact_forecast[ForecastID]"
+            }
+          ],
+          "topN": {
+            "displayOthers": true,
+            "otherLabel": "Others",
+            "rankMeasure": "",
+            "rankMeasureLabel": "",
+            "rankMode": "TOP",
+            "rankType": "value",
+            "rankValue": 5
+          },
+          "visualType": "NUMERIC"
+        },
+        "filter": [],
+        "filterLevel": "visual",
+        "id": "filter_1782493485911_sxc9qamib",
+        "isDaxMeasure": false,
+        "isDefault": true,
+        "isDefaultMeasure": false,
+        "pivotAssignments": [
+          {
+            "bucketId": "rows",
+            "columnName": "ForecastID",
+            "columnType": "Column",
+            "contents": "",
+            "dataRoleType": "Grouping",
+            "dataType": "Int64",
+            "distinctValueCount": 0,
+            "formatString": "0",
+            "id": "fact_forecast[ForecastID]",
+            "isFlatHierarchy": false,
+            "name": "ForecastID",
+            "order": 0,
+            "sourceId": "fact_forecast[ForecastID]",
+            "sourceType": "PowerBI",
+            "tableName": "fact_forecast"
+          }
+        ],
+        "position": "RIGHT"
+      }
+    ],
+    "visualState": {
+      "auto_fit_options": {
+        "autoFit": false,
+        "bestFit": false,
+        "lockColumnWidth": false,
+        "uniformColumnWidth": null,
+        "wrapCols": false
+      },
+      "chartCustomTitle": {
+        "customTitle": {
+          "containerMeta": {
+            "height": 45,
+            "width": 1130
+          },
+          "containerPosition": "top",
+          "elements": [
+            {
+              "align": "left",
+              "background": null,
+              "border": [],
+              "borderColor": "",
+              "borderRadius": "0px",
+              "borderWidth": "1px",
+              "containerBackground": null,
+              "content": "<span class='mention' data-value='{\"id\":\"[fields]\",\"fieldKey\":\"title\",\"key\":\"fields\"}'>[fields]</span><p><span style=\"font-size: 12px;\"><span class='mention' data-value='{\"id\":\"[scaling]\",\"fieldKey\":\"title\",\"key\":\"scaling\"}'>[scaling]</span></span></p>",
+              "dimension": {
+                "height": "30",
+                "width": "150"
+              },
+              "id": "left-col",
+              "layout": {
+                "h": 3,
+                "i": "left-col",
+                "static": false,
+                "w": 32,
+                "x": 0,
+                "y": 0
+              },
+              "marginBottom": "0px",
+              "marginLeft": "0px",
+              "marginRight": "0px",
+              "marginTop": "0px",
+              "position": {
+                "left": 0,
+                "top": 0
+              },
+              "shadowColor": "",
+              "shadowPosition": "",
+              "type": "DEFAULT_TITLE",
+              "verticalAlign": "MIDDLE"
+            }
+          ],
+          "layout": "left-col",
+          "layoutType": "CUSTOM"
+        },
+        "measureTitle": "",
+        "primaryTitle": "",
+        "secondaryTitle": ""
+      },
+      "columnDimensions": [],
+      "commentsNotes": {
+        "commentsMap": {},
+        "createMode": false,
+        "creationType": "NOTES",
+        "dimension": {
+          "height": 441,
+          "width": 1584
+        },
+        "modCommentaryId": "",
+        "notesMap": {},
+        "tempIdMap": {}
+      },
+      "dimension_id_mapping": {
+        "mappings": null,
+        "pivot": []
+      },
+      "dynamic_row_template_dimensions_map": {},
+      "filterContextProperties": {
+        "filterContextDimensions": [],
+        "filterContextHash": null,
+        "filterContextHashMap": {},
+        "filterContextJson": {}
+      },
+      "invert_row": {
+        "influence_total": false,
+        "items": [],
+        "result_rows": null
+      },
+      "locale": "en-US",
+      "manage_measures": [],
+      "model_editor_page_config": {
+        "column_break": null,
+        "pagination_type": {
+          "RowCount": 25
+        },
+        "view": "Browser"
+      },
+      "pivot": {
+        "active_id": null,
+        "configs": []
+      },
+      "ragged_hierarchy_config": {
+        "enabled": false,
+        "hide_blank_columns": false,
+        "hide_blank_dimension": false,
+        "hide_blanks": "ValueCategory",
+        "hide_zeros": false,
+        "single_child": "All",
+        "suppress_calculated_measures": false,
+        "suppress_di_measures": false,
+        "suppress_native_measures": false
+      },
+      "ranking_config": {
+        "exemptions": {},
+        "others_title": "Others",
+        "rank_rules": [],
+        "show_category_suffix": false,
+        "show_others": true
+      },
+      "rowDimensions": [
+        {
+          "externalKey": "fact_forecast[ForecastID]",
+          "id": "1801199898195507788",
+          "isNative": true,
+          "label": "ForecastID"
+        }
+      ],
+      "toolbar": {
+        "currentTab": "",
+        "enableHoverToolbar": false,
+        "hideDuplicateReportWarning": false,
+        "isPinned": true,
+        "readViewPin": true,
+        "setCanvasResize": false,
+        "showFloatingToolbar": true,
+        "showForecastTab": false,
+        "showMinimalTabEditMode": true,
+        "showMinimalView": true,
+        "showOnHover": false,
+        "showTabContent": true,
+        "toolbarTheme": "light"
+      },
+      "unlinked_row_ids": {
+        "ids": []
+      },
+      "visualStyles": {
+        "background": {
+          "backgroundColor": "#FFFFFF",
+          "isEnabled": true
+        },
+        "border": {
+          "color": "#DDDDDD",
+          "isEnabled": false,
+          "side": "all",
+          "width": 1
+        },
+        "cornerRadius": {
+          "isCustomCornerRadius": false,
+          "isEnabled": true,
+          "radiusBottomLeft": 0,
+          "radiusBottomRight": 0,
+          "radiusTopLeft": 0,
+          "radiusTopRight": 0
+        },
+        "isTooltipEnabled": true,
+        "padding": {
+          "bottomPadding": 5,
+          "isCustomPaddingSize": false,
+          "isEnabled": true,
+          "leftPadding": 5,
+          "rightPadding": 5,
+          "topPadding": 5
+        },
+        "shadow": {
+          "angle": 135,
+          "blur": 8,
+          "color": "#0000003f",
+          "distance": 10,
+          "isEnabled": false,
+          "opacity": 100,
+          "placement": "outer",
+          "side": "bottom",
+          "width": 0
+        },
+        "showHelperTooltips": true,
+        "showSelectedSeriesInTooltip": false,
+        "tooltipPageId": "auto",
+        "tooltipStyle": {
+          "backgroundColor": "#FFFFFF",
+          "bold": false,
+          "fontFamily": "Segoe UI",
+          "fontSize": 12,
+          "italic": false,
+          "labelColor": "#252423",
+          "underline": false,
+          "valueColor": "#252423"
+        },
+        "tooltipType": "default",
+        "varianceInTooltip": true,
+        "varianceTooltipType": "both"
+      }
+    },
+    "visualStyles": {
+      "background": {
+        "backgroundColor": "#FFFFFF",
+        "isEnabled": true
+      },
+      "border": {
+        "color": "#DDDDDD",
+        "isEnabled": false,
+        "side": "all",
+        "width": 1
+      },
+      "cornerRadius": {
+        "isCustomCornerRadius": false,
+        "isEnabled": true,
+        "radiusBottomLeft": 0,
+        "radiusBottomRight": 0,
+        "radiusTopLeft": 0,
+        "radiusTopRight": 0
+      },
+      "isTooltipEnabled": true,
+      "padding": {
+        "bottomPadding": 5,
+        "isCustomPaddingSize": false,
+        "isEnabled": true,
+        "leftPadding": 5,
+        "rightPadding": 5,
+        "topPadding": 5
+      },
+      "shadow": {
+        "angle": 135,
+        "blur": 8,
+        "color": "#0000003f",
+        "distance": 10,
+        "isEnabled": false,
+        "opacity": 100,
+        "placement": "outer",
+        "side": "bottom",
+        "width": 0
+      },
+      "showHelperTooltips": true,
+      "showSelectedSeriesInTooltip": false,
+      "tooltipPageId": "auto",
+      "tooltipStyle": {
+        "backgroundColor": "#FFFFFF",
+        "bold": false,
+        "fontFamily": "Segoe UI",
+        "fontSize": 12,
+        "italic": false,
+        "labelColor": "#252423",
+        "underline": false,
+        "valueColor": "#252423"
+      },
+      "tooltipType": "default",
+      "varianceInTooltip": true,
+      "varianceTooltipType": "both"
+    },
+    "visualType": 80
+  }
+}

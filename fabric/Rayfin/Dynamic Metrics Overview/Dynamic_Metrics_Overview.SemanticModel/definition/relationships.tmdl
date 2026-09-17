@@ -1,0 +1,12 @@
+relationship 75575d35-5d22-c88a-b01c-9d71a86ace5d
+	fromColumn: Category.DepartmentID
+	toColumn: Department.DepartmentID
+
+relationship 1267f0f1-d220-88e7-a91c-32b0ca1dae3f
+	fromColumn: Metric.CategoryID
+	toColumn: Category.CategoryID
+
+relationship 1f27d0c6-2687-e361-8e99-74f9b7dc8d68
+	fromColumn: MetricValue.MetricID
+	toColumn: Metric.MetricID
+

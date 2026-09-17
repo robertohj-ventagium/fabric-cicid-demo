@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "ManufacturingOperationsReport",
+    "description": ""
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "42261961-4bd1-89a7-483c-123a8fd654c7"
+  }
+}

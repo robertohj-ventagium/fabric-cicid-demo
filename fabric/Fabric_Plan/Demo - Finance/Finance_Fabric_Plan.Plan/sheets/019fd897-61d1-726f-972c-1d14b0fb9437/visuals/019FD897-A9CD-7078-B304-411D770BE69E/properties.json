@@ -1,0 +1,3033 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/plan/definition/PowerTable/Properties/1.0.0/schema.json",
+  "properties": {
+    "properties": {
+      "advanceLookup": [],
+      "chartType": "COLUMN_VERTICAL",
+      "dimension": {
+        "height": 0.4,
+        "width": 0.3
+      },
+      "groupMeasureAssignments": [],
+      "groupName": "",
+      "layerProperties": {
+        "order": 0
+      },
+      "lockAspectRatio": false,
+      "mobileProperties": {},
+      "originEntityId": "7",
+      "pivotAssignments": [],
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "preVisualId": "8",
+      "shapeType": "RECTANGLE",
+      "sortingConfig": [],
+      "splitByCategory": {
+        "pivotValueAssignments": [],
+        "splitByCategoryAssignments": [],
+        "splitByCategoryItems": [],
+        "splitByDelimiter": "-"
+      },
+      "superFilterAssignments": [
+        {
+          "configuration": {
+            "alphaNumericValues": {
+              "equalValue": null,
+              "maxValue": null,
+              "minValue": null
+            },
+            "enableNumericToFacet": false,
+            "filterMode": "basic",
+            "filterOperator": "is",
+            "hide": false,
+            "isExpanded": false,
+            "locked": false,
+            "name": "AccountKey",
+            "regex": "",
+            "scale": "none",
+            "selectAll": true,
+            "selectAllState": "UNSELECTED",
+            "singleSelect": false,
+            "slider": false,
+            "sort": [
+              {
+                "columnId": "AccountKey",
+                "columnName": "AccountKey",
+                "direction": "ASC",
+                "id": "AccountKey"
+              }
+            ],
+            "topN": {
+              "displayOthers": true,
+              "isRankEmptyItems": false,
+              "otherLabel": "Others",
+              "rankMeasure": "",
+              "rankMode": "TOP",
+              "rankType": "value",
+              "rankValue": 5
+            },
+            "visualType": "NUMERIC"
+          },
+          "filter": [],
+          "filterLevel": "visual",
+          "id": "AccountKey",
+          "isDeleted": false,
+          "pivotAssignments": [
+            {
+              "bucketId": "",
+              "columnName": "AccountKey",
+              "columnType": "Column",
+              "dataType": "Int64",
+              "id": "AccountKey",
+              "name": "AccountKey",
+              "order": 0,
+              "sourceId": "AccountKey",
+              "sourceType": "powerTables",
+              "tableName": "DimAccount"
+            }
+          ],
+          "position": "RIGHT"
+        },
+        {
+          "configuration": {
+            "alphaNumericValues": {
+              "equalValue": null,
+              "maxValue": null,
+              "minValue": null
+            },
+            "enableNumericToFacet": false,
+            "filterMode": "basic",
+            "filterOperator": "is",
+            "hide": false,
+            "isExpanded": false,
+            "locked": false,
+            "name": "ParentAccountKey",
+            "regex": "",
+            "scale": "none",
+            "selectAll": true,
+            "selectAllState": "UNSELECTED",
+            "singleSelect": false,
+            "slider": false,
+            "sort": [
+              {
+                "columnId": "ParentAccountKey",
+                "columnName": "ParentAccountKey",
+                "direction": "ASC",
+                "id": "ParentAccountKey"
+              }
+            ],
+            "topN": {
+              "displayOthers": true,
+              "isRankEmptyItems": false,
+              "otherLabel": "Others",
+              "rankMeasure": "",
+              "rankMode": "TOP",
+              "rankType": "value",
+              "rankValue": 5
+            },
+            "visualType": "NUMERIC"
+          },
+          "filter": [],
+          "filterLevel": "visual",
+          "id": "ParentAccountKey",
+          "isDeleted": false,
+          "pivotAssignments": [
+            {
+              "bucketId": "",
+              "columnName": "ParentAccountKey",
+              "columnType": "Column",
+              "dataType": "Int64",
+              "id": "ParentAccountKey",
+              "name": "ParentAccountKey",
+              "order": 0,
+              "sourceId": "ParentAccountKey",
+              "sourceType": "powerTables",
+              "tableName": "DimAccount"
+            }
+          ],
+          "position": "RIGHT"
+        },
+        {
+          "configuration": {
+            "alphaNumericValues": {
+              "equalValue": null,
+              "maxValue": null,
+              "minValue": null
+            },
+            "enableNumericToFacet": false,
+            "filterMode": "basic",
+            "filterOperator": "is",
+            "hide": false,
+            "isExpanded": false,
+            "locked": false,
+            "name": "AccountCodeAlternateKey",
+            "regex": "",
+            "scale": "none",
+            "selectAll": true,
+            "selectAllState": "UNSELECTED",
+            "singleSelect": false,
+            "slider": false,
+            "sort": [
+              {
+                "columnId": "AccountCodeAlternateKey",
+                "columnName": "AccountCodeAlternateKey",
+                "direction": "ASC",
+                "id": "AccountCodeAlternateKey"
+              }
+            ],
+            "topN": {
+              "displayOthers": true,
+              "isRankEmptyItems": false,
+              "otherLabel": "Others",
+              "rankMeasure": "",
+              "rankMode": "TOP",
+              "rankType": "value",
+              "rankValue": 5
+            },
+            "visualType": "NUMERIC"
+          },
+          "filter": [],
+          "filterLevel": "visual",
+          "id": "AccountCodeAlternateKey",
+          "isDeleted": false,
+          "pivotAssignments": [
+            {
+              "bucketId": "",
+              "columnName": "AccountCodeAlternateKey",
+              "columnType": "Column",
+              "dataType": "Int64",
+              "id": "AccountCodeAlternateKey",
+              "name": "AccountCodeAlternateKey",
+              "order": 0,
+              "sourceId": "AccountCodeAlternateKey",
+              "sourceType": "powerTables",
+              "tableName": "DimAccount"
+            }
+          ],
+          "position": "RIGHT"
+        },
+        {
+          "configuration": {
+            "alphaNumericValues": {
+              "equalValue": null,
+              "maxValue": null,
+              "minValue": null
+            },
+            "enableNumericToFacet": false,
+            "filterMode": "basic",
+            "filterOperator": "is",
+            "hide": false,
+            "isExpanded": false,
+            "locked": false,
+            "name": "ParentAccountCodeAlternateKey",
+            "regex": "",
+            "scale": "none",
+            "selectAll": true,
+            "selectAllState": "UNSELECTED",
+            "singleSelect": false,
+            "slider": false,
+            "sort": [
+              {
+                "columnId": "ParentAccountCodeAlternateKey",
+                "columnName": "ParentAccountCodeAlternateKey",
+                "direction": "ASC",
+                "id": "ParentAccountCodeAlternateKey"
+              }
+            ],
+            "topN": {
+              "displayOthers": true,
+              "isRankEmptyItems": false,
+              "otherLabel": "Others",
+              "rankMeasure": "",
+              "rankMode": "TOP",
+              "rankType": "value",
+              "rankValue": 5
+            },
+            "visualType": "NUMERIC"
+          },
+          "filter": [],
+          "filterLevel": "visual",
+          "id": "ParentAccountCodeAlternateKey",
+          "isDeleted": false,
+          "pivotAssignments": [
+            {
+              "bucketId": "",
+              "columnName": "ParentAccountCodeAlternateKey",
+              "columnType": "Column",
+              "dataType": "Int64",
+              "id": "ParentAccountCodeAlternateKey",
+              "name": "ParentAccountCodeAlternateKey",
+              "order": 0,
+              "sourceId": "ParentAccountCodeAlternateKey",
+              "sourceType": "powerTables",
+              "tableName": "DimAccount"
+            }
+          ],
+          "position": "RIGHT"
+        },
+        {
+          "configuration": {
+            "filterMode": "basic",
+            "filterOperator": "is",
+            "hide": false,
+            "isExpanded": false,
+            "locked": false,
+            "name": "AccountDescription",
+            "selectAll": true,
+            "selectAllState": "UNSELECTED",
+            "singleSelect": false,
+            "sort": [
+              {
+                "columnId": "AccountDescription",
+                "columnName": "AccountDescription",
+                "direction": "ASC",
+                "id": "AccountDescription"
+              }
+            ],
+            "topN": {
+              "displayOthers": true,
+              "isRankEmptyItems": false,
+              "otherLabel": "Others",
+              "rankMeasure": "",
+              "rankMode": "TOP",
+              "rankType": "value",
+              "rankValue": 5
+            },
+            "visualType": "FACET"
+          },
+          "filter": [],
+          "filterLevel": "visual",
+          "id": "AccountDescription",
+          "isDeleted": false,
+          "pivotAssignments": [
+            {
+              "bucketId": "",
+              "columnName": "AccountDescription",
+              "columnType": "Column",
+              "dataType": "String",
+              "id": "AccountDescription",
+              "name": "AccountDescription",
+              "order": 0,
+              "sourceId": "AccountDescription",
+              "sourceType": "powerTables",
+              "tableName": "DimAccount"
+            }
+          ],
+          "position": "RIGHT"
+        },
+        {
+          "configuration": {
+            "filterMode": "basic",
+            "filterOperator": "is",
+            "hide": false,
+            "isExpanded": false,
+            "locked": false,
+            "name": "AccountType",
+            "selectAll": true,
+            "selectAllState": "UNSELECTED",
+            "singleSelect": false,
+            "sort": [
+              {
+                "columnId": "AccountType",
+                "columnName": "AccountType",
+                "direction": "ASC",
+                "id": "AccountType"
+              }
+            ],
+            "topN": {
+              "displayOthers": true,
+              "isRankEmptyItems": false,
+              "otherLabel": "Others",
+              "rankMeasure": "",
+              "rankMode": "TOP",
+              "rankType": "value",
+              "rankValue": 5
+            },
+            "visualType": "FACET"
+          },
+          "filter": [],
+          "filterLevel": "visual",
+          "id": "AccountType",
+          "isDeleted": false,
+          "pivotAssignments": [
+            {
+              "bucketId": "",
+              "columnName": "AccountType",
+              "columnType": "Column",
+              "dataType": "String",
+              "id": "AccountType",
+              "name": "AccountType",
+              "order": 0,
+              "sourceId": "AccountType",
+              "sourceType": "powerTables",
+              "tableName": "DimAccount"
+            }
+          ],
+          "position": "RIGHT"
+        },
+        {
+          "configuration": {
+            "filterMode": "basic",
+            "filterOperator": "is",
+            "hide": false,
+            "isExpanded": false,
+            "locked": false,
+            "name": "Operator",
+            "selectAll": true,
+            "selectAllState": "UNSELECTED",
+            "singleSelect": false,
+            "sort": [
+              {
+                "columnId": "Operator",
+                "columnName": "Operator",
+                "direction": "ASC",
+                "id": "Operator"
+              }
+            ],
+            "topN": {
+              "displayOthers": true,
+              "isRankEmptyItems": false,
+              "otherLabel": "Others",
+              "rankMeasure": "",
+              "rankMode": "TOP",
+              "rankType": "value",
+              "rankValue": 5
+            },
+            "visualType": "FACET"
+          },
+          "filter": [],
+          "filterLevel": "visual",
+          "id": "Operator",
+          "isDeleted": false,
+          "pivotAssignments": [
+            {
+              "bucketId": "",
+              "columnName": "Operator",
+              "columnType": "Column",
+              "dataType": "String",
+              "id": "Operator",
+              "name": "Operator",
+              "order": 0,
+              "sourceId": "Operator",
+              "sourceType": "powerTables",
+              "tableName": "DimAccount"
+            }
+          ],
+          "position": "RIGHT"
+        },
+        {
+          "configuration": {
+            "filterMode": "basic",
+            "filterOperator": "is",
+            "hide": false,
+            "isExpanded": false,
+            "locked": false,
+            "name": "CustomMembers",
+            "selectAll": true,
+            "selectAllState": "UNSELECTED",
+            "singleSelect": false,
+            "sort": [
+              {
+                "columnId": "CustomMembers",
+                "columnName": "CustomMembers",
+                "direction": "ASC",
+                "id": "CustomMembers"
+              }
+            ],
+            "topN": {
+              "displayOthers": true,
+              "isRankEmptyItems": false,
+              "otherLabel": "Others",
+              "rankMeasure": "",
+              "rankMode": "TOP",
+              "rankType": "value",
+              "rankValue": 5
+            },
+            "visualType": "FACET"
+          },
+          "filter": [],
+          "filterLevel": "visual",
+          "id": "CustomMembers",
+          "isDeleted": false,
+          "pivotAssignments": [
+            {
+              "bucketId": "",
+              "columnName": "CustomMembers",
+              "columnType": "Column",
+              "dataType": "String",
+              "id": "CustomMembers",
+              "name": "CustomMembers",
+              "order": 0,
+              "sourceId": "CustomMembers",
+              "sourceType": "powerTables",
+              "tableName": "DimAccount"
+            }
+          ],
+          "position": "RIGHT"
+        },
+        {
+          "configuration": {
+            "filterMode": "basic",
+            "filterOperator": "is",
+            "hide": false,
+            "isExpanded": false,
+            "locked": false,
+            "name": "ValueType",
+            "selectAll": true,
+            "selectAllState": "UNSELECTED",
+            "singleSelect": false,
+            "sort": [
+              {
+                "columnId": "ValueType",
+                "columnName": "ValueType",
+                "direction": "ASC",
+                "id": "ValueType"
+              }
+            ],
+            "topN": {
+              "displayOthers": true,
+              "isRankEmptyItems": false,
+              "otherLabel": "Others",
+              "rankMeasure": "",
+              "rankMode": "TOP",
+              "rankType": "value",
+              "rankValue": 5
+            },
+            "visualType": "FACET"
+          },
+          "filter": [],
+          "filterLevel": "visual",
+          "id": "ValueType",
+          "isDeleted": false,
+          "pivotAssignments": [
+            {
+              "bucketId": "",
+              "columnName": "ValueType",
+              "columnType": "Column",
+              "dataType": "String",
+              "id": "ValueType",
+              "name": "ValueType",
+              "order": 0,
+              "sourceId": "ValueType",
+              "sourceType": "powerTables",
+              "tableName": "DimAccount"
+            }
+          ],
+          "position": "RIGHT"
+        },
+        {
+          "configuration": {
+            "filterMode": "basic",
+            "filterOperator": "is",
+            "hide": false,
+            "isExpanded": false,
+            "locked": false,
+            "name": "CustomMemberOptions",
+            "selectAll": true,
+            "selectAllState": "UNSELECTED",
+            "singleSelect": false,
+            "sort": [
+              {
+                "columnId": "CustomMemberOptions",
+                "columnName": "CustomMemberOptions",
+                "direction": "ASC",
+                "id": "CustomMemberOptions"
+              }
+            ],
+            "topN": {
+              "displayOthers": true,
+              "isRankEmptyItems": false,
+              "otherLabel": "Others",
+              "rankMeasure": "",
+              "rankMode": "TOP",
+              "rankType": "value",
+              "rankValue": 5
+            },
+            "visualType": "FACET"
+          },
+          "filter": [],
+          "filterLevel": "visual",
+          "id": "CustomMemberOptions",
+          "isDeleted": false,
+          "pivotAssignments": [
+            {
+              "bucketId": "",
+              "columnName": "CustomMemberOptions",
+              "columnType": "Column",
+              "dataType": "String",
+              "id": "CustomMemberOptions",
+              "name": "CustomMemberOptions",
+              "order": 0,
+              "sourceId": "CustomMemberOptions",
+              "sourceType": "powerTables",
+              "tableName": "DimAccount"
+            }
+          ],
+          "position": "RIGHT"
+        },
+        {
+          "configuration": {
+            "alphaNumericValues": {
+              "equalValue": null,
+              "maxValue": null,
+              "minValue": null
+            },
+            "enableNumericToFacet": false,
+            "filterMode": "basic",
+            "filterOperator": "is",
+            "hide": false,
+            "isExpanded": false,
+            "locked": false,
+            "name": "Budget",
+            "regex": "",
+            "scale": "none",
+            "selectAll": true,
+            "selectAllState": "UNSELECTED",
+            "singleSelect": false,
+            "slider": false,
+            "sort": [
+              {
+                "columnId": "COLUMN_6adff1a8_2a32_4efa_9bc4_bb960daa3afb",
+                "columnName": "COLUMN_6adff1a8_2a32_4efa_9bc4_bb960daa3afb",
+                "direction": "ASC",
+                "id": "COLUMN_6adff1a8_2a32_4efa_9bc4_bb960daa3afb"
+              }
+            ],
+            "topN": {
+              "displayOthers": true,
+              "isRankEmptyItems": false,
+              "otherLabel": "Others",
+              "rankMeasure": "",
+              "rankMode": "TOP",
+              "rankType": "value",
+              "rankValue": 5
+            },
+            "visualType": "NUMERIC"
+          },
+          "filter": [],
+          "filterLevel": "visual",
+          "id": "COLUMN_6adff1a8_2a32_4efa_9bc4_bb960daa3afb",
+          "isDeleted": false,
+          "pivotAssignments": [
+            {
+              "bucketId": "",
+              "columnName": "COLUMN_6adff1a8_2a32_4efa_9bc4_bb960daa3afb",
+              "columnType": "Column",
+              "dataType": "String",
+              "id": "COLUMN_6adff1a8_2a32_4efa_9bc4_bb960daa3afb",
+              "name": "COLUMN_6adff1a8_2a32_4efa_9bc4_bb960daa3afb",
+              "order": 0,
+              "sourceId": "COLUMN_6adff1a8_2a32_4efa_9bc4_bb960daa3afb",
+              "sourceType": "powerTables",
+              "tableName": "DimAccount"
+            }
+          ],
+          "position": "RIGHT"
+        },
+        {
+          "configuration": {
+            "alphaNumericValues": {
+              "equalValue": null,
+              "maxValue": null,
+              "minValue": null
+            },
+            "enableNumericToFacet": false,
+            "filterMode": "basic",
+            "filterOperator": "is",
+            "hide": false,
+            "isExpanded": false,
+            "locked": false,
+            "name": "Actuals",
+            "regex": "",
+            "scale": "none",
+            "selectAll": true,
+            "selectAllState": "UNSELECTED",
+            "singleSelect": false,
+            "slider": false,
+            "sort": [
+              {
+                "columnId": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e",
+                "columnName": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e",
+                "direction": "ASC",
+                "id": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e"
+              }
+            ],
+            "topN": {
+              "displayOthers": true,
+              "isRankEmptyItems": false,
+              "otherLabel": "Others",
+              "rankMeasure": "",
+              "rankMode": "TOP",
+              "rankType": "value",
+              "rankValue": 5
+            },
+            "visualType": "NUMERIC"
+          },
+          "filter": [],
+          "filterLevel": "visual",
+          "id": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e",
+          "isDeleted": false,
+          "pivotAssignments": [
+            {
+              "bucketId": "",
+              "columnName": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e",
+              "columnType": "Column",
+              "dataType": "Decimal",
+              "id": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e",
+              "name": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e",
+              "order": 0,
+              "sourceId": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e",
+              "sourceType": "powerTables",
+              "tableName": "DimAccount"
+            }
+          ],
+          "position": "RIGHT"
+        },
+        {
+          "configuration": {
+            "alphaNumericValues": {
+              "equalValue": null,
+              "maxValue": null,
+              "minValue": null
+            },
+            "enableNumericToFacet": false,
+            "filterMode": "basic",
+            "filterOperator": "is",
+            "hide": false,
+            "isExpanded": false,
+            "locked": false,
+            "name": "Budget",
+            "regex": "",
+            "scale": "none",
+            "selectAll": true,
+            "selectAllState": "UNSELECTED",
+            "singleSelect": false,
+            "slider": false,
+            "sort": [
+              {
+                "columnId": "Budget",
+                "columnName": "Budget",
+                "direction": "ASC",
+                "id": "Budget"
+              }
+            ],
+            "topN": {
+              "displayOthers": true,
+              "isRankEmptyItems": false,
+              "otherLabel": "Others",
+              "rankMeasure": "",
+              "rankMode": "TOP",
+              "rankType": "value",
+              "rankValue": 5
+            },
+            "visualType": "NUMERIC"
+          },
+          "filter": [],
+          "filterLevel": "visual",
+          "id": "Budget",
+          "isDeleted": false,
+          "pivotAssignments": [
+            {
+              "bucketId": "",
+              "columnName": "Budget",
+              "columnType": "Column",
+              "dataType": "Decimal",
+              "id": "Budget",
+              "name": "Budget",
+              "order": 0,
+              "sourceId": "Budget",
+              "sourceType": "powerTables",
+              "tableName": "DimAccount"
+            }
+          ],
+          "position": "RIGHT"
+        }
+      ],
+      "transformMeasure": "none",
+      "visualInteractions": {},
+      "visualState": {
+        "assignmentColumnMap": {
+          "8": {
+            "AccountCodeAlternateKey": {
+              "columnId": "",
+              "label": "",
+              "parentPath": [],
+              "source": "",
+              "sourceId": ""
+            },
+            "AccountDescription": {
+              "columnId": "",
+              "label": "",
+              "parentPath": [],
+              "source": "",
+              "sourceId": ""
+            },
+            "AccountKey": {
+              "columnId": "",
+              "label": "",
+              "parentPath": [],
+              "source": "",
+              "sourceId": ""
+            },
+            "AccountType": {
+              "columnId": "",
+              "label": "",
+              "parentPath": [],
+              "source": "",
+              "sourceId": ""
+            },
+            "Budget": {
+              "columnId": "",
+              "label": "",
+              "parentPath": [],
+              "source": "",
+              "sourceId": ""
+            },
+            "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e": {
+              "columnId": "",
+              "label": "",
+              "parentPath": [],
+              "source": "",
+              "sourceId": ""
+            },
+            "COLUMN_6adff1a8_2a32_4efa_9bc4_bb960daa3afb": {
+              "columnId": "",
+              "label": "",
+              "parentPath": [],
+              "source": "",
+              "sourceId": ""
+            },
+            "CustomMemberOptions": {
+              "columnId": "",
+              "label": "",
+              "parentPath": [],
+              "source": "",
+              "sourceId": ""
+            },
+            "CustomMembers": {
+              "columnId": "",
+              "label": "",
+              "parentPath": [],
+              "source": "",
+              "sourceId": ""
+            },
+            "Operator": {
+              "columnId": "",
+              "label": "",
+              "parentPath": [],
+              "source": "",
+              "sourceId": ""
+            },
+            "ParentAccountCodeAlternateKey": {
+              "columnId": "",
+              "label": "",
+              "parentPath": [],
+              "source": "",
+              "sourceId": ""
+            },
+            "ParentAccountKey": {
+              "columnId": "",
+              "label": "",
+              "parentPath": [],
+              "source": "",
+              "sourceId": ""
+            },
+            "ValueType": {
+              "columnId": "",
+              "label": "",
+              "parentPath": [],
+              "source": "",
+              "sourceId": ""
+            }
+          }
+        },
+        "auditLog": [
+          {
+            "action": "ADD",
+            "group": "COL_REORDER",
+            "isServerLog": false,
+            "level": 2,
+            "meta": {
+              "measureId": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e",
+              "name": "Measure reordered"
+            },
+            "selection": [
+              {
+                "colId": null,
+                "columnHierarchy": [],
+                "name": "Actuals",
+                "rowHierarchy": [],
+                "rowId": null,
+                "type": 4
+              }
+            ],
+            "timestamp": 1786045932215
+          }
+        ],
+        "calendar": {
+          "calendarGroupByColumnSelectedMembers": [],
+          "dataColor": {
+            "colorBy": "all",
+            "pickColor": "#899CF3",
+            "selectedOptionsColumnId": null,
+            "showAccentBar": true
+          },
+          "dependency": false,
+          "displayColumn": [],
+          "displayRangeValue": "month_view",
+          "displayViewType": "month_view",
+          "endDate": [],
+          "is12HtimeFormat": true,
+          "lastVisitedDate": null,
+          "noOfDays": 1,
+          "noOfWeeks": null,
+          "showMoreEventDate": null,
+          "showMoreEvents": [],
+          "startDate": [],
+          "status": [],
+          "subtasks": false,
+          "timelineOptions": {
+            "timeScale": 30
+          },
+          "weekNumbers": true,
+          "weekends": true
+        },
+        "columnMeta": {
+          "AccountCodeAlternateKey": {
+            "width": 100
+          },
+          "AccountDescription": {
+            "width": 175.748046875
+          },
+          "AccountKey": {
+            "width": 100
+          },
+          "AccountType": {
+            "width": 100
+          },
+          "CustomMemberOptions": {
+            "width": 100
+          },
+          "CustomMembers": {
+            "width": 100
+          },
+          "Operator": {
+            "width": 100
+          },
+          "ParentAccountCodeAlternateKey": {
+            "width": 100
+          },
+          "ParentAccountKey": {
+            "width": 100
+          },
+          "ValueType": {
+            "width": 100
+          }
+        },
+        "ganttPivotData": {
+          "connectTo": [],
+          "customColumns": [],
+          "derivedColumnsMeta": [],
+          "displayColumns": [],
+          "effort": [],
+          "endDate": [],
+          "ganttBackendFilterColumns": [],
+          "ganttVirtualColumns": [],
+          "isDecimalEntryColumn": false,
+          "milestone": [],
+          "parentId": [],
+          "plannedEndDate": [],
+          "plannedStartDate": [],
+          "progress": [],
+          "resource": [],
+          "resourceGroupBy": [],
+          "startDate": [],
+          "taskId": [],
+          "taskNames": [],
+          "timeEntryType": null,
+          "timeTrackingDatabaseName": null,
+          "timeTrackingDateId": null,
+          "timeTrackingEntityId": null,
+          "timeTrackingEntryId": null,
+          "timeTrackingSchemaName": null,
+          "timeTrackingSheetName": null,
+          "timeTrackingSourceId": null,
+          "timeTrackingTaskId": null,
+          "timeTrackingVisualId": null
+        },
+        "kanban": {
+          "assignee": [],
+          "cardView": "collapsed",
+          "collapsedColumns": {},
+          "columnOrder": {},
+          "dataColor": {
+            "borderFill": "#117865",
+            "borderPosition": [],
+            "cardFill": "#FFFFFF",
+            "progressBarFill": "#117865",
+            "textColor": "#242424"
+          },
+          "displayHiddenColumn": false,
+          "enableStatusBtn": false,
+          "expandGroups": {},
+          "groupBy": [],
+          "hiddenColumns": {},
+          "hideEmptyColumnGroup": false,
+          "loadLimit": 10,
+          "phaseMap": {},
+          "phases": [],
+          "progress": [],
+          "showAddNewColumn": true,
+          "showCountInHeader": true,
+          "stackBy": [],
+          "taskId": [],
+          "taskName": []
+        },
+        "manageMeasures": [
+          {
+            "id": "AccountKey",
+            "label": "AccountKey",
+            "measureType": "data",
+            "name": "AccountKey",
+            "order": 0,
+            "visible": true
+          },
+          {
+            "id": "ParentAccountKey",
+            "label": "ParentAccountKey",
+            "measureType": "data",
+            "name": "ParentAccountKey",
+            "order": 1,
+            "visible": true
+          },
+          {
+            "id": "AccountCodeAlternateKey",
+            "label": "AccountCodeAlternateKey",
+            "measureType": "data",
+            "name": "AccountCodeAlternateKey",
+            "order": 2,
+            "visible": true
+          },
+          {
+            "id": "ParentAccountCodeAlternateKey",
+            "label": "ParentAccountCodeAlternateKey",
+            "measureType": "data",
+            "name": "ParentAccountCodeAlternateKey",
+            "order": 3,
+            "visible": true
+          },
+          {
+            "id": "AccountDescription",
+            "label": "AccountDescription",
+            "measureType": "data",
+            "name": "AccountDescription",
+            "order": 4,
+            "visible": true
+          },
+          {
+            "id": "AccountType",
+            "label": "AccountType",
+            "measureType": "data",
+            "name": "AccountType",
+            "order": 5,
+            "visible": true
+          },
+          {
+            "id": "Operator",
+            "label": "Operator",
+            "measureType": "data",
+            "name": "Operator",
+            "order": 6,
+            "visible": true
+          },
+          {
+            "id": "CustomMembers",
+            "label": "CustomMembers",
+            "measureType": "data",
+            "name": "CustomMembers",
+            "order": 7,
+            "visible": true
+          },
+          {
+            "id": "ValueType",
+            "label": "ValueType",
+            "measureType": "data",
+            "name": "ValueType",
+            "order": 8,
+            "visible": true
+          },
+          {
+            "id": "CustomMemberOptions",
+            "label": "CustomMemberOptions",
+            "measureType": "data",
+            "name": "CustomMemberOptions",
+            "order": 9,
+            "visible": true
+          },
+          {
+            "id": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e",
+            "label": "Actuals",
+            "measureType": "data",
+            "name": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e",
+            "order": 10,
+            "visible": true
+          },
+          {
+            "id": "COLUMN_6adff1a8_2a32_4efa_9bc4_bb960daa3afb",
+            "label": "Budget",
+            "measureType": "data",
+            "name": "COLUMN_6adff1a8_2a32_4efa_9bc4_bb960daa3afb",
+            "order": 11,
+            "visible": true
+          },
+          {
+            "id": "AccountDescription (Display)",
+            "label": "AccountDescription (Display)",
+            "measureType": "data",
+            "name": "AccountDescription (Display)",
+            "order": 12,
+            "visible": true
+          },
+          {
+            "id": "Budget",
+            "label": "Budget",
+            "measureType": "data",
+            "name": "Budget",
+            "order": 13,
+            "visible": true
+          }
+        ],
+        "mdmLayout": {
+          "activeLayout": "table",
+          "childHeaderTableControlConfiguration": {},
+          "configuration": {
+            "hierarchy": {
+              "displayColumn": "AccountDescription",
+              "hierarchyColumn": "ParentAccountKey",
+              "primaryKeyColumn": "AccountKey"
+            }
+          },
+          "ganttViewColVisibility": {},
+          "layoutVisibility": {},
+          "parentApprovalMeta": {},
+          "tableModeColVisibility": {}
+        },
+        "pinnedColIds": [
+          "AccountDescription (Display)"
+        ],
+        "pivotView": {
+          "end": "",
+          "interval": "week",
+          "intervalCount": 1,
+          "parentFilterLabelValues": {},
+          "parentFilterSelections": {},
+          "parentIdValue": "undefined",
+          "start": ""
+        },
+        "superFilter": {
+          "AccountCodeAlternateKey": {
+            "appData": [],
+            "columnMeta": {
+              "columnGuid": "AccountCodeAlternateKey",
+              "columnMeta": {
+                "dbMeta": {
+                  "isIdentity": false,
+                  "isNullable": true,
+                  "isPrimaryKey": false,
+                  "type": "int"
+                }
+              },
+              "columnName": "AccountCodeAlternateKey",
+              "columnType": 6,
+              "displayName": "AccountCodeAlternateKey",
+              "id": "71",
+              "sourceId": 6,
+              "visualColumnType": 1
+            },
+            "configuration": {
+              "alphaNumericValues": {
+                "equalValue": null,
+                "maxValue": null,
+                "minValue": null
+              },
+              "enableNumericToFacet": false,
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "AccountCodeAlternateKey",
+              "regex": "",
+              "scale": "none",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "slider": false,
+              "sort": [
+                {
+                  "columnId": "AccountCodeAlternateKey",
+                  "columnName": "AccountCodeAlternateKey",
+                  "direction": "ASC",
+                  "id": "AccountCodeAlternateKey"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "NUMERIC"
+            },
+            "filter": [],
+            "isLoading": true,
+            "tableName": "DimAccount",
+            "topNMeasureOptions": [
+              {
+                "id": "AccountKey",
+                "label": "AccountKey"
+              },
+              {
+                "id": "ParentAccountKey",
+                "label": "ParentAccountKey"
+              },
+              {
+                "id": "AccountCodeAlternateKey",
+                "label": "AccountCodeAlternateKey"
+              },
+              {
+                "id": "ParentAccountCodeAlternateKey",
+                "label": "ParentAccountCodeAlternateKey"
+              },
+              {
+                "id": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e",
+                "label": "Actuals"
+              },
+              {
+                "id": "Budget",
+                "label": "Budget"
+              }
+            ]
+          },
+          "AccountDescription": {
+            "appData": [],
+            "columnMeta": {
+              "columnGuid": "AccountDescription",
+              "columnMeta": {
+                "dbMeta": {
+                  "isIdentity": false,
+                  "isNullable": true,
+                  "isPrimaryKey": false,
+                  "type": "nvarchar"
+                },
+                "textFieldColumnType": "Any Value"
+              },
+              "columnName": "AccountDescription",
+              "columnType": 1,
+              "displayName": "AccountDescription",
+              "id": "73",
+              "sourceId": 6,
+              "visualColumnType": 1
+            },
+            "configuration": {
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "AccountDescription",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "sort": [
+                {
+                  "columnId": "AccountDescription",
+                  "columnName": "AccountDescription",
+                  "direction": "ASC",
+                  "id": "AccountDescription"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "FACET"
+            },
+            "filter": [],
+            "isLoading": true,
+            "tableName": "DimAccount",
+            "topNMeasureOptions": [
+              {
+                "id": "AccountKey",
+                "label": "AccountKey"
+              },
+              {
+                "id": "ParentAccountKey",
+                "label": "ParentAccountKey"
+              },
+              {
+                "id": "AccountCodeAlternateKey",
+                "label": "AccountCodeAlternateKey"
+              },
+              {
+                "id": "ParentAccountCodeAlternateKey",
+                "label": "ParentAccountCodeAlternateKey"
+              },
+              {
+                "id": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e",
+                "label": "Actuals"
+              },
+              {
+                "id": "Budget",
+                "label": "Budget"
+              }
+            ]
+          },
+          "AccountKey": {
+            "appData": [],
+            "columnMeta": {
+              "columnGuid": "AccountKey",
+              "columnMeta": {
+                "dbMeta": {
+                  "isIdentity": false,
+                  "isNullable": false,
+                  "isPrimaryKey": false,
+                  "type": "int"
+                }
+              },
+              "columnName": "AccountKey",
+              "columnType": 6,
+              "displayName": "AccountKey",
+              "id": "69",
+              "sourceId": 6,
+              "visualColumnType": 1
+            },
+            "configuration": {
+              "alphaNumericValues": {
+                "equalValue": null,
+                "maxValue": null,
+                "minValue": null
+              },
+              "enableNumericToFacet": false,
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "AccountKey",
+              "regex": "",
+              "scale": "none",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "slider": false,
+              "sort": [
+                {
+                  "columnId": "AccountKey",
+                  "columnName": "AccountKey",
+                  "direction": "ASC",
+                  "id": "AccountKey"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "NUMERIC"
+            },
+            "filter": [],
+            "isLoading": true,
+            "tableName": "DimAccount",
+            "topNMeasureOptions": [
+              {
+                "id": "AccountKey",
+                "label": "AccountKey"
+              },
+              {
+                "id": "ParentAccountKey",
+                "label": "ParentAccountKey"
+              },
+              {
+                "id": "AccountCodeAlternateKey",
+                "label": "AccountCodeAlternateKey"
+              },
+              {
+                "id": "ParentAccountCodeAlternateKey",
+                "label": "ParentAccountCodeAlternateKey"
+              },
+              {
+                "id": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e",
+                "label": "Actuals"
+              },
+              {
+                "id": "Budget",
+                "label": "Budget"
+              }
+            ]
+          },
+          "AccountType": {
+            "appData": [],
+            "columnMeta": {
+              "columnGuid": "AccountType",
+              "columnMeta": {
+                "dbMeta": {
+                  "isIdentity": false,
+                  "isNullable": true,
+                  "isPrimaryKey": false,
+                  "type": "nvarchar"
+                },
+                "textFieldColumnType": "Any Value"
+              },
+              "columnName": "AccountType",
+              "columnType": 1,
+              "displayName": "AccountType",
+              "id": "74",
+              "sourceId": 6,
+              "visualColumnType": 1
+            },
+            "configuration": {
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "AccountType",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "sort": [
+                {
+                  "columnId": "AccountType",
+                  "columnName": "AccountType",
+                  "direction": "ASC",
+                  "id": "AccountType"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "FACET"
+            },
+            "filter": [],
+            "isLoading": true,
+            "tableName": "DimAccount",
+            "topNMeasureOptions": [
+              {
+                "id": "AccountKey",
+                "label": "AccountKey"
+              },
+              {
+                "id": "ParentAccountKey",
+                "label": "ParentAccountKey"
+              },
+              {
+                "id": "AccountCodeAlternateKey",
+                "label": "AccountCodeAlternateKey"
+              },
+              {
+                "id": "ParentAccountCodeAlternateKey",
+                "label": "ParentAccountCodeAlternateKey"
+              },
+              {
+                "id": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e",
+                "label": "Actuals"
+              },
+              {
+                "id": "Budget",
+                "label": "Budget"
+              }
+            ]
+          },
+          "Budget": {
+            "appData": [],
+            "columnMeta": {
+              "columnGuid": "Budget",
+              "columnMeta": {
+                "dbMeta": {
+                  "isIdentity": false,
+                  "isNullable": true,
+                  "isPrimaryKey": false,
+                  "type": "decimal"
+                }
+              },
+              "columnName": "Budget",
+              "columnType": 13,
+              "displayName": "",
+              "id": "81",
+              "sourceId": 6,
+              "visualColumnType": 7
+            },
+            "configuration": {
+              "alphaNumericValues": {
+                "equalValue": null,
+                "maxValue": null,
+                "minValue": null
+              },
+              "enableNumericToFacet": false,
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "Budget",
+              "regex": "",
+              "scale": "none",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "slider": false,
+              "sort": [
+                {
+                  "columnId": "Budget",
+                  "columnName": "Budget",
+                  "direction": "ASC",
+                  "id": "Budget"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "NUMERIC"
+            },
+            "filter": [],
+            "isLoading": true,
+            "tableName": "DimAccount",
+            "topNMeasureOptions": [
+              {
+                "id": "AccountKey",
+                "label": "AccountKey"
+              },
+              {
+                "id": "ParentAccountKey",
+                "label": "ParentAccountKey"
+              },
+              {
+                "id": "AccountCodeAlternateKey",
+                "label": "AccountCodeAlternateKey"
+              },
+              {
+                "id": "ParentAccountCodeAlternateKey",
+                "label": "ParentAccountCodeAlternateKey"
+              },
+              {
+                "id": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e",
+                "label": "Actuals"
+              },
+              {
+                "id": "Budget",
+                "label": "Budget"
+              }
+            ]
+          },
+          "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e": {
+            "appData": [],
+            "columnMeta": {
+              "columnGuid": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e",
+              "columnMeta": {},
+              "columnName": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e",
+              "columnType": 13,
+              "displayName": "Actuals",
+              "id": "80",
+              "lookupConfig": [
+                {
+                  "id": "3",
+                  "lookupDestination": {
+                    "database": {
+                      "connectionId": "1facea80-61a9-4583-84c9-a14dcc349cde",
+                      "connectionIdVariable": null,
+                      "databaseId": "376e6d49-4021-4996-aa78-6124427a2294",
+                      "databaseVariable": null,
+                      "dbHost": "6unlohtqbrpuleev5bpjprytom-hey6wg25fszuznawyrsaivk3je.database.fabric.microsoft.com",
+                      "dbName": "Adventure_Works_DW_2017-376e6d49-4021-4996-aa78-6124427a2294",
+                      "displayName": "Adventure_Works_DW_2017"
+                    },
+                    "schemaName": "dbo",
+                    "sourceId": "3",
+                    "tableName": "FactFinance",
+                    "workspaceId": "1beb3139-2c5d-4cb3-b416-c46404555b49",
+                    "workspaceName": "00_Experiments"
+                  },
+                  "lookupKey": null,
+                  "lookupValue": "Amount",
+                  "relationshipMapping": [
+                    {
+                      "lookupMappingColumn": "AccountKey",
+                      "sourceMappingColumn": "AccountKey"
+                    }
+                  ]
+                }
+              ],
+              "sourceId": 6,
+              "visualColumnType": 11
+            },
+            "configuration": {
+              "alphaNumericValues": {
+                "equalValue": null,
+                "maxValue": null,
+                "minValue": null
+              },
+              "enableNumericToFacet": false,
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "Actuals",
+              "regex": "",
+              "scale": "none",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "slider": false,
+              "sort": [
+                {
+                  "columnId": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e",
+                  "columnName": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e",
+                  "direction": "ASC",
+                  "id": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "NUMERIC"
+            },
+            "filter": [],
+            "isLoading": true,
+            "tableName": "DimAccount",
+            "topNMeasureOptions": [
+              {
+                "id": "AccountKey",
+                "label": "AccountKey"
+              },
+              {
+                "id": "ParentAccountKey",
+                "label": "ParentAccountKey"
+              },
+              {
+                "id": "AccountCodeAlternateKey",
+                "label": "AccountCodeAlternateKey"
+              },
+              {
+                "id": "ParentAccountCodeAlternateKey",
+                "label": "ParentAccountCodeAlternateKey"
+              },
+              {
+                "id": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e",
+                "label": "Actuals"
+              },
+              {
+                "id": "Budget",
+                "label": "Budget"
+              }
+            ]
+          },
+          "COLUMN_6adff1a8_2a32_4efa_9bc4_bb960daa3afb": {
+            "appData": [],
+            "columnMeta": {
+              "columnGuid": "COLUMN_6adff1a8_2a32_4efa_9bc4_bb960daa3afb",
+              "columnMeta": {},
+              "columnName": "COLUMN_6adff1a8_2a32_4efa_9bc4_bb960daa3afb",
+              "columnType": 17,
+              "displayName": "Budget",
+              "id": "79",
+              "sourceId": 6,
+              "visualColumnType": 6
+            },
+            "configuration": {
+              "alphaNumericValues": {
+                "equalValue": null,
+                "maxValue": null,
+                "minValue": null
+              },
+              "enableNumericToFacet": false,
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "Budget",
+              "regex": "",
+              "scale": "none",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "slider": false,
+              "sort": [
+                {
+                  "columnId": "COLUMN_6adff1a8_2a32_4efa_9bc4_bb960daa3afb",
+                  "columnName": "COLUMN_6adff1a8_2a32_4efa_9bc4_bb960daa3afb",
+                  "direction": "ASC",
+                  "id": "COLUMN_6adff1a8_2a32_4efa_9bc4_bb960daa3afb"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "NUMERIC"
+            },
+            "filter": [],
+            "isLoading": true,
+            "tableName": "DimAccount",
+            "topNMeasureOptions": [
+              {
+                "id": "AccountKey",
+                "label": "AccountKey"
+              },
+              {
+                "id": "ParentAccountKey",
+                "label": "ParentAccountKey"
+              },
+              {
+                "id": "AccountCodeAlternateKey",
+                "label": "AccountCodeAlternateKey"
+              },
+              {
+                "id": "ParentAccountCodeAlternateKey",
+                "label": "ParentAccountCodeAlternateKey"
+              },
+              {
+                "id": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e",
+                "label": "Actuals"
+              },
+              {
+                "id": "Budget",
+                "label": "Budget"
+              }
+            ]
+          },
+          "CustomMemberOptions": {
+            "appData": [],
+            "columnMeta": {
+              "columnGuid": "CustomMemberOptions",
+              "columnMeta": {
+                "dbMeta": {
+                  "isIdentity": false,
+                  "isNullable": true,
+                  "isPrimaryKey": false,
+                  "type": "nvarchar"
+                },
+                "textFieldColumnType": "Any Value"
+              },
+              "columnName": "CustomMemberOptions",
+              "columnType": 1,
+              "displayName": "CustomMemberOptions",
+              "id": "78",
+              "sourceId": 6,
+              "visualColumnType": 1
+            },
+            "configuration": {
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "CustomMemberOptions",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "sort": [
+                {
+                  "columnId": "CustomMemberOptions",
+                  "columnName": "CustomMemberOptions",
+                  "direction": "ASC",
+                  "id": "CustomMemberOptions"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "FACET"
+            },
+            "filter": [],
+            "isLoading": true,
+            "tableName": "DimAccount",
+            "topNMeasureOptions": [
+              {
+                "id": "AccountKey",
+                "label": "AccountKey"
+              },
+              {
+                "id": "ParentAccountKey",
+                "label": "ParentAccountKey"
+              },
+              {
+                "id": "AccountCodeAlternateKey",
+                "label": "AccountCodeAlternateKey"
+              },
+              {
+                "id": "ParentAccountCodeAlternateKey",
+                "label": "ParentAccountCodeAlternateKey"
+              },
+              {
+                "id": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e",
+                "label": "Actuals"
+              },
+              {
+                "id": "Budget",
+                "label": "Budget"
+              }
+            ]
+          },
+          "CustomMembers": {
+            "appData": [],
+            "columnMeta": {
+              "columnGuid": "CustomMembers",
+              "columnMeta": {
+                "dbMeta": {
+                  "isIdentity": false,
+                  "isNullable": true,
+                  "isPrimaryKey": false,
+                  "type": "nvarchar"
+                },
+                "textFieldColumnType": "Any Value"
+              },
+              "columnName": "CustomMembers",
+              "columnType": 1,
+              "displayName": "CustomMembers",
+              "id": "76",
+              "sourceId": 6,
+              "visualColumnType": 1
+            },
+            "configuration": {
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "CustomMembers",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "sort": [
+                {
+                  "columnId": "CustomMembers",
+                  "columnName": "CustomMembers",
+                  "direction": "ASC",
+                  "id": "CustomMembers"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "FACET"
+            },
+            "filter": [],
+            "isLoading": true,
+            "tableName": "DimAccount",
+            "topNMeasureOptions": [
+              {
+                "id": "AccountKey",
+                "label": "AccountKey"
+              },
+              {
+                "id": "ParentAccountKey",
+                "label": "ParentAccountKey"
+              },
+              {
+                "id": "AccountCodeAlternateKey",
+                "label": "AccountCodeAlternateKey"
+              },
+              {
+                "id": "ParentAccountCodeAlternateKey",
+                "label": "ParentAccountCodeAlternateKey"
+              },
+              {
+                "id": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e",
+                "label": "Actuals"
+              },
+              {
+                "id": "Budget",
+                "label": "Budget"
+              }
+            ]
+          },
+          "Operator": {
+            "appData": [],
+            "columnMeta": {
+              "columnGuid": "Operator",
+              "columnMeta": {
+                "dbMeta": {
+                  "isIdentity": false,
+                  "isNullable": true,
+                  "isPrimaryKey": false,
+                  "type": "nvarchar"
+                },
+                "textFieldColumnType": "Any Value"
+              },
+              "columnName": "Operator",
+              "columnType": 1,
+              "displayName": "Operator",
+              "id": "75",
+              "sourceId": 6,
+              "visualColumnType": 1
+            },
+            "configuration": {
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "Operator",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "sort": [
+                {
+                  "columnId": "Operator",
+                  "columnName": "Operator",
+                  "direction": "ASC",
+                  "id": "Operator"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "FACET"
+            },
+            "filter": [],
+            "isLoading": true,
+            "tableName": "DimAccount",
+            "topNMeasureOptions": [
+              {
+                "id": "AccountKey",
+                "label": "AccountKey"
+              },
+              {
+                "id": "ParentAccountKey",
+                "label": "ParentAccountKey"
+              },
+              {
+                "id": "AccountCodeAlternateKey",
+                "label": "AccountCodeAlternateKey"
+              },
+              {
+                "id": "ParentAccountCodeAlternateKey",
+                "label": "ParentAccountCodeAlternateKey"
+              },
+              {
+                "id": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e",
+                "label": "Actuals"
+              },
+              {
+                "id": "Budget",
+                "label": "Budget"
+              }
+            ]
+          },
+          "ParentAccountCodeAlternateKey": {
+            "appData": [],
+            "columnMeta": {
+              "columnGuid": "ParentAccountCodeAlternateKey",
+              "columnMeta": {
+                "dbMeta": {
+                  "isIdentity": false,
+                  "isNullable": true,
+                  "isPrimaryKey": false,
+                  "type": "int"
+                }
+              },
+              "columnName": "ParentAccountCodeAlternateKey",
+              "columnType": 6,
+              "displayName": "ParentAccountCodeAlternateKey",
+              "id": "72",
+              "sourceId": 6,
+              "visualColumnType": 1
+            },
+            "configuration": {
+              "alphaNumericValues": {
+                "equalValue": null,
+                "maxValue": null,
+                "minValue": null
+              },
+              "enableNumericToFacet": false,
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "ParentAccountCodeAlternateKey",
+              "regex": "",
+              "scale": "none",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "slider": false,
+              "sort": [
+                {
+                  "columnId": "ParentAccountCodeAlternateKey",
+                  "columnName": "ParentAccountCodeAlternateKey",
+                  "direction": "ASC",
+                  "id": "ParentAccountCodeAlternateKey"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "NUMERIC"
+            },
+            "filter": [],
+            "isLoading": true,
+            "tableName": "DimAccount",
+            "topNMeasureOptions": [
+              {
+                "id": "AccountKey",
+                "label": "AccountKey"
+              },
+              {
+                "id": "ParentAccountKey",
+                "label": "ParentAccountKey"
+              },
+              {
+                "id": "AccountCodeAlternateKey",
+                "label": "AccountCodeAlternateKey"
+              },
+              {
+                "id": "ParentAccountCodeAlternateKey",
+                "label": "ParentAccountCodeAlternateKey"
+              },
+              {
+                "id": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e",
+                "label": "Actuals"
+              },
+              {
+                "id": "Budget",
+                "label": "Budget"
+              }
+            ]
+          },
+          "ParentAccountKey": {
+            "appData": [],
+            "columnMeta": {
+              "columnGuid": "ParentAccountKey",
+              "columnMeta": {
+                "dbMeta": {
+                  "isIdentity": false,
+                  "isNullable": true,
+                  "isPrimaryKey": false,
+                  "type": "int"
+                }
+              },
+              "columnName": "ParentAccountKey",
+              "columnType": 6,
+              "displayName": "ParentAccountKey",
+              "id": "70",
+              "sourceId": 6,
+              "visualColumnType": 1
+            },
+            "configuration": {
+              "alphaNumericValues": {
+                "equalValue": null,
+                "maxValue": null,
+                "minValue": null
+              },
+              "enableNumericToFacet": false,
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "ParentAccountKey",
+              "regex": "",
+              "scale": "none",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "slider": false,
+              "sort": [
+                {
+                  "columnId": "ParentAccountKey",
+                  "columnName": "ParentAccountKey",
+                  "direction": "ASC",
+                  "id": "ParentAccountKey"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "NUMERIC"
+            },
+            "filter": [],
+            "isLoading": true,
+            "tableName": "DimAccount",
+            "topNMeasureOptions": [
+              {
+                "id": "AccountKey",
+                "label": "AccountKey"
+              },
+              {
+                "id": "ParentAccountKey",
+                "label": "ParentAccountKey"
+              },
+              {
+                "id": "AccountCodeAlternateKey",
+                "label": "AccountCodeAlternateKey"
+              },
+              {
+                "id": "ParentAccountCodeAlternateKey",
+                "label": "ParentAccountCodeAlternateKey"
+              },
+              {
+                "id": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e",
+                "label": "Actuals"
+              },
+              {
+                "id": "Budget",
+                "label": "Budget"
+              }
+            ]
+          },
+          "ValueType": {
+            "appData": [],
+            "columnMeta": {
+              "columnGuid": "ValueType",
+              "columnMeta": {
+                "dbMeta": {
+                  "isIdentity": false,
+                  "isNullable": true,
+                  "isPrimaryKey": false,
+                  "type": "nvarchar"
+                },
+                "textFieldColumnType": "Any Value"
+              },
+              "columnName": "ValueType",
+              "columnType": 1,
+              "displayName": "ValueType",
+              "id": "77",
+              "sourceId": 6,
+              "visualColumnType": 1
+            },
+            "configuration": {
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "ValueType",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "sort": [
+                {
+                  "columnId": "ValueType",
+                  "columnName": "ValueType",
+                  "direction": "ASC",
+                  "id": "ValueType"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "FACET"
+            },
+            "filter": [],
+            "isLoading": true,
+            "tableName": "DimAccount",
+            "topNMeasureOptions": [
+              {
+                "id": "AccountKey",
+                "label": "AccountKey"
+              },
+              {
+                "id": "ParentAccountKey",
+                "label": "ParentAccountKey"
+              },
+              {
+                "id": "AccountCodeAlternateKey",
+                "label": "AccountCodeAlternateKey"
+              },
+              {
+                "id": "ParentAccountCodeAlternateKey",
+                "label": "ParentAccountCodeAlternateKey"
+              },
+              {
+                "id": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e",
+                "label": "Actuals"
+              },
+              {
+                "id": "Budget",
+                "label": "Budget"
+              }
+            ]
+          }
+        },
+        "superFilterAssignments": [
+          {
+            "configuration": {
+              "alphaNumericValues": {
+                "equalValue": null,
+                "maxValue": null,
+                "minValue": null
+              },
+              "enableNumericToFacet": false,
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "AccountKey",
+              "regex": "",
+              "scale": "none",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "slider": false,
+              "sort": [
+                {
+                  "columnId": "AccountKey",
+                  "columnName": "AccountKey",
+                  "direction": "ASC",
+                  "id": "AccountKey"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "NUMERIC"
+            },
+            "filter": [],
+            "filterLevel": "visual",
+            "id": "AccountKey",
+            "isDeleted": false,
+            "pivotAssignments": [
+              {
+                "bucketId": "",
+                "columnName": "AccountKey",
+                "columnType": "Column",
+                "dataType": "Int64",
+                "id": "AccountKey",
+                "name": "AccountKey",
+                "order": 0,
+                "sourceId": "AccountKey",
+                "sourceType": "powerTables",
+                "tableName": "DimAccount"
+              }
+            ],
+            "position": "RIGHT"
+          },
+          {
+            "configuration": {
+              "alphaNumericValues": {
+                "equalValue": null,
+                "maxValue": null,
+                "minValue": null
+              },
+              "enableNumericToFacet": false,
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "ParentAccountKey",
+              "regex": "",
+              "scale": "none",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "slider": false,
+              "sort": [
+                {
+                  "columnId": "ParentAccountKey",
+                  "columnName": "ParentAccountKey",
+                  "direction": "ASC",
+                  "id": "ParentAccountKey"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "NUMERIC"
+            },
+            "filter": [],
+            "filterLevel": "visual",
+            "id": "ParentAccountKey",
+            "isDeleted": false,
+            "pivotAssignments": [
+              {
+                "bucketId": "",
+                "columnName": "ParentAccountKey",
+                "columnType": "Column",
+                "dataType": "Int64",
+                "id": "ParentAccountKey",
+                "name": "ParentAccountKey",
+                "order": 0,
+                "sourceId": "ParentAccountKey",
+                "sourceType": "powerTables",
+                "tableName": "DimAccount"
+              }
+            ],
+            "position": "RIGHT"
+          },
+          {
+            "configuration": {
+              "alphaNumericValues": {
+                "equalValue": null,
+                "maxValue": null,
+                "minValue": null
+              },
+              "enableNumericToFacet": false,
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "AccountCodeAlternateKey",
+              "regex": "",
+              "scale": "none",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "slider": false,
+              "sort": [
+                {
+                  "columnId": "AccountCodeAlternateKey",
+                  "columnName": "AccountCodeAlternateKey",
+                  "direction": "ASC",
+                  "id": "AccountCodeAlternateKey"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "NUMERIC"
+            },
+            "filter": [],
+            "filterLevel": "visual",
+            "id": "AccountCodeAlternateKey",
+            "isDeleted": false,
+            "pivotAssignments": [
+              {
+                "bucketId": "",
+                "columnName": "AccountCodeAlternateKey",
+                "columnType": "Column",
+                "dataType": "Int64",
+                "id": "AccountCodeAlternateKey",
+                "name": "AccountCodeAlternateKey",
+                "order": 0,
+                "sourceId": "AccountCodeAlternateKey",
+                "sourceType": "powerTables",
+                "tableName": "DimAccount"
+              }
+            ],
+            "position": "RIGHT"
+          },
+          {
+            "configuration": {
+              "alphaNumericValues": {
+                "equalValue": null,
+                "maxValue": null,
+                "minValue": null
+              },
+              "enableNumericToFacet": false,
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "ParentAccountCodeAlternateKey",
+              "regex": "",
+              "scale": "none",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "slider": false,
+              "sort": [
+                {
+                  "columnId": "ParentAccountCodeAlternateKey",
+                  "columnName": "ParentAccountCodeAlternateKey",
+                  "direction": "ASC",
+                  "id": "ParentAccountCodeAlternateKey"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "NUMERIC"
+            },
+            "filter": [],
+            "filterLevel": "visual",
+            "id": "ParentAccountCodeAlternateKey",
+            "isDeleted": false,
+            "pivotAssignments": [
+              {
+                "bucketId": "",
+                "columnName": "ParentAccountCodeAlternateKey",
+                "columnType": "Column",
+                "dataType": "Int64",
+                "id": "ParentAccountCodeAlternateKey",
+                "name": "ParentAccountCodeAlternateKey",
+                "order": 0,
+                "sourceId": "ParentAccountCodeAlternateKey",
+                "sourceType": "powerTables",
+                "tableName": "DimAccount"
+              }
+            ],
+            "position": "RIGHT"
+          },
+          {
+            "configuration": {
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "AccountDescription",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "sort": [
+                {
+                  "columnId": "AccountDescription",
+                  "columnName": "AccountDescription",
+                  "direction": "ASC",
+                  "id": "AccountDescription"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "FACET"
+            },
+            "filter": [],
+            "filterLevel": "visual",
+            "id": "AccountDescription",
+            "isDeleted": false,
+            "pivotAssignments": [
+              {
+                "bucketId": "",
+                "columnName": "AccountDescription",
+                "columnType": "Column",
+                "dataType": "String",
+                "id": "AccountDescription",
+                "name": "AccountDescription",
+                "order": 0,
+                "sourceId": "AccountDescription",
+                "sourceType": "powerTables",
+                "tableName": "DimAccount"
+              }
+            ],
+            "position": "RIGHT"
+          },
+          {
+            "configuration": {
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "AccountType",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "sort": [
+                {
+                  "columnId": "AccountType",
+                  "columnName": "AccountType",
+                  "direction": "ASC",
+                  "id": "AccountType"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "FACET"
+            },
+            "filter": [],
+            "filterLevel": "visual",
+            "id": "AccountType",
+            "isDeleted": false,
+            "pivotAssignments": [
+              {
+                "bucketId": "",
+                "columnName": "AccountType",
+                "columnType": "Column",
+                "dataType": "String",
+                "id": "AccountType",
+                "name": "AccountType",
+                "order": 0,
+                "sourceId": "AccountType",
+                "sourceType": "powerTables",
+                "tableName": "DimAccount"
+              }
+            ],
+            "position": "RIGHT"
+          },
+          {
+            "configuration": {
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "Operator",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "sort": [
+                {
+                  "columnId": "Operator",
+                  "columnName": "Operator",
+                  "direction": "ASC",
+                  "id": "Operator"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "FACET"
+            },
+            "filter": [],
+            "filterLevel": "visual",
+            "id": "Operator",
+            "isDeleted": false,
+            "pivotAssignments": [
+              {
+                "bucketId": "",
+                "columnName": "Operator",
+                "columnType": "Column",
+                "dataType": "String",
+                "id": "Operator",
+                "name": "Operator",
+                "order": 0,
+                "sourceId": "Operator",
+                "sourceType": "powerTables",
+                "tableName": "DimAccount"
+              }
+            ],
+            "position": "RIGHT"
+          },
+          {
+            "configuration": {
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "CustomMembers",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "sort": [
+                {
+                  "columnId": "CustomMembers",
+                  "columnName": "CustomMembers",
+                  "direction": "ASC",
+                  "id": "CustomMembers"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "FACET"
+            },
+            "filter": [],
+            "filterLevel": "visual",
+            "id": "CustomMembers",
+            "isDeleted": false,
+            "pivotAssignments": [
+              {
+                "bucketId": "",
+                "columnName": "CustomMembers",
+                "columnType": "Column",
+                "dataType": "String",
+                "id": "CustomMembers",
+                "name": "CustomMembers",
+                "order": 0,
+                "sourceId": "CustomMembers",
+                "sourceType": "powerTables",
+                "tableName": "DimAccount"
+              }
+            ],
+            "position": "RIGHT"
+          },
+          {
+            "configuration": {
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "ValueType",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "sort": [
+                {
+                  "columnId": "ValueType",
+                  "columnName": "ValueType",
+                  "direction": "ASC",
+                  "id": "ValueType"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "FACET"
+            },
+            "filter": [],
+            "filterLevel": "visual",
+            "id": "ValueType",
+            "isDeleted": false,
+            "pivotAssignments": [
+              {
+                "bucketId": "",
+                "columnName": "ValueType",
+                "columnType": "Column",
+                "dataType": "String",
+                "id": "ValueType",
+                "name": "ValueType",
+                "order": 0,
+                "sourceId": "ValueType",
+                "sourceType": "powerTables",
+                "tableName": "DimAccount"
+              }
+            ],
+            "position": "RIGHT"
+          },
+          {
+            "configuration": {
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "CustomMemberOptions",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "sort": [
+                {
+                  "columnId": "CustomMemberOptions",
+                  "columnName": "CustomMemberOptions",
+                  "direction": "ASC",
+                  "id": "CustomMemberOptions"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "FACET"
+            },
+            "filter": [],
+            "filterLevel": "visual",
+            "id": "CustomMemberOptions",
+            "isDeleted": false,
+            "pivotAssignments": [
+              {
+                "bucketId": "",
+                "columnName": "CustomMemberOptions",
+                "columnType": "Column",
+                "dataType": "String",
+                "id": "CustomMemberOptions",
+                "name": "CustomMemberOptions",
+                "order": 0,
+                "sourceId": "CustomMemberOptions",
+                "sourceType": "powerTables",
+                "tableName": "DimAccount"
+              }
+            ],
+            "position": "RIGHT"
+          },
+          {
+            "configuration": {
+              "alphaNumericValues": {
+                "equalValue": null,
+                "maxValue": null,
+                "minValue": null
+              },
+              "enableNumericToFacet": false,
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "Budget",
+              "regex": "",
+              "scale": "none",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "slider": false,
+              "sort": [
+                {
+                  "columnId": "COLUMN_6adff1a8_2a32_4efa_9bc4_bb960daa3afb",
+                  "columnName": "COLUMN_6adff1a8_2a32_4efa_9bc4_bb960daa3afb",
+                  "direction": "ASC",
+                  "id": "COLUMN_6adff1a8_2a32_4efa_9bc4_bb960daa3afb"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "NUMERIC"
+            },
+            "filter": [],
+            "filterLevel": "visual",
+            "id": "COLUMN_6adff1a8_2a32_4efa_9bc4_bb960daa3afb",
+            "isDeleted": false,
+            "pivotAssignments": [
+              {
+                "bucketId": "",
+                "columnName": "COLUMN_6adff1a8_2a32_4efa_9bc4_bb960daa3afb",
+                "columnType": "Column",
+                "dataType": "String",
+                "id": "COLUMN_6adff1a8_2a32_4efa_9bc4_bb960daa3afb",
+                "name": "COLUMN_6adff1a8_2a32_4efa_9bc4_bb960daa3afb",
+                "order": 0,
+                "sourceId": "COLUMN_6adff1a8_2a32_4efa_9bc4_bb960daa3afb",
+                "sourceType": "powerTables",
+                "tableName": "DimAccount"
+              }
+            ],
+            "position": "RIGHT"
+          },
+          {
+            "configuration": {
+              "alphaNumericValues": {
+                "equalValue": null,
+                "maxValue": null,
+                "minValue": null
+              },
+              "enableNumericToFacet": false,
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "Actuals",
+              "regex": "",
+              "scale": "none",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "slider": false,
+              "sort": [
+                {
+                  "columnId": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e",
+                  "columnName": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e",
+                  "direction": "ASC",
+                  "id": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "NUMERIC"
+            },
+            "filter": [],
+            "filterLevel": "visual",
+            "id": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e",
+            "isDeleted": false,
+            "pivotAssignments": [
+              {
+                "bucketId": "",
+                "columnName": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e",
+                "columnType": "Column",
+                "dataType": "Decimal",
+                "id": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e",
+                "name": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e",
+                "order": 0,
+                "sourceId": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e",
+                "sourceType": "powerTables",
+                "tableName": "DimAccount"
+              }
+            ],
+            "position": "RIGHT"
+          },
+          {
+            "configuration": {
+              "alphaNumericValues": {
+                "equalValue": null,
+                "maxValue": null,
+                "minValue": null
+              },
+              "enableNumericToFacet": false,
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "Budget",
+              "regex": "",
+              "scale": "none",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "slider": false,
+              "sort": [
+                {
+                  "columnId": "Budget",
+                  "columnName": "Budget",
+                  "direction": "ASC",
+                  "id": "Budget"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "NUMERIC"
+            },
+            "filter": [],
+            "filterLevel": "visual",
+            "id": "Budget",
+            "isDeleted": false,
+            "pivotAssignments": [
+              {
+                "bucketId": "",
+                "columnName": "Budget",
+                "columnType": "Column",
+                "dataType": "Decimal",
+                "id": "Budget",
+                "name": "Budget",
+                "order": 0,
+                "sourceId": "Budget",
+                "sourceType": "powerTables",
+                "tableName": "DimAccount"
+              }
+            ],
+            "position": "RIGHT"
+          }
+        ],
+        "superFilterMetaConfig": {
+          "orderedFilterIds": [
+            "AccountKey",
+            "ParentAccountKey",
+            "AccountCodeAlternateKey",
+            "ParentAccountCodeAlternateKey",
+            "AccountDescription",
+            "AccountType",
+            "Operator",
+            "CustomMembers",
+            "ValueType",
+            "CustomMemberOptions",
+            "COLUMN_6adff1a8_2a32_4efa_9bc4_bb960daa3afb",
+            "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e",
+            "Budget"
+          ]
+        },
+        "visualColumns": [
+          {
+            "id": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e",
+            "label": "Actuals",
+            "type": 13
+          }
+        ]
+      },
+      "visualStyles": {
+        "background": {
+          "backgroundColor": "#fff",
+          "isEnabled": true
+        },
+        "border": {
+          "color": "#ddd",
+          "isEnabled": false,
+          "side": "all",
+          "width": 0
+        },
+        "cornerRadius": {
+          "isCustomCornerRadius": false,
+          "isEnabled": true,
+          "radiusBottomLeft": 0,
+          "radiusBottomRight": 0,
+          "radiusTopLeft": 0,
+          "radiusTopRight": 0
+        },
+        "isTooltipEnabled": true,
+        "padding": {
+          "bottomPadding": 5,
+          "isCustomPaddingSize": false,
+          "isEnabled": true,
+          "leftPadding": 5,
+          "rightPadding": 5,
+          "topPadding": 5
+        },
+        "rotation": {
+          "isEnabled": false,
+          "transform": 0
+        },
+        "shadow": {
+          "angle": 0,
+          "blur": 0,
+          "color": "#000000",
+          "distance": 10,
+          "isEnabled": false,
+          "opacity": 100,
+          "placement": "outer",
+          "side": "center",
+          "width": 0
+        },
+        "showHelperTooltips": true,
+        "showSelectedSeriesInTooltip": false,
+        "tooltipPageId": "auto",
+        "tooltipStyle": {
+          "backgroundColor": "#FFFFFF",
+          "bold": false,
+          "fontFamily": "Segoe UI",
+          "fontSize": 12,
+          "italic": false,
+          "labelColor": "#252423",
+          "underline": false,
+          "valueColor": "#252423"
+        },
+        "tooltipType": "default",
+        "varianceInTooltip": true,
+        "varianceTooltipType": "both"
+      },
+      "visualType": 30
+    },
+    "schema": "0.0.1"
+  }
+}

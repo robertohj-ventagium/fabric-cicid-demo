@@ -1,0 +1,120 @@
+table supplier_updates
+	lineageTag: 1927cc8d-bf12-4c5b-ae14-cfd8a8233f46
+	sourceLineageTag: [dbo].[supplier_updates]
+
+	column supplier_id
+		dataType: string
+		lineageTag: e05ad5e1-bdc3-44e3-8dca-1fecb528b8f9
+		sourceLineageTag: supplier_id
+		summarizeBy: none
+		sourceColumn: supplier_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column supplier_name
+		dataType: string
+		lineageTag: 9a0413e4-784f-428e-a301-64cc3a7d9891
+		sourceLineageTag: supplier_name
+		summarizeBy: none
+		sourceColumn: supplier_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column update_type
+		dataType: string
+		lineageTag: 0c66e768-9825-4803-93b5-e18fc8236d80
+		sourceLineageTag: update_type
+		summarizeBy: none
+		sourceColumn: update_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column severity
+		dataType: string
+		lineageTag: cb2dad8e-6537-4d30-bb3b-74c92d7dd897
+		sourceLineageTag: severity
+		summarizeBy: none
+		sourceColumn: severity
+
+		annotation SummarizationSetBy = Automatic
+
+	column status
+		dataType: string
+		lineageTag: 2d1c6ff5-29d4-4f2e-a52b-541acc485f41
+		sourceLineageTag: status
+		summarizeBy: none
+		sourceColumn: status
+
+		annotation SummarizationSetBy = Automatic
+
+	column message
+		dataType: string
+		lineageTag: e52dc9a4-2eee-4ace-9237-95f7c91ec9d1
+		sourceLineageTag: message
+		summarizeBy: none
+		sourceColumn: message
+
+		annotation SummarizationSetBy = Automatic
+
+	column affected_product
+		dataType: string
+		lineageTag: 3d0991df-f5ee-4191-a9ce-43b6f0669917
+		sourceLineageTag: affected_product
+		summarizeBy: none
+		sourceColumn: affected_product
+
+		annotation SummarizationSetBy = Automatic
+
+	column affected_region
+		dataType: string
+		lineageTag: bfdadcf1-20ba-4e73-84bc-0c8e2d3574e1
+		sourceLineageTag: affected_region
+		summarizeBy: none
+		sourceColumn: affected_region
+
+		annotation SummarizationSetBy = Automatic
+
+	column expected_impact
+		dataType: string
+		lineageTag: 134b1d82-5f27-41b2-a6e4-c19fdcf38044
+		sourceLineageTag: expected_impact
+		summarizeBy: none
+		sourceColumn: expected_impact
+
+		annotation SummarizationSetBy = Automatic
+
+	column action_required
+		dataType: string
+		lineageTag: 5e8e78ea-f4a6-4add-83c8-daf96135044f
+		sourceLineageTag: action_required
+		summarizeBy: none
+		sourceColumn: action_required
+
+		annotation SummarizationSetBy = Automatic
+
+	column date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 90b6a08e-01cc-4b3b-aa51-2a6daad1fd71
+		sourceLineageTag: date
+		summarizeBy: none
+		sourceColumn: date
+
+		annotation SummarizationSetBy = Automatic
+
+	column affected_warehouse
+		dataType: string
+		lineageTag: c8847e7f-d4ad-48e4-a389-96c936c18f0a
+		sourceLineageTag: affected_warehouse
+		summarizeBy: none
+		sourceColumn: affected_warehouse
+
+		annotation SummarizationSetBy = Automatic
+
+	partition supplier_updates = entity
+		mode: directLake
+		source
+			entityName: supplier_updates
+			schemaName: dbo
+			expressionSource: 'DirectLake - Supply_Chain_Lakehouse'
+

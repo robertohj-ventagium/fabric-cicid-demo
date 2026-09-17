@@ -1,0 +1,66 @@
+table Ventagium_App_Valens_Roadmap_Lanes_Capability_Dependencies
+	lineageTag: b271184a-78ae-4a51-ae9a-6a45b4eebc45
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: 876b1b06-47c4-4a1e-a82d-b65f2a58866f
+		summarizeBy: sum
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column roadmap_lane_capability_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 7abed1fc-1b10-4bbc-9ab2-a8fa66250952
+		summarizeBy: none
+		sourceColumn: roadmap_lane_capability_id
+
+		annotation SummarizationSetBy = User
+
+	column dependent_capability_id
+		dataType: int64
+		formatString: 0
+		lineageTag: a5c7dedc-7f8f-48da-85ee-3ac2cd33a7cf
+		summarizeBy: sum
+		sourceColumn: dependent_capability_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column dependent_capability_name = LOOKUPVALUE(ventagium_projects[name], ventagium_projects[id], Ventagium_App_Valens_Roadmap_Lanes_Capability_Dependencies[dependent_capability_id])
+		lineageTag: b0919e8e-b8fd-4f1a-a0f7-47f1330de997
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column connect_to_name =
+			
+			VAR PredecessorCapabilityId =
+			    LOOKUPVALUE(
+			        Ventagium_App_Valens_Roadmap_Lanes_Capabilities[capability_id],
+			        Ventagium_App_Valens_Roadmap_Lanes_Capabilities[id],
+			        Ventagium_App_Valens_Roadmap_Lanes_Capability_Dependencies[roadmap_lane_capability_id]
+			    )
+			RETURN
+			    LOOKUPVALUE(
+			        ventagium_projects[name],
+			        ventagium_projects[id],
+			        PredecessorCapabilityId
+			    )
+		lineageTag: b7a643a7-b089-418f-8af5-40086ba07a8f
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Ventagium_App_Valens_Roadmap_Lanes_Capability_Dependencies = m
+		mode: import
+		source =
+				let
+				  Source = Sql.Database("ventagiumgeneralserver2.database.windows.net", "Ventagium_Database"),
+				  #"Navigation 1" = Source{[Schema = "dbo", Item = "Ventagium_App_Valens_Roadmap_Lanes_Capability_Dependencies"]}[Data]
+				in
+				  #"Navigation 1"
+
+	annotation PBI_ResultType = Table
+

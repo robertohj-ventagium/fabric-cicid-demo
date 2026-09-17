@@ -1,0 +1,28 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/plan/definition/Planning/DataInput/1.0.0/schema.json",
+  "columns": [
+    {
+      "boundToFilterContext": 10,
+      "columnMeta": {
+        "data_type": "Number",
+        "description": null,
+        "id": "10102932694277100779",
+        "label": "Actuals",
+        "measure_type": {
+          "Native": {
+            "measure_role": "ACMeasure"
+          }
+        },
+        "name": "Actuals"
+      },
+      "dataInputType": 6,
+      "description": null,
+      "measureGuid": "10102932694277100779",
+      "name": "Actuals",
+      "sidecarHydrationLeaseAt": null,
+      "sidecarHydrationStatus": 10,
+      "status": 10,
+      "visualId": "01a02085-1134-749b-a688-1413a95cb932"
+    }
+  ]
+}

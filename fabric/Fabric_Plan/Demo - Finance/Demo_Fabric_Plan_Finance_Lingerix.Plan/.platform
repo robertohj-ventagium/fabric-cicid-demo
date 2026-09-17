@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Plan",
+    "displayName": "Demo_Fabric_Plan_Finance_Lingerix"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "75c5be6b-7123-b4f1-4318-312b62a78a43"
+  }
+}

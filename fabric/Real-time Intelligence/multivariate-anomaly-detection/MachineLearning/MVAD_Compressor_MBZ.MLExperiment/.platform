@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "MLExperiment",
+    "displayName": "MVAD_Compressor_MBZ"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "73bf3394-d8f1-a488-488e-bcd922c2f372"
+  }
+}

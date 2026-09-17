@@ -1,0 +1,147 @@
+table calendar
+	lineageTag: deeadac9-bd5d-4036-8976-e9b703c9ad12
+	sourceLineageTag: [dbo].[calendar]
+
+	column meeting_id
+		dataType: string
+		lineageTag: 4ec62595-00a6-4d8c-b7a8-cdc3d93ccfa2
+		sourceLineageTag: meeting_id
+		summarizeBy: none
+		sourceColumn: meeting_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column meeting_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 5233eed5-9223-4ef8-8421-b252d650d688
+		sourceLineageTag: meeting_date
+		summarizeBy: none
+		sourceColumn: meeting_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column meeting_start
+		dataType: string
+		lineageTag: a5a523d6-661b-47be-932a-4ee19d6ba581
+		sourceLineageTag: meeting_start
+		summarizeBy: none
+		sourceColumn: meeting_start
+
+		annotation SummarizationSetBy = Automatic
+
+	column meeting_end
+		dataType: string
+		lineageTag: deb8b780-847a-4dcb-8b06-e414e819e38a
+		sourceLineageTag: meeting_end
+		summarizeBy: none
+		sourceColumn: meeting_end
+
+		annotation SummarizationSetBy = Automatic
+
+	column owner
+		dataType: string
+		lineageTag: 0f1ccb4a-0de2-4cbd-95ed-c91f4beffac6
+		sourceLineageTag: owner
+		summarizeBy: none
+		sourceColumn: owner
+
+		annotation SummarizationSetBy = Automatic
+
+	column meeting_type
+		dataType: string
+		lineageTag: 999d5dd7-70e6-4d15-9b5f-293fcc2d628a
+		sourceLineageTag: meeting_type
+		summarizeBy: none
+		sourceColumn: meeting_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column supplier_name
+		dataType: string
+		lineageTag: 6d92576c-520d-4bed-9a16-8d47604ab3df
+		sourceLineageTag: supplier_name
+		summarizeBy: none
+		sourceColumn: supplier_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column customer_name
+		dataType: string
+		lineageTag: baf15701-673e-43cc-9643-1fbf26d88086
+		sourceLineageTag: customer_name
+		summarizeBy: none
+		sourceColumn: customer_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column warehouse
+		dataType: string
+		lineageTag: b1a2ffef-d766-49af-8a27-87496e32261f
+		sourceLineageTag: warehouse
+		summarizeBy: none
+		sourceColumn: warehouse
+
+		annotation SummarizationSetBy = Automatic
+
+	column priority
+		dataType: string
+		lineageTag: ca00c77b-d235-4d3b-85e2-0e1fcc964806
+		sourceLineageTag: priority
+		summarizeBy: none
+		sourceColumn: priority
+
+		annotation SummarizationSetBy = Automatic
+
+	column title
+		dataType: string
+		lineageTag: 8f8a83b6-3966-4d91-8a4c-af1cceb7707d
+		sourceLineageTag: title
+		summarizeBy: none
+		sourceColumn: title
+
+		annotation SummarizationSetBy = Automatic
+
+	column description
+		dataType: string
+		lineageTag: bc8f1ee4-8b0e-4ca1-8949-5130476da7dc
+		sourceLineageTag: description
+		summarizeBy: none
+		sourceColumn: description
+
+		annotation SummarizationSetBy = Automatic
+
+	column preparation_needed
+		dataType: string
+		lineageTag: 5838c857-0668-4a12-b7a3-4f5f95aad8bf
+		sourceLineageTag: preparation_needed
+		summarizeBy: none
+		sourceColumn: preparation_needed
+
+		annotation SummarizationSetBy = Automatic
+
+	column related_risk
+		dataType: string
+		lineageTag: 7feaf162-0861-4c62-9a02-1b98463a4176
+		sourceLineageTag: related_risk
+		summarizeBy: none
+		sourceColumn: related_risk
+
+		annotation SummarizationSetBy = Automatic
+
+	column status
+		dataType: string
+		lineageTag: 135d6ecb-828f-40e4-af24-4787b7c8ebdf
+		sourceLineageTag: status
+		summarizeBy: none
+		sourceColumn: status
+
+		annotation SummarizationSetBy = Automatic
+
+	partition calendar = entity
+		mode: directLake
+		source
+			entityName: calendar
+			schemaName: dbo
+			expressionSource: 'DirectLake - Supply_Chain_Lakehouse'
+

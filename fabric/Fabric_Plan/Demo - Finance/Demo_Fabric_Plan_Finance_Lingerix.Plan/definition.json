@@ -1,0 +1,42 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/plan/definition/Definition/1.0.0/schema.json",
+  "appDBconnection": "1facea80-61a9-4583-84c9-a14dcc349cde",
+  "cube": {
+    "partitionRefIds": []
+  },
+  "semanticModelReference": {
+    "artifactId": 0,
+    "connectionId": "ecbdac74-f575-41c7-b839-694837756880",
+    "datasetRelations": [
+      {
+        "dependentArtifactId": 13137581,
+        "settings": "Association"
+      }
+    ],
+    "directLakeMode": false,
+    "directQueryMode": false,
+    "recordGuid": "01a0211d-171d-7784-bc63-7b0d85c9de7a",
+    "semanticModelId": "26acaac2-3442-87e1-4b02-b5834db230be",
+    "semanticModelName": "Fabric_Plan",
+    "semanticModelWorkspaceId": "00000000-0000-0000-0000-000000000000",
+    "semanticModelWorkspaceName": "WORKSPACE_NAME_PLACEHOLDER",
+    "sourceType": "WORKLOAD",
+    "url": "https://app.powerbi.com/groups/00000000-0000-0000-0000-000000000000/datasets/26acaac2-3442-87e1-4b02-b5834db230be"
+  },
+  "sheets": [
+    {
+      "displayName": "Budget Planning",
+      "isHidden": false,
+      "recordGuid": "01a0211f-a171-71a6-af8c-cc88546df9fd",
+      "sheetType": "PLANNING",
+      "workloadItemEntityVisuals": [
+        {
+          "isEmbedded": false,
+          "visualId": "01a0211f-a6c8-76fa-b3e5-77b177f96f21",
+          "visualType": "PLANNING"
+        }
+      ]
+    }
+  ],
+  "workloadItemName": "Demo_Fabric_Plan_Finance_Lingerix"
+}

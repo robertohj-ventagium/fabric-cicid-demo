@@ -1,0 +1,127 @@
+table Loans
+	lineageTag: 395cb48a-c6ec-4fea-8bb4-6cdd958eca8f
+	sourceLineageTag: [dbo].[Loans]
+
+	measure 'Active Loans' = ```
+			
+			COALESCE(
+			    CALCULATE(
+			        COUNT('Loans'[LoanID]),
+			        'Loans'[Status] IN { "Active"}
+			    ), 
+			    "-"
+			)
+			```
+		lineageTag: 98e73139-9ccc-481a-84a4-32c7933047a1
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column LoanID
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 4bd3048a-c8ef-45dc-941f-6cbcf8e90450
+		sourceLineageTag: LoanID
+		summarizeBy: none
+		sourceColumn: LoanID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CustomerID
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 1f790884-349e-4702-9717-c3124d9a2e3b
+		sourceLineageTag: CustomerID
+		summarizeBy: none
+		sourceColumn: CustomerID
+
+		annotation SummarizationSetBy = Automatic
+
+	column LoanType
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: f811c3e4-a700-4dfe-a083-8e673fa73d01
+		sourceLineageTag: LoanType
+		summarizeBy: none
+		sourceColumn: LoanType
+
+		annotation SummarizationSetBy = Automatic
+
+	column OriginalAmount
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 429b8841-e280-48c2-bc45-cff3da3b0fa7
+		sourceLineageTag: OriginalAmount
+		summarizeBy: sum
+		sourceColumn: OriginalAmount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column OutstandingBalance
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 7aebaa64-00f6-45d9-ad0f-fc0b8911bb3d
+		sourceLineageTag: OutstandingBalance
+		summarizeBy: sum
+		sourceColumn: OutstandingBalance
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column InterestRate
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 57e233b0-6119-41ce-9dbe-943805b62f53
+		sourceLineageTag: InterestRate
+		summarizeBy: sum
+		sourceColumn: InterestRate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column StartDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: aa657fa2-5938-4a90-9faa-da0b992a88fb
+		sourceLineageTag: StartDate
+		summarizeBy: none
+		sourceColumn: StartDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column TermMonths
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: c9e4c4b8-922c-405b-a8a0-c2371cd00b50
+		sourceLineageTag: TermMonths
+		summarizeBy: sum
+		sourceColumn: TermMonths
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: e3f197cf-e88c-4790-8ffa-ffed98484c25
+		sourceLineageTag: Status
+		summarizeBy: none
+		sourceColumn: Status
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Loans = entity
+		mode: directLake
+		source
+			entityName: Loans
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

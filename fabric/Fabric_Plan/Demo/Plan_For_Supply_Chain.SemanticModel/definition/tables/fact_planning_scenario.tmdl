@@ -1,0 +1,175 @@
+table fact_planning_scenario
+	lineageTag: ae5bd367-1bde-4023-bbe0-8bf72db388c1
+	sourceLineageTag: [dbo].[fact_planning_scenario]
+
+	column ScenarioID
+		dataType: int64
+		formatString: 0
+		lineageTag: dfdd6b3b-5a92-4e16-9bec-6bec81bc0674
+		sourceLineageTag: ScenarioID
+		summarizeBy: count
+		sourceColumn: ScenarioID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ScenarioName
+		dataType: string
+		lineageTag: 7a69eaee-4875-4dba-b422-a000500a4a88
+		sourceLineageTag: ScenarioName
+		summarizeBy: none
+		sourceColumn: ScenarioName
+
+		annotation SummarizationSetBy = Automatic
+
+	column ScenarioDescription
+		dataType: string
+		lineageTag: cd4855e7-c3f7-4d5d-a77b-40c345e51dea
+		sourceLineageTag: ScenarioDescription
+		summarizeBy: none
+		sourceColumn: ScenarioDescription
+
+		annotation SummarizationSetBy = Automatic
+
+	column BaseForecastVersionID
+		dataType: int64
+		formatString: 0
+		lineageTag: 43dead3e-6597-4ba2-84ef-86b8ee61fe59
+		sourceLineageTag: BaseForecastVersionID
+		summarizeBy: count
+		sourceColumn: BaseForecastVersionID
+
+		annotation SummarizationSetBy = Automatic
+
+	column DateKey
+		dataType: int64
+		formatString: 0
+		lineageTag: ff01a89d-abd9-4d96-9125-a296e33a084d
+		sourceLineageTag: DateKey
+		summarizeBy: none
+		sourceColumn: DateKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column StoreKey
+		dataType: int64
+		formatString: 0
+		lineageTag: b043ed7e-b74f-48ef-9e4d-1b9a951189bf
+		sourceLineageTag: StoreKey
+		summarizeBy: none
+		sourceColumn: StoreKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 89a14a9d-9c2c-4613-9199-33ae6f9327a7
+		sourceLineageTag: ProductKey
+		summarizeBy: none
+		sourceColumn: ProductKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column AdjustmentType
+		dataType: string
+		lineageTag: 8faf7cba-dda0-449f-9a10-b594927685db
+		sourceLineageTag: AdjustmentType
+		summarizeBy: none
+		sourceColumn: AdjustmentType
+
+		annotation SummarizationSetBy = Automatic
+
+	column AdjustmentPct
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 4cfaa458-914e-43a0-b8b9-62570a36a144
+		sourceLineageTag: AdjustmentPct
+		summarizeBy: sum
+		sourceColumn: AdjustmentPct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column AdjustmentAbsolute
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 15aafa15-de90-4e43-863c-efbee2956772
+		sourceLineageTag: AdjustmentAbsolute
+		summarizeBy: sum
+		sourceColumn: AdjustmentAbsolute
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column BaselineForecast
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: e50b3edc-f05d-4277-aeb9-5b67ba651f31
+		sourceLineageTag: BaselineForecast
+		summarizeBy: sum
+		sourceColumn: BaselineForecast
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column AdjustedForecast
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 53a4d454-544e-4187-b602-88e3859924ea
+		sourceLineageTag: AdjustedForecast
+		summarizeBy: sum
+		sourceColumn: AdjustedForecast
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column CreatedBy
+		dataType: string
+		lineageTag: 401e4e15-9fde-439f-8eee-a70252cb2b24
+		sourceLineageTag: CreatedBy
+		summarizeBy: none
+		sourceColumn: CreatedBy
+
+		annotation SummarizationSetBy = Automatic
+
+	column CreatedAt
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 3fc562b2-d441-45f5-8f40-8802dfde4558
+		sourceLineageTag: CreatedAt
+		summarizeBy: none
+		sourceColumn: CreatedAt
+
+		annotation SummarizationSetBy = Automatic
+
+	column IsActive
+		dataType: int64
+		formatString: 0
+		lineageTag: c5020b97-75b2-45d9-ab40-d097be53f359
+		sourceLineageTag: IsActive
+		summarizeBy: sum
+		sourceColumn: IsActive
+
+		annotation SummarizationSetBy = Automatic
+
+	column MSSQL_System_Uniquifier_1957582012
+		dataType: int64
+		formatString: 0
+		lineageTag: 985521b8-3024-470e-bda0-ae447bce27a7
+		sourceLineageTag: MSSQL_System_Uniquifier_1957582012
+		summarizeBy: sum
+		sourceColumn: MSSQL_System_Uniquifier_1957582012
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_planning_scenario = entity
+		mode: directLake
+		source
+			entityName: fact_planning_scenario
+			schemaName: dbo
+			expressionSource: 'DirectLake - Test_Store_DB'
+

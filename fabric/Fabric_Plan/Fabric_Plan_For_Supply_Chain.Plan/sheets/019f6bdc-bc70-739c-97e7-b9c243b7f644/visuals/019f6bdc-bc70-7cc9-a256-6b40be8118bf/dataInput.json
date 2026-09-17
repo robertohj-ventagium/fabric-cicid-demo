@@ -1,0 +1,159 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/plan/definition/Planning/DataInput/1.0.0/schema.json",
+  "columns": [
+    {
+      "boundToFilterContext": 10,
+      "columnMeta": {
+        "data_type": "Number",
+        "description": null,
+        "id": "2109893561906004396",
+        "label": "Sum of ActualQuantity",
+        "measure_type": {
+          "Native": {
+            "measure_role": "ACMeasure"
+          }
+        }
+      },
+      "dataInputType": 6,
+      "description": null,
+      "measureGuid": "2109893561906004396",
+      "name": "Sum of ActualQuantity",
+      "sidecarHydrationLeaseAt": null,
+      "sidecarHydrationStatus": 10,
+      "status": 10,
+      "visualId": "019f6bdc-bc70-7cc9-a256-6b40be8118bf"
+    },
+    {
+      "boundToFilterContext": 10,
+      "columnMeta": {
+        "data_type": "Number",
+        "description": null,
+        "id": "13494327334852209186",
+        "label": "Forecast Qty v1",
+        "measure_type": {
+          "Native": {
+            "measure_role": "ACMeasure"
+          }
+        }
+      },
+      "dataInputType": 6,
+      "description": null,
+      "measureGuid": "13494327334852209186",
+      "name": "Forecast Qty v1",
+      "sidecarHydrationLeaseAt": null,
+      "sidecarHydrationStatus": 10,
+      "status": 10,
+      "visualId": "019f6bdc-bc70-7cc9-a256-6b40be8118bf"
+    },
+    {
+      "boundToFilterContext": 10,
+      "columnMeta": {
+        "data_type": "Number",
+        "description": null,
+        "id": "14428624777388247285",
+        "label": "Forecast Qty v2",
+        "measure_type": {
+          "Native": {
+            "measure_role": "ACMeasure"
+          }
+        }
+      },
+      "dataInputType": 6,
+      "description": null,
+      "measureGuid": "14428624777388247285",
+      "name": "Forecast Qty v2",
+      "sidecarHydrationLeaseAt": null,
+      "sidecarHydrationStatus": 10,
+      "status": 10,
+      "visualId": "019f6bdc-bc70-7cc9-a256-6b40be8118bf"
+    },
+    {
+      "boundToFilterContext": 10,
+      "columnMeta": {
+        "data_type": "Text",
+        "description": "",
+        "id": "6718905702616342653",
+        "label": "Single Select",
+        "measure_type": {
+          "VisualColumn": {
+            "DataInput": {
+              "allow_input": "ReadAndEdit",
+              "bound_to_filter_context": true,
+              "column_type": {
+                "SingleSelect": {
+                  "advanced": null,
+                  "allow_entry_on_totals_or_subtotals": true,
+                  "allow_user_to_add_new_option": false,
+                  "default_value": null,
+                  "icon_position": "left",
+                  "option_style": "Chip",
+                  "options": [
+                    {
+                      "color": "#9CD740",
+                      "display_name": "Option 1",
+                      "icon": "circle-fill",
+                      "order": 1,
+                      "value": "custom_select_43CuWZs4"
+                    },
+                    {
+                      "color": "#FF8A00",
+                      "display_name": "Option 2",
+                      "icon": "circle-fill",
+                      "order": 2,
+                      "value": "custom_select_03aIEbun"
+                    },
+                    {
+                      "color": "#FF000A",
+                      "display_name": "Option 3",
+                      "icon": "circle-fill",
+                      "order": 3,
+                      "value": "custom_select_QDXWxE8S"
+                    }
+                  ],
+                  "options_source": {
+                    "Static": [
+                      {
+                        "color": "#9CD740",
+                        "display_name": "Option 1",
+                        "icon": "circle-fill",
+                        "order": 1,
+                        "value": "custom_select_43CuWZs4"
+                      },
+                      {
+                        "color": "#FF8A00",
+                        "display_name": "Option 2",
+                        "icon": "circle-fill",
+                        "order": 2,
+                        "value": "custom_select_03aIEbun"
+                      },
+                      {
+                        "color": "#FF000A",
+                        "display_name": "Option 3",
+                        "icon": "circle-fill",
+                        "order": 3,
+                        "value": "custom_select_QDXWxE8S"
+                      }
+                    ]
+                  },
+                  "prevent_null": null
+                }
+              },
+              "disable_write_access": false,
+              "id": "",
+              "on_change_formula": "",
+              "title": "Single Select"
+            }
+          }
+        }
+      },
+      "dataInputType": 2,
+      "description": null,
+      "measureGuid": "6718905702616342653",
+      "name": "Single Select",
+      "sidecarHydrationLeaseAt": null,
+      "sidecarHydrationStatus": 10,
+      "status": 10,
+      "visualId": "019f6bdc-bc70-7cc9-a256-6b40be8118bf"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/plan/definition/PowerTable/Source/1.0.0/schema.json",
+  "source": {
+    "connectionId": "4c80bfe0-fcd1-4709-b4df-604a11441ec5",
+    "connectionIdVariable": null,
+    "creationMode": 2,
+    "databaseVariable": null,
+    "dbHost": "6unlohtqbrpuleev5bpjprytom-hey6wg25fszuznawyrsaivk3je.database.fabric.microsoft.com",
+    "dbName": "Test_Store_DB-1b247ee8-ca8c-4b17-8405-dcf0ac48a8b3",
+    "fileImportType": null,
+    "meta": {
+      "databaseId": "1b247ee8-ca8c-4b17-8405-dcf0ac48a8b3",
+      "dbDisplayName": "Test_Store_DB",
+      "lastRowCountUpdatedAt": 1782487053,
+      "totalRows": 726492,
+      "workspaceId": "1beb3139-2c5d-4cb3-b416-c46404555b49",
+      "workspaceName": "00_Experiments"
+    },
+    "recordGuid": "67E52673-3781-F111-B338-6045BD481F87",
+    "schemaName": "dbo",
+    "sqlTargetArtifact": {
+      "artifactId": "1b247ee8-ca8c-4b17-8405-dcf0ac48a8b3",
+      "artifactType": "SQLDbNative",
+      "workspaceId": "1beb3139-2c5d-4cb3-b416-c46404555b49"
+    },
+    "tableName": "fact_forecast",
+    "tableType": 1
+  }
+}

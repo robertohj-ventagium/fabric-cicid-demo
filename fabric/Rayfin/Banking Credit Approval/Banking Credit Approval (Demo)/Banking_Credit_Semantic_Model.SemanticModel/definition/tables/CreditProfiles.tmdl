@@ -1,0 +1,137 @@
+table CreditProfiles
+	lineageTag: db222e88-8224-4400-be77-67d21f14c0b8
+	sourceLineageTag: [dbo].[CreditProfiles]
+
+	measure d = SUM(CreditProfiles[DelinquenciesLast12Months])
+		formatString: 0
+		lineageTag: a68c7cb1-26a1-4663-bef5-3621a32d32f3
+
+		changedProperty = Name
+
+	measure cs =
+			
+			VAR score = sum(CreditProfiles[CreditScore])
+			RETURN
+			    IF(
+			        score <= 580,
+			        3,
+			        IF(
+			            score <= 670,
+			            2,
+			            1
+			        )
+			    )
+		formatString: 0
+		lineageTag: 39c969f2-00cf-41b6-81ab-b15e89515f8e
+
+		changedProperty = Name
+
+	column CreditProfileID
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a9aa3cdb-635c-4e0d-9814-b972e3a2a4b5
+		sourceLineageTag: CreditProfileID
+		summarizeBy: none
+		sourceColumn: CreditProfileID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CustomerID
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 4b791dd6-7920-4f8a-9ae0-43f88e469293
+		sourceLineageTag: CustomerID
+		summarizeBy: none
+		sourceColumn: CustomerID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CreditScore
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: ef4f99b3-bd2d-4170-a87a-10442fb0943c
+		sourceLineageTag: CreditScore
+		summarizeBy: sum
+		sourceColumn: CreditScore
+
+		annotation SummarizationSetBy = Automatic
+
+	column CreditUtilization
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 079e293a-e4f5-4770-bb9e-164548eb1402
+		sourceLineageTag: CreditUtilization
+		summarizeBy: sum
+		sourceColumn: CreditUtilization
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column DebtToIncomeRatio
+		dataType: double
+		sourceProviderType: float
+		lineageTag: a869607b-9bb5-4272-836a-cb453cf3b087
+		sourceLineageTag: DebtToIncomeRatio
+		summarizeBy: sum
+		sourceColumn: DebtToIncomeRatio
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column TotalOutstandingDebt
+		dataType: double
+		sourceProviderType: float
+		lineageTag: a2eea327-371c-4129-b027-dc99f57f42f3
+		sourceLineageTag: TotalOutstandingDebt
+		summarizeBy: sum
+		sourceColumn: TotalOutstandingDebt
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column DelinquenciesLast12Months
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 02905e57-239f-410f-9817-22c3fc07cbe3
+		sourceLineageTag: DelinquenciesLast12Months
+		summarizeBy: sum
+		sourceColumn: DelinquenciesLast12Months
+
+		annotation SummarizationSetBy = Automatic
+
+	column CreditHistoryYears
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: f1f9941f-cd95-4e2e-b7b0-e645ca7c1c06
+		sourceLineageTag: CreditHistoryYears
+		summarizeBy: sum
+		sourceColumn: CreditHistoryYears
+
+		annotation SummarizationSetBy = Automatic
+
+	column LastUpdated
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: 019a7f99-c999-42b8-9223-f7b07f4daf8b
+		sourceLineageTag: LastUpdated
+		summarizeBy: none
+		sourceColumn: LastUpdated
+
+		annotation SummarizationSetBy = Automatic
+
+	partition CreditProfiles = entity
+		mode: directLake
+		source
+			entityName: CreditProfiles
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

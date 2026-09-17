@@ -1,0 +1,11 @@
+expression 'DirectLake - Loan_Data' =
+		let
+		    Source = AzureStorage.DataLake("https://onelake.dfs.fabric.microsoft.com/1beb3139-2c5d-4cb3-b416-c46404555b49/3f259435-66c7-4513-8c73-17fd9965a872", [HierarchicalNavigation=true])
+		in
+		    Source
+	lineageTag: 70076f33-5231-4379-bb85-c744bd0d0516
+
+	annotation PBI_IncludeFutureArtifacts = False
+
+	annotation PBI_RemovedChildren = [{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[dbo].[backup]"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[dbo].[batch_predictions2]"}},"objectType":"Table"}]
+

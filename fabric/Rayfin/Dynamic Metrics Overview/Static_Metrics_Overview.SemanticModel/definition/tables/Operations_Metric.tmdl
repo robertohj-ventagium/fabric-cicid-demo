@@ -1,0 +1,90 @@
+table Operations_Metric
+	lineageTag: 9396770f-c899-458a-b8df-28f630c4e9de
+	sourceLineageTag: [operations].[Metric]
+
+	column MetricID
+		dataType: int64
+		formatString: 0
+		lineageTag: 67e98512-6a67-46c5-8fa7-1294aa3d7920
+		sourceLineageTag: MetricID
+		summarizeBy: none
+		sourceColumn: MetricID
+
+		annotation SummarizationSetBy = Automatic
+
+	column MetricName
+		dataType: string
+		lineageTag: f82ad7ba-dd96-4e6e-8842-e2bd717b9feb
+		sourceLineageTag: MetricName
+		summarizeBy: none
+		sourceColumn: MetricName
+
+		annotation SummarizationSetBy = Automatic
+
+	column CategoryID
+		dataType: int64
+		formatString: 0
+		lineageTag: 17c7b1a1-14fb-467c-8d9f-ee5c5a36a6af
+		sourceLineageTag: CategoryID
+		summarizeBy: none
+		sourceColumn: CategoryID
+
+		annotation SummarizationSetBy = Automatic
+
+	column MetricDescription
+		dataType: string
+		lineageTag: d17e470b-be87-434a-8774-2cf827ace571
+		sourceLineageTag: MetricDescription
+		summarizeBy: none
+		sourceColumn: MetricDescription
+
+		annotation SummarizationSetBy = Automatic
+
+	column Unit
+		dataType: string
+		lineageTag: fc5698e3-7382-421a-812a-cde533f8131a
+		sourceLineageTag: Unit
+		summarizeBy: none
+		sourceColumn: Unit
+
+		annotation SummarizationSetBy = Automatic
+
+	column TargetValue
+		dataType: double
+		lineageTag: ba058201-fc27-4528-a735-95276caa4a01
+		sourceLineageTag: TargetValue
+		summarizeBy: sum
+		sourceColumn: TargetValue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column HigherIsBetter
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 4904a542-0187-460c-b5aa-087c5953b083
+		sourceLineageTag: HigherIsBetter
+		summarizeBy: none
+		sourceColumn: HigherIsBetter
+
+		annotation SummarizationSetBy = Automatic
+
+	column DetailURL
+		dataType: string
+		lineageTag: 25ecd1b6-d77e-4307-bd9a-af413c534058
+		sourceLineageTag: DetailURL
+		summarizeBy: none
+		sourceColumn: DetailURL
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Operations_Metric = entity
+		mode: directLake
+		source
+			entityName: Metric
+			schemaName: operations
+			expressionSource: 'DirectLake - Static_Metrics_Lakehouse'
+
+	changedProperty = Name
+

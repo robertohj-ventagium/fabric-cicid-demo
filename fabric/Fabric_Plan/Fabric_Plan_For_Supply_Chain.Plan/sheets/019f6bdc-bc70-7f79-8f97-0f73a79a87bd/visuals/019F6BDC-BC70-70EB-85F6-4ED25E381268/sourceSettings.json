@@ -1,0 +1,76 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/plan/definition/PowerTable/Settings/1.0.0/schema.json",
+  "sourceSettings": [
+    {
+      "name": "SCD",
+      "recordGuid": "77E52673-3781-F111-B338-6045BD481F87",
+      "settings": {
+        "config": {
+          "businessKey": "",
+          "identifierKeys": {
+            "activeFlag": "",
+            "effectiveDate": "",
+            "endDate": "",
+            "endDateDefaultValue": null,
+            "startDate": ""
+          },
+          "selectedColumns": []
+        },
+        "enabled": false,
+        "type": 2
+      },
+      "sourceId": "67E52673-3781-F111-B338-6045BD481F87"
+    },
+    {
+      "name": "COMMENT_SETTINGS",
+      "recordGuid": "78E52673-3781-F111-B338-6045BD481F87",
+      "settings": {
+        "displayComment": true,
+        "notification": true,
+        "rowLevelComments": false,
+        "toggleAddonColumns": false
+      },
+      "sourceId": "67E52673-3781-F111-B338-6045BD481F87"
+    },
+    {
+      "filters": [
+        {
+          "filter": {},
+          "filterType": 1,
+          "name": "all_users",
+          "recordGuid": "7DE52673-3781-F111-B338-6045BD481F87"
+        }
+      ],
+      "name": "ROW_ADD",
+      "recordGuid": "79E52673-3781-F111-B338-6045BD481F87",
+      "settings": {
+        "enabled": true
+      },
+      "sourceId": "67E52673-3781-F111-B338-6045BD481F87"
+    },
+    {
+      "filters": [
+        {
+          "filter": {},
+          "filterType": 1,
+          "name": "all_users",
+          "recordGuid": "7CE52673-3781-F111-B338-6045BD481F87"
+        }
+      ],
+      "name": "ROW_UPDATE",
+      "recordGuid": "7AE52673-3781-F111-B338-6045BD481F87",
+      "settings": {
+        "enabled": true
+      },
+      "sourceId": "67E52673-3781-F111-B338-6045BD481F87"
+    },
+    {
+      "name": "ROW_DELETE",
+      "recordGuid": "7BE52673-3781-F111-B338-6045BD481F87",
+      "settings": {
+        "enabled": false
+      },
+      "sourceId": "67E52673-3781-F111-B338-6045BD481F87"
+    }
+  ]
+}

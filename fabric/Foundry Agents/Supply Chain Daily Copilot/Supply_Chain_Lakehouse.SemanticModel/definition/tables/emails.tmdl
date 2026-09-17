@@ -1,0 +1,139 @@
+table emails
+	lineageTag: 4f12adbc-5afb-40bc-a276-0c3adbe2cc8a
+	sourceLineageTag: [dbo].[emails]
+
+	column email_id
+		dataType: string
+		lineageTag: 0f3e71e2-6514-4d9e-8c27-c71e59fbe540
+		sourceLineageTag: email_id
+		summarizeBy: none
+		sourceColumn: email_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column datetime
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 51d286fd-94d7-48d0-870d-2dbaf889a715
+		sourceLineageTag: datetime
+		summarizeBy: none
+		sourceColumn: datetime
+
+		annotation SummarizationSetBy = Automatic
+
+	column sender
+		dataType: string
+		lineageTag: 3dde4d37-209d-4d7c-9ab0-c830a523783b
+		sourceLineageTag: sender
+		summarizeBy: none
+		sourceColumn: sender
+
+		annotation SummarizationSetBy = Automatic
+
+	column recipient
+		dataType: string
+		lineageTag: ddc0c678-183e-493f-80a3-dd30666115dc
+		sourceLineageTag: recipient
+		summarizeBy: none
+		sourceColumn: recipient
+
+		annotation SummarizationSetBy = Automatic
+
+	column subject
+		dataType: string
+		lineageTag: d4058f48-fe0f-4bd7-8360-d7ae83c6e452
+		sourceLineageTag: subject
+		summarizeBy: none
+		sourceColumn: subject
+
+		annotation SummarizationSetBy = Automatic
+
+	column body
+		dataType: string
+		lineageTag: 92945b50-5e95-4269-a031-111eb818721d
+		sourceLineageTag: body
+		summarizeBy: none
+		sourceColumn: body
+
+		annotation SummarizationSetBy = Automatic
+
+	column category
+		dataType: string
+		lineageTag: 71bacce2-80a0-41de-ac83-36378ed4fc13
+		sourceLineageTag: category
+		summarizeBy: none
+		sourceColumn: category
+
+		annotation SummarizationSetBy = Automatic
+
+	column priority
+		dataType: string
+		lineageTag: ac22d05b-b0e0-449b-b721-7d589e1dbbc1
+		sourceLineageTag: priority
+		summarizeBy: none
+		sourceColumn: priority
+
+		annotation SummarizationSetBy = Automatic
+
+	column customer_name
+		dataType: string
+		lineageTag: adfd8767-8c02-478f-88f8-e6d169489881
+		sourceLineageTag: customer_name
+		summarizeBy: none
+		sourceColumn: customer_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column supplier_name
+		dataType: string
+		lineageTag: 10722ffe-f41d-4d18-99cf-bc679bd1f31d
+		sourceLineageTag: supplier_name
+		summarizeBy: none
+		sourceColumn: supplier_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column warehouse
+		dataType: string
+		lineageTag: 6af6d971-10e0-4582-bfce-a752f6311795
+		sourceLineageTag: warehouse
+		summarizeBy: none
+		sourceColumn: warehouse
+
+		annotation SummarizationSetBy = Automatic
+
+	column product
+		dataType: string
+		lineageTag: 8fac4a33-c801-4ac3-8e6c-bf757b173326
+		sourceLineageTag: product
+		summarizeBy: none
+		sourceColumn: product
+
+		annotation SummarizationSetBy = Automatic
+
+	column order_id
+		dataType: string
+		lineageTag: 1a47da04-3593-4531-aeb8-e444bcd92a7c
+		sourceLineageTag: order_id
+		summarizeBy: none
+		sourceColumn: order_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column requires_action
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 6ea7185f-c9cb-4bbc-abcf-97404dfcf5c4
+		sourceLineageTag: requires_action
+		summarizeBy: none
+		sourceColumn: requires_action
+
+		annotation SummarizationSetBy = Automatic
+
+	partition emails = entity
+		mode: directLake
+		source
+			entityName: emails
+			schemaName: dbo
+			expressionSource: 'DirectLake - Supply_Chain_Lakehouse'
+

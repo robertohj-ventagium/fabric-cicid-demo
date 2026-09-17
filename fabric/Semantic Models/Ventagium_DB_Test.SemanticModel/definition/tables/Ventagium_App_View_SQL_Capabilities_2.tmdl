@@ -1,0 +1,379 @@
+table Ventagium_App_View_SQL_Capabilities_2
+	lineageTag: 6c77719c-a6e7-40cd-9cf6-394fd86615e5
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: 7aa3578a-0faa-46f9-85ea-a27a7e2ad490
+		summarizeBy: sum
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column name
+		dataType: string
+		lineageTag: 0108bfb0-9d83-40b8-839c-e1914c314285
+		summarizeBy: none
+		sourceColumn: name
+
+		annotation SummarizationSetBy = Automatic
+
+	column status
+		dataType: int64
+		formatString: 0
+		lineageTag: 2e846c35-0eb5-4cdd-afb7-8d9ea0f15a57
+		summarizeBy: sum
+		sourceColumn: status
+
+		annotation SummarizationSetBy = Automatic
+
+	column status_name
+		dataType: string
+		lineageTag: 1284d05e-6f38-42ff-9816-d7dc9b8049a6
+		summarizeBy: none
+		sourceColumn: status_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column entity_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 5d5abf6a-c37e-496d-ae96-280d35cd329e
+		summarizeBy: sum
+		sourceColumn: entity_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column account_lead
+		dataType: string
+		lineageTag: 5bb36df6-da93-416e-9e57-47e19aee53eb
+		summarizeBy: none
+		sourceColumn: account_lead
+
+		annotation SummarizationSetBy = Automatic
+
+	column preferred_language_code
+		dataType: string
+		lineageTag: c12e247c-1167-40a4-a1e6-7c9fcc874baa
+		summarizeBy: none
+		sourceColumn: preferred_language_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column story_point_before_in_progress
+		dataType: int64
+		formatString: 0
+		lineageTag: cd3c80d2-e2bb-4a13-86f9-7b4127f93423
+		summarizeBy: sum
+		sourceColumn: story_point_before_in_progress
+
+		annotation SummarizationSetBy = Automatic
+
+	column created_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 512d17e4-9b2f-4ff2-af68-e09ab057475b
+		summarizeBy: none
+		sourceColumn: created_date
+
+		variation Variation
+			isDefault
+			relationship: 61cdd6fd-f3bb-47c6-9674-b7a48776129e
+			defaultHierarchy: LocalDateTable_0a333f8c-2e89-40f1-ab96-34397d3adf05.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column in_ready_to_work_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 44d2a223-60f8-4a68-894b-e2bf74cc3093
+		summarizeBy: none
+		sourceColumn: in_ready_to_work_date
+
+		variation Variation
+			isDefault
+			relationship: 4a652494-1664-448a-844a-c492c6f22c26
+			defaultHierarchy: LocalDateTable_7e1cbbda-8807-4b9f-bd6a-106004f87048.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column in_progress_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: fe096ba1-36af-4c4b-8207-527023f34e2e
+		summarizeBy: none
+		sourceColumn: in_progress_date
+
+		variation Variation
+			isDefault
+			relationship: bd35007d-7b5a-439a-ad83-9342204f1eff
+			defaultHierarchy: LocalDateTable_fba7b155-3eaf-45b3-ac06-0429d311429e.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column in_evaluation_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 4c1b5466-3c33-492b-a8fa-85558613334c
+		summarizeBy: none
+		sourceColumn: in_evaluation_date
+
+		variation Variation
+			isDefault
+			relationship: 70f43458-79bc-441c-9e44-cdf8a3dbf39d
+			defaultHierarchy: LocalDateTable_7aac7bbe-832f-4636-9188-5c1d13bf288c.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column due_date_first_task
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: b483e75b-4e0d-46f5-940f-50f6b5863271
+		summarizeBy: none
+		sourceColumn: due_date_first_task
+
+		variation Variation
+			isDefault
+			relationship: d0481126-b1c1-4325-b963-1b78c17ed613
+			defaultHierarchy: LocalDateTable_5e24500c-9f7e-4fb4-b0f6-6c4d290ae096.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column due_date_last_task
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: c54e0abc-1346-4bd2-807c-1082771da031
+		summarizeBy: none
+		sourceColumn: due_date_last_task
+
+		variation Variation
+			isDefault
+			relationship: 71f882b9-a08c-4108-b83f-b583541e4e5a
+			defaultHierarchy: LocalDateTable_282c864e-980a-483d-9691-9582b333a005.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column finished_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 563049d4-9274-4365-a041-febd69b7ea63
+		summarizeBy: none
+		sourceColumn: finished_date
+
+		variation Variation
+			isDefault
+			relationship: 1bfa5308-4022-4af4-b979-83d25732987f
+			defaultHierarchy: LocalDateTable_46cbeede-b095-4108-87d7-d46bf0dfc3c0.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column age_in_days
+		dataType: int64
+		formatString: 0
+		lineageTag: 091c3e63-095a-4bcd-abf4-4be6e6f80087
+		summarizeBy: sum
+		sourceColumn: age_in_days
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_canceled
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: ce37dd48-4d66-44a7-8e9e-c0e825dabbcd
+		summarizeBy: none
+		sourceColumn: is_canceled
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_world_changing_project
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: c430340d-8380-45e8-8d27-80e303cc59b0
+		summarizeBy: none
+		sourceColumn: is_world_changing_project
+
+		annotation SummarizationSetBy = Automatic
+
+	column executive_sponsor
+		dataType: string
+		lineageTag: 746e7317-8791-4e05-bf6a-fd9e6696fecc
+		summarizeBy: none
+		sourceColumn: executive_sponsor
+
+		annotation SummarizationSetBy = Automatic
+
+	column product_owner
+		dataType: string
+		lineageTag: c336a29f-93b5-49f5-aa30-08497ef85699
+		summarizeBy: none
+		sourceColumn: product_owner
+
+		annotation SummarizationSetBy = Automatic
+
+	column product_owner_email
+		dataType: string
+		lineageTag: 07d8a0c7-2d0b-4b2b-b063-641e9cd4d6af
+		summarizeBy: none
+		sourceColumn: product_owner_email
+
+		annotation SummarizationSetBy = Automatic
+
+	column product_owner_id
+		dataType: int64
+		formatString: 0
+		lineageTag: ffd6c350-3b4a-4cde-9104-ddb72c00f3db
+		summarizeBy: sum
+		sourceColumn: product_owner_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column business_objectives
+		dataType: string
+		lineageTag: 40fb5af6-cd1e-4b72-ac4a-4d8c12a05fce
+		summarizeBy: none
+		sourceColumn: business_objectives
+
+		annotation SummarizationSetBy = Automatic
+
+	column ventagium_app_capability_url
+		dataType: string
+		lineageTag: feef3ae3-3e88-4483-a862-2da24e34158c
+		summarizeBy: none
+		sourceColumn: ventagium_app_capability_url
+
+		annotation SummarizationSetBy = Automatic
+
+	column weeks_in_status
+		dataType: int64
+		formatString: 0
+		lineageTag: d88d7a53-bc18-4b6a-ac7b-885b3fa92c3b
+		summarizeBy: sum
+		sourceColumn: weeks_in_status
+
+		annotation SummarizationSetBy = Automatic
+
+	column capability_type_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 84ca1364-ba3d-4a3d-8740-464eedeef7db
+		summarizeBy: sum
+		sourceColumn: capability_type_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column sequence
+		dataType: int64
+		formatString: 0
+		lineageTag: ce4f6952-16b0-4af8-9a6b-9a609eef82a4
+		summarizeBy: sum
+		sourceColumn: sequence
+
+		annotation SummarizationSetBy = Automatic
+
+	column capability_owner_full_name
+		dataType: string
+		lineageTag: 3dca5dd2-3f3c-4fce-a9ac-aeacad2081e6
+		summarizeBy: none
+		sourceColumn: capability_owner_full_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_external_user
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 04f2f407-5281-4411-90c2-d5fca4f6d93a
+		summarizeBy: none
+		sourceColumn: is_external_user
+
+		annotation SummarizationSetBy = Automatic
+
+	column percentage_completion
+		dataType: double
+		lineageTag: 335554a4-c461-4718-8b39-c6e03e396dad
+		summarizeBy: sum
+		sourceColumn: percentage_completion
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column client_name
+		dataType: string
+		lineageTag: 2a3205a7-57ca-407a-b4b2-303b539b491e
+		summarizeBy: none
+		sourceColumn: client_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column account_lead_email
+		dataType: string
+		lineageTag: f7f75855-2282-45dc-a96a-2c1be9d1651d
+		summarizeBy: none
+		sourceColumn: account_lead_email
+
+		annotation SummarizationSetBy = Automatic
+
+	column expected_year_month_due_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 19eb3cd4-a269-4e19-92c3-a2ec4ceb32b0
+		summarizeBy: none
+		sourceColumn: expected_year_month_due_date
+
+		variation Variation
+			isDefault
+			relationship: c5a7bd32-7951-4fcc-b084-20497a3f01bb
+			defaultHierarchy: LocalDateTable_99401103-2795-4a20-8da0-27569d7644e6.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column expected_year_month_start_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 816c1260-ab9d-4323-a3e0-887d63d6e314
+		summarizeBy: none
+		sourceColumn: expected_year_month_start_date
+
+		variation Variation
+			isDefault
+			relationship: 18d19743-cce0-4b0d-9652-ed21f268b521
+			defaultHierarchy: LocalDateTable_397a5e97-2981-47b2-bb84-ec9ec518d3d5.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column dates_are_different = [expected_year_month_start_date] <> [expected_year_month_due_date]
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: da2d235f-a9e7-42c4-94dd-8400e94ca59f
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Ventagium_App_View_SQL_Capabilities_2 = m
+		mode: import
+		source =
+				let
+				  Source = Sql.Database("ventagiumgeneralserver2.database.windows.net", "Ventagium_Database"),
+				  #"Navigation 1" = Source{[Schema = "dbo", Item = "Ventagium_App_View_SQL_Capabilities_2"]}[Data]
+				in
+				  #"Navigation 1"
+
+	annotation PBI_ResultType = Table
+

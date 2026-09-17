@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Plan",
+    "displayName": "Roadmaps"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "707ee4ad-67ce-a73c-4b45-704d68b0643f"
+  }
+}

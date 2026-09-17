@@ -1,0 +1,6 @@
+CREATE USER [david.garza@ventagium.com]
+    WITH SID = 0x2F5EEC1617361148A70DD2B2497CC52B, TYPE = E;
+
+
+GO
+

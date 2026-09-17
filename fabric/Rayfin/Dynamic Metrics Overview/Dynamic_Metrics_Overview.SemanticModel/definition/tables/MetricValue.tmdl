@@ -1,0 +1,41 @@
+table MetricValue
+	lineageTag: 9cec1e21-fd17-41cb-aad5-919326266b19
+	sourceLineageTag: [dbo].[MetricValue]
+
+	column MetricID
+		dataType: int64
+		formatString: 0
+		lineageTag: 18c3e71c-197a-486e-8eb5-fb6b4916acd4
+		sourceLineageTag: MetricID
+		summarizeBy: none
+		sourceColumn: MetricID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: e3171df0-fc76-4d2c-ba02-c8e274610137
+		sourceLineageTag: Date
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column Value
+		dataType: double
+		lineageTag: 4dce5f6d-e22b-4367-adb0-0534fa25a25b
+		sourceLineageTag: Value
+		summarizeBy: sum
+		sourceColumn: Value
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition MetricValue = entity
+		mode: directLake
+		source
+			entityName: MetricValue
+			expressionSource: 'DirectLake - Dynamic_Metrics_Lakehouse'
+

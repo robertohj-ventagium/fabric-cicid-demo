@@ -1,0 +1,201 @@
+table LoanApplications
+	lineageTag: 7871f1b4-b4db-44fe-b753-83cc47c10750
+	sourceLineageTag: [dbo].[LoanApplications]
+
+	measure 'Total Applications' = COALESCE(COUNT('LoanApplications'[ApplicationID]), "-" )
+		lineageTag: 8903ad7d-1d33-4829-a381-d410fc19656c
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Pending Applications' = ```
+			
+			COALESCE(
+			    CALCULATE(
+			        COUNT('LoanApplications'[ApplicationID]),
+			        'LoanApplications'[Status] IN { "Additional Documentation", "Under Review", "New" }
+			    ), 
+			    "-"
+			)
+			
+			```
+		lineageTag: 0e7a0914-18fd-4174-9974-1afbe24ff130
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Rejected Applications' = ```
+			
+			COALESCE(
+			    CALCULATE(
+			        COUNT('LoanApplications'[ApplicationID]),
+			        'LoanApplications'[Status] IN { "Rejected"}
+			    ), 
+			    "-"
+			)
+			```
+		lineageTag: 11e542ee-3f8a-4413-aea9-7fe14c81be54
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Approved Applications' = ```
+			
+			COALESCE(
+			    CALCULATE(
+			        COUNT('LoanApplications'[ApplicationID]),
+			        'LoanApplications'[Status] IN { "Approved"}
+			    ), 
+			    "-"
+			)
+			```
+		lineageTag: d8a3235f-175a-48bd-bfe6-dcd6d4995d7b
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure p = 0
+		formatString: 0
+		lineageTag: 5e195f4e-6f0d-4f70-8399-bca5d31611d7
+
+		changedProperty = Name
+
+	measure a = 1
+		formatString: 0
+		lineageTag: c8500577-5e9f-470f-8e7b-eca4e9ed32cb
+
+		changedProperty = Name
+
+	measure r = 2
+		formatString: 0
+		lineageTag: 70fdf249-ef49-4d66-a428-cf2beca325cf
+
+		changedProperty = Name
+
+	column id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 0e341945-9364-4f63-8e27-bfc58ec59e90
+		sourceLineageTag: id
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column ApplicationDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 559a32fc-8aac-481b-9f89-05eaaaabf653
+		sourceLineageTag: ApplicationDate
+		summarizeBy: none
+		sourceColumn: ApplicationDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column ApplicationID
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 7d2d47e5-a165-4767-aec4-ed6a992ea0c7
+		sourceLineageTag: ApplicationID
+		summarizeBy: none
+		sourceColumn: ApplicationID
+
+		annotation SummarizationSetBy = Automatic
+
+	column AssignedReviewer
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 72f8215a-4950-4942-9dbf-ea865886de27
+		sourceLineageTag: AssignedReviewer
+		summarizeBy: none
+		sourceColumn: AssignedReviewer
+
+		annotation SummarizationSetBy = Automatic
+
+	column CustomerID
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: b5aea394-91cb-487a-a085-79fc2ea065f8
+		sourceLineageTag: CustomerID
+		summarizeBy: none
+		sourceColumn: CustomerID
+
+		annotation SummarizationSetBy = Automatic
+
+	column LoanType
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 1489743a-eb58-4154-b70d-bb56802b6630
+		sourceLineageTag: LoanType
+		summarizeBy: none
+		sourceColumn: LoanType
+
+		annotation SummarizationSetBy = Automatic
+
+	column Purpose
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: db1901a3-641c-4a8b-9c39-5cc0f519df0c
+		sourceLineageTag: Purpose
+		summarizeBy: none
+		sourceColumn: Purpose
+
+		annotation SummarizationSetBy = Automatic
+
+	column RequestedAmount
+		dataType: double
+		sourceProviderType: decimal(18, 2)
+		lineageTag: c5657afd-d6bc-497d-a603-8715d9bcee8f
+		sourceLineageTag: RequestedAmount
+		summarizeBy: sum
+		sourceColumn: RequestedAmount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column RiskLevel
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 863d3d6d-ff22-45b1-b0f8-c82b84d99974
+		sourceLineageTag: RiskLevel
+		summarizeBy: none
+		sourceColumn: RiskLevel
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 8eebe9ac-20bc-47db-944a-87a9e3170ac8
+		sourceLineageTag: Status
+		summarizeBy: none
+		sourceColumn: Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column TermMonths
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: b5aac539-aaf0-4938-8c8f-e5b9e6ed9ba8
+		sourceLineageTag: TermMonths
+		summarizeBy: sum
+		sourceColumn: TermMonths
+
+		annotation SummarizationSetBy = Automatic
+
+	partition LoanApplications = entity
+		mode: directLake
+		source
+			entityName: LoanApplications
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

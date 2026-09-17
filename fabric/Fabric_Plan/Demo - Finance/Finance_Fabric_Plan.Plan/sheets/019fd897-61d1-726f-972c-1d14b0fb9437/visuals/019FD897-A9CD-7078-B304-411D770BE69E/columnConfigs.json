@@ -1,0 +1,475 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/plan/definition/PowerTable/ColumnConfigs/1.0.0/schema.json",
+  "columnConfigs": [
+    {
+      "allowEdit": 1,
+      "columnGuid": "AccountKey",
+      "columnMeta": {
+        "allowNegative": true,
+        "dbMeta": {
+          "isCompositeUnique": false,
+          "isIdentity": false,
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "isUnique": false,
+          "maxLength": 4,
+          "type": "int",
+          "uniqueConstraintName": null
+        },
+        "defaultValue": "",
+        "defaultValueType": "NONE",
+        "isPrimaryKey": true,
+        "largeNumberAbbrevation": "",
+        "max": "",
+        "min": "",
+        "negativeValueFormat": "-0",
+        "prefix": "",
+        "resetToDefaultOnRowModify": false,
+        "suffix": "",
+        "thousandSeparator": "",
+        "updateValueOnRowModify": false
+      },
+      "columnName": "AccountKey",
+      "columnType": 6,
+      "description": "",
+      "displayName": "AccountKey",
+      "hideColumn": 0,
+      "mandatory": 1,
+      "recordGuid": "9928A6B7-CE91-F111-9B33-6045BD4AE551",
+      "visualColumnType": 1
+    },
+    {
+      "allowEdit": 1,
+      "columnGuid": "ParentAccountKey",
+      "columnMeta": {
+        "allowNegative": true,
+        "dbMeta": {
+          "isCompositeUnique": false,
+          "isIdentity": false,
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isUnique": false,
+          "maxLength": 4,
+          "type": "int",
+          "uniqueConstraintName": null
+        },
+        "defaultValue": "",
+        "defaultValueType": "NONE",
+        "isPrimaryKey": false,
+        "largeNumberAbbrevation": "",
+        "max": "",
+        "min": "",
+        "negativeValueFormat": "-0",
+        "prefix": "",
+        "resetToDefaultOnRowModify": false,
+        "suffix": "",
+        "thousandSeparator": "",
+        "updateValueOnRowModify": false
+      },
+      "columnName": "ParentAccountKey",
+      "columnType": 6,
+      "description": "",
+      "displayName": "ParentAccountKey",
+      "hideColumn": 0,
+      "mandatory": 0,
+      "recordGuid": "9A28A6B7-CE91-F111-9B33-6045BD4AE551",
+      "visualColumnType": 1
+    },
+    {
+      "allowEdit": 1,
+      "columnGuid": "AccountCodeAlternateKey",
+      "columnMeta": {
+        "allowNegative": true,
+        "dbMeta": {
+          "isCompositeUnique": false,
+          "isIdentity": false,
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isUnique": false,
+          "maxLength": 4,
+          "type": "int",
+          "uniqueConstraintName": null
+        },
+        "defaultValue": "",
+        "defaultValueType": "NONE",
+        "isPrimaryKey": false,
+        "largeNumberAbbrevation": "",
+        "max": "",
+        "min": "",
+        "negativeValueFormat": "-0",
+        "prefix": "",
+        "resetToDefaultOnRowModify": false,
+        "suffix": "",
+        "thousandSeparator": "",
+        "updateValueOnRowModify": false
+      },
+      "columnName": "AccountCodeAlternateKey",
+      "columnType": 6,
+      "description": "",
+      "displayName": "AccountCodeAlternateKey",
+      "hideColumn": 0,
+      "mandatory": 0,
+      "recordGuid": "9B28A6B7-CE91-F111-9B33-6045BD4AE551",
+      "visualColumnType": 1
+    },
+    {
+      "allowEdit": 1,
+      "columnGuid": "ParentAccountCodeAlternateKey",
+      "columnMeta": {
+        "allowNegative": true,
+        "dbMeta": {
+          "isCompositeUnique": false,
+          "isIdentity": false,
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isUnique": false,
+          "maxLength": 4,
+          "type": "int",
+          "uniqueConstraintName": null
+        },
+        "defaultValue": "",
+        "defaultValueType": "NONE",
+        "isPrimaryKey": false,
+        "largeNumberAbbrevation": "",
+        "max": "",
+        "min": "",
+        "negativeValueFormat": "-0",
+        "prefix": "",
+        "resetToDefaultOnRowModify": false,
+        "suffix": "",
+        "thousandSeparator": "",
+        "updateValueOnRowModify": false
+      },
+      "columnName": "ParentAccountCodeAlternateKey",
+      "columnType": 6,
+      "description": "",
+      "displayName": "ParentAccountCodeAlternateKey",
+      "hideColumn": 0,
+      "mandatory": 0,
+      "recordGuid": "9C28A6B7-CE91-F111-9B33-6045BD4AE551",
+      "visualColumnType": 1
+    },
+    {
+      "allowEdit": 1,
+      "columnGuid": "AccountDescription",
+      "columnMeta": {
+        "dbMeta": {
+          "isCompositeUnique": false,
+          "isIdentity": false,
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isUnique": false,
+          "maxLength": 50,
+          "type": "nvarchar",
+          "uniqueConstraintName": null
+        },
+        "defaultValue": "",
+        "defaultValueType": "NONE",
+        "isPrimaryKey": false,
+        "maximumAllowedLength": "",
+        "resetToDefaultOnRowModify": false,
+        "textFieldColumnType": "Any Value",
+        "updateValueOnRowModify": false
+      },
+      "columnName": "AccountDescription",
+      "columnType": 1,
+      "description": "",
+      "displayName": "AccountDescription",
+      "hideColumn": 0,
+      "mandatory": 0,
+      "recordGuid": "9D28A6B7-CE91-F111-9B33-6045BD4AE551",
+      "visualColumnType": 1
+    },
+    {
+      "allowEdit": 1,
+      "columnGuid": "AccountType",
+      "columnMeta": {
+        "dbMeta": {
+          "isCompositeUnique": false,
+          "isIdentity": false,
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isUnique": false,
+          "maxLength": 50,
+          "type": "nvarchar",
+          "uniqueConstraintName": null
+        },
+        "defaultValue": "",
+        "defaultValueType": "NONE",
+        "isPrimaryKey": false,
+        "maximumAllowedLength": "",
+        "resetToDefaultOnRowModify": false,
+        "textFieldColumnType": "Any Value",
+        "updateValueOnRowModify": false
+      },
+      "columnName": "AccountType",
+      "columnType": 1,
+      "description": "",
+      "displayName": "AccountType",
+      "hideColumn": 0,
+      "mandatory": 0,
+      "recordGuid": "9E28A6B7-CE91-F111-9B33-6045BD4AE551",
+      "visualColumnType": 1
+    },
+    {
+      "allowEdit": 1,
+      "columnGuid": "Operator",
+      "columnMeta": {
+        "dbMeta": {
+          "isCompositeUnique": false,
+          "isIdentity": false,
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isUnique": false,
+          "maxLength": 50,
+          "type": "nvarchar",
+          "uniqueConstraintName": null
+        },
+        "defaultValue": "",
+        "defaultValueType": "NONE",
+        "isPrimaryKey": false,
+        "maximumAllowedLength": "",
+        "resetToDefaultOnRowModify": false,
+        "textFieldColumnType": "Any Value",
+        "updateValueOnRowModify": false
+      },
+      "columnName": "Operator",
+      "columnType": 1,
+      "description": "",
+      "displayName": "Operator",
+      "hideColumn": 0,
+      "mandatory": 0,
+      "recordGuid": "9F28A6B7-CE91-F111-9B33-6045BD4AE551",
+      "visualColumnType": 1
+    },
+    {
+      "allowEdit": 1,
+      "columnGuid": "CustomMembers",
+      "columnMeta": {
+        "dbMeta": {
+          "isCompositeUnique": false,
+          "isIdentity": false,
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isUnique": false,
+          "maxLength": 300,
+          "type": "nvarchar",
+          "uniqueConstraintName": null
+        },
+        "defaultValue": "",
+        "defaultValueType": "NONE",
+        "isPrimaryKey": false,
+        "maximumAllowedLength": "",
+        "resetToDefaultOnRowModify": false,
+        "textFieldColumnType": "Any Value",
+        "updateValueOnRowModify": false
+      },
+      "columnName": "CustomMembers",
+      "columnType": 1,
+      "description": "",
+      "displayName": "CustomMembers",
+      "hideColumn": 0,
+      "mandatory": 0,
+      "recordGuid": "A028A6B7-CE91-F111-9B33-6045BD4AE551",
+      "visualColumnType": 1
+    },
+    {
+      "allowEdit": 1,
+      "columnGuid": "ValueType",
+      "columnMeta": {
+        "dbMeta": {
+          "isCompositeUnique": false,
+          "isIdentity": false,
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isUnique": false,
+          "maxLength": 50,
+          "type": "nvarchar",
+          "uniqueConstraintName": null
+        },
+        "defaultValue": "",
+        "defaultValueType": "NONE",
+        "isPrimaryKey": false,
+        "maximumAllowedLength": "",
+        "resetToDefaultOnRowModify": false,
+        "textFieldColumnType": "Any Value",
+        "updateValueOnRowModify": false
+      },
+      "columnName": "ValueType",
+      "columnType": 1,
+      "description": "",
+      "displayName": "ValueType",
+      "hideColumn": 0,
+      "mandatory": 0,
+      "recordGuid": "A128A6B7-CE91-F111-9B33-6045BD4AE551",
+      "visualColumnType": 1
+    },
+    {
+      "allowEdit": 1,
+      "columnGuid": "CustomMemberOptions",
+      "columnMeta": {
+        "dbMeta": {
+          "isCompositeUnique": false,
+          "isIdentity": false,
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isUnique": false,
+          "maxLength": 200,
+          "type": "nvarchar",
+          "uniqueConstraintName": null
+        },
+        "defaultValue": "",
+        "defaultValueType": "NONE",
+        "isPrimaryKey": false,
+        "maximumAllowedLength": "",
+        "resetToDefaultOnRowModify": false,
+        "textFieldColumnType": "Any Value",
+        "updateValueOnRowModify": false
+      },
+      "columnName": "CustomMemberOptions",
+      "columnType": 1,
+      "description": "",
+      "displayName": "CustomMemberOptions",
+      "hideColumn": 0,
+      "mandatory": 0,
+      "recordGuid": "A228A6B7-CE91-F111-9B33-6045BD4AE551",
+      "visualColumnType": 1
+    },
+    {
+      "allowEdit": 0,
+      "columnGuid": "COLUMN_6adff1a8_2a32_4efa_9bc4_bb960daa3afb",
+      "columnMeta": {
+        "defaultValue": "1",
+        "defaultValueType": "NONE",
+        "deps": [],
+        "formulaColumnDetails": {
+          "dataType": "number",
+          "expression": "1"
+        },
+        "isCustomColumn": true,
+        "isPrimaryKey": false,
+        "negativeValueFormat": "-0",
+        "resetToDefaultOnRowModify": false,
+        "sqlQueryProps": {
+          "resolvedExpression": {
+            "type": "columnExpr",
+            "value": [
+              "1"
+            ]
+          }
+        },
+        "thousandSeparator": ",",
+        "updateValueOnRowModify": false
+      },
+      "columnName": "COLUMN_6adff1a8_2a32_4efa_9bc4_bb960daa3afb",
+      "columnType": 17,
+      "description": "",
+      "displayName": "Budget",
+      "hideColumn": 0,
+      "mandatory": 0,
+      "recordGuid": "FB3A6713-CF91-F111-9B33-6045BD4AE551",
+      "visualColumnType": 6
+    },
+    {
+      "allowEdit": 0,
+      "columnGuid": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e",
+      "columnMeta": {
+        "allowNegative": true,
+        "defaultValue": "",
+        "defaultValueType": "NONE",
+        "isCustomColumn": true,
+        "isPrimaryKey": false,
+        "max": "",
+        "min": "",
+        "negativeValueFormat": "-0",
+        "noOfDecimals": 1,
+        "prefix": "",
+        "resetToDefaultOnRowModify": false,
+        "rollupColumn": {
+          "config": {
+            "aggregationMethod": "sum"
+          }
+        },
+        "suffix": "",
+        "thousandSeparator": "",
+        "updateValueOnRowModify": false
+      },
+      "columnName": "COLUMN_433ccec2_5763_49c4_a652_744ff1c5f40e",
+      "columnType": 13,
+      "description": "",
+      "displayName": "Actuals",
+      "hideColumn": 0,
+      "lookupConfigDetails": [
+        {
+          "lookupKey": null,
+          "lookupSourceDetails": {
+            "connectionId": "1facea80-61a9-4583-84c9-a14dcc349cde",
+            "connectionIdVariable": null,
+            "creationMode": null,
+            "databaseVariable": null,
+            "dbHost": "6unlohtqbrpuleev5bpjprytom-hey6wg25fszuznawyrsaivk3je.database.fabric.microsoft.com",
+            "dbName": "Adventure_Works_DW_2017-376e6d49-4021-4996-aa78-6124427a2294",
+            "fileImportType": null,
+            "meta": {
+              "databaseId": "376e6d49-4021-4996-aa78-6124427a2294",
+              "dbDisplayName": "Adventure_Works_DW_2017",
+              "workspaceId": "1beb3139-2c5d-4cb3-b416-c46404555b49",
+              "workspaceName": "00_Experiments"
+            },
+            "recordGuid": "5EDB97C9-CA91-F111-9B33-6045BD4AE551",
+            "schemaName": "dbo",
+            "sqlTargetArtifact": null,
+            "tableName": "FactFinance",
+            "tableType": 2
+          },
+          "lookupSourceId": "5EDB97C9-CA91-F111-9B33-6045BD4AE551",
+          "lookupValue": "Amount",
+          "recordGuid": "D978A72C-D091-F111-9B33-6045BD4AE551",
+          "relationshipMapping": "[{\"lookupMappingColumn\":\"AccountKey\",\"sourceMappingColumn\":\"AccountKey\"}]",
+          "sourceEntityId": "D878A72C-D091-F111-9B33-6045BD4AE551",
+          "sourceEntityType": 1
+        }
+      ],
+      "mandatory": 0,
+      "recordGuid": "D878A72C-D091-F111-9B33-6045BD4AE551",
+      "visualColumnType": 11
+    },
+    {
+      "allowEdit": 1,
+      "columnGuid": "Budget",
+      "columnMeta": {
+        "allowNegative": true,
+        "dbMeta": {
+          "isCompositeUnique": false,
+          "isIdentity": false,
+          "isNullable": true,
+          "isPrimaryKey": false,
+          "isUnique": false,
+          "maxLength": 9,
+          "type": "decimal",
+          "uniqueConstraintName": null
+        },
+        "defaultValue": "",
+        "defaultValueType": "NONE",
+        "isPrimaryKey": false,
+        "max": "",
+        "min": "",
+        "negativeValueFormat": "-0",
+        "noOfDecimals": 2,
+        "prefix": "",
+        "resetToDefaultOnRowModify": false,
+        "suffix": "",
+        "thousandSeparator": "",
+        "updateValueOnRowModify": false
+      },
+      "columnName": "Budget",
+      "columnType": 13,
+      "description": "",
+      "displayName": "",
+      "hideColumn": 0,
+      "mandatory": 0,
+      "recordGuid": "1A4EC8D8-D091-F111-9B33-6045BD4AE551",
+      "visualColumnType": 7
+    }
+  ]
+}

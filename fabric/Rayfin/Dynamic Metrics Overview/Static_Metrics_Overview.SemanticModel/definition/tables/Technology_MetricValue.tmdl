@@ -1,0 +1,44 @@
+table Technology_MetricValue
+	lineageTag: 35f7051f-5b57-444e-bbce-51bd36682dbc
+	sourceLineageTag: [technology].[MetricValue]
+
+	column MetricID
+		dataType: int64
+		formatString: 0
+		lineageTag: fa09eee3-63b1-43c3-ae27-b09c59e9f0e9
+		sourceLineageTag: MetricID
+		summarizeBy: none
+		sourceColumn: MetricID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 9ec62fbe-7997-4868-a0ca-5611d1b6ad19
+		sourceLineageTag: Date
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column Value
+		dataType: double
+		lineageTag: 8c80d217-cb07-4431-a2b0-f7bd82b069d1
+		sourceLineageTag: Value
+		summarizeBy: sum
+		sourceColumn: Value
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition Technology_MetricValue = entity
+		mode: directLake
+		source
+			entityName: MetricValue
+			schemaName: technology
+			expressionSource: 'DirectLake - Static_Metrics_Lakehouse'
+
+	changedProperty = Name
+

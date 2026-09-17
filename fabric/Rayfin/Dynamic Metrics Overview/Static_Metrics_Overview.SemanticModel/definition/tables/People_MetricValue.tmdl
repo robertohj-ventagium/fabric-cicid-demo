@@ -1,0 +1,44 @@
+table People_MetricValue
+	lineageTag: 843b4c96-0ca9-43af-9e8f-75a2652f0f3f
+	sourceLineageTag: [people].[MetricValue]
+
+	column MetricID
+		dataType: int64
+		formatString: 0
+		lineageTag: 0bbbb1e5-95a8-4b90-810c-42480a1b0038
+		sourceLineageTag: MetricID
+		summarizeBy: none
+		sourceColumn: MetricID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: af1073f4-ce1a-4fcc-8f5c-18e83096b13d
+		sourceLineageTag: Date
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column Value
+		dataType: double
+		lineageTag: a37a290f-dc29-4e55-834f-746451ae5ca5
+		sourceLineageTag: Value
+		summarizeBy: sum
+		sourceColumn: Value
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition People_MetricValue = entity
+		mode: directLake
+		source
+			entityName: MetricValue
+			schemaName: people
+			expressionSource: 'DirectLake - Static_Metrics_Lakehouse'
+
+	changedProperty = Name
+

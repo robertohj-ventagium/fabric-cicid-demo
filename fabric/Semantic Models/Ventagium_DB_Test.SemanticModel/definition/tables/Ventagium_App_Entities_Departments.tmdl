@@ -1,0 +1,58 @@
+table Ventagium_App_Entities_Departments
+	lineageTag: 1fe01555-a449-4e49-a2d2-28a9c86081b7
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: f7600fff-3faf-4c81-b2b2-47b1b26867b5
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column entity_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 13fd6c58-c339-42eb-9de5-0c2dd08af732
+		summarizeBy: none
+		sourceColumn: entity_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column department
+		dataType: string
+		lineageTag: 803ba1ff-57a4-4d26-889a-b2e9e9f1d140
+		summarizeBy: none
+		sourceColumn: department
+
+		annotation SummarizationSetBy = Automatic
+
+	column requires_roadmap
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 335c4e85-4e02-4afe-8e4f-e77674ef1c9c
+		summarizeBy: none
+		sourceColumn: requires_roadmap
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_active
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 63cf5d11-a0c3-433b-89ba-06c6cf610e92
+		summarizeBy: none
+		sourceColumn: is_active
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Ventagium_App_Entities_Departments = m
+		mode: import
+		source =
+				let
+				  Source = Sql.Database("ventagiumgeneralserver2.database.windows.net", "Ventagium_Database"),
+				  #"Navigation 1" = Source{[Schema = "dbo", Item = "Ventagium_App_Entities_Departments"]}[Data]
+				in
+				  #"Navigation 1"
+
+	annotation PBI_ResultType = Table
+

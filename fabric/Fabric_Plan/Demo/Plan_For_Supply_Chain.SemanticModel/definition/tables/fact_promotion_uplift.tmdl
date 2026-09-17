@@ -1,0 +1,98 @@
+table fact_promotion_uplift
+	lineageTag: 72cbb030-b544-442f-abb2-94c45b67d2d5
+	sourceLineageTag: [dbo].[fact_promotion_uplift]
+
+	column UpliftKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 97c5d097-dfdb-43ef-9d9a-872985a0501f
+		sourceLineageTag: UpliftKey
+		summarizeBy: count
+		sourceColumn: UpliftKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column Category
+		dataType: string
+		lineageTag: 8fa30638-0041-4d08-bf98-91551d37f8b4
+		sourceLineageTag: Category
+		summarizeBy: none
+		sourceColumn: Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column Subcategory
+		dataType: string
+		lineageTag: fcb8ceac-98cc-431a-a56a-2ebcd591ca11
+		sourceLineageTag: Subcategory
+		summarizeBy: none
+		sourceColumn: Subcategory
+
+		annotation SummarizationSetBy = Automatic
+
+	column WeekNumber
+		dataType: int64
+		formatString: 0
+		lineageTag: 6aeef54b-410d-47ec-954c-39a92ad4e26d
+		sourceLineageTag: WeekNumber
+		summarizeBy: sum
+		sourceColumn: WeekNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column UpliftPct
+		dataType: double
+		lineageTag: 271a5bab-c23a-4e4d-8570-5959e299f271
+		sourceLineageTag: UpliftPct
+		summarizeBy: sum
+		sourceColumn: UpliftPct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ScenarioName
+		dataType: string
+		lineageTag: 6937eff6-3a51-4402-ae96-f739acc1555b
+		sourceLineageTag: ScenarioName
+		summarizeBy: none
+		sourceColumn: ScenarioName
+
+		annotation SummarizationSetBy = Automatic
+
+	column CreatedBy
+		dataType: string
+		lineageTag: 236ba486-0df5-42ce-807c-b174267ce9bb
+		sourceLineageTag: CreatedBy
+		summarizeBy: none
+		sourceColumn: CreatedBy
+
+		annotation SummarizationSetBy = Automatic
+
+	column CreatedAt
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: c16ff219-9f14-417a-9f39-2b999100f228
+		sourceLineageTag: CreatedAt
+		summarizeBy: none
+		sourceColumn: CreatedAt
+
+		annotation SummarizationSetBy = Automatic
+
+	column MSSQL_System_Uniquifier_1909581841
+		dataType: int64
+		formatString: 0
+		lineageTag: ca5b96b9-0f23-4863-a96b-4bd6aa6a2903
+		sourceLineageTag: MSSQL_System_Uniquifier_1909581841
+		summarizeBy: sum
+		sourceColumn: MSSQL_System_Uniquifier_1909581841
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_promotion_uplift = entity
+		mode: directLake
+		source
+			entityName: fact_promotion_uplift
+			schemaName: dbo
+			expressionSource: 'DirectLake - Test_Store_DB'
+

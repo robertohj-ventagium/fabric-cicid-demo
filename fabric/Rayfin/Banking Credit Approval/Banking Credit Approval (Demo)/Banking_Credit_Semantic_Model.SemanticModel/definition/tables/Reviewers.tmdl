@@ -1,0 +1,53 @@
+table Reviewers
+	lineageTag: 086e6d58-6b16-4af3-9f8e-7c71aa5e8405
+	sourceLineageTag: [dbo].[Reviewers]
+
+	column id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 2fe1903d-3e32-41ee-a38e-f51419c4e4c6
+		sourceLineageTag: id
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column DisplayName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: c666213c-2584-45fc-8382-28c9a0526c8f
+		sourceLineageTag: DisplayName
+		summarizeBy: none
+		sourceColumn: DisplayName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Email
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 13b86ed7-8c96-40a0-88f9-3d522564b2ae
+		sourceLineageTag: Email
+		summarizeBy: none
+		sourceColumn: Email
+
+		annotation SummarizationSetBy = Automatic
+
+	column ReviewerID
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 19b94d82-f89e-4b8b-893c-311d62004f00
+		sourceLineageTag: ReviewerID
+		summarizeBy: none
+		sourceColumn: ReviewerID
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Reviewers = entity
+		mode: directLake
+		source
+			entityName: Reviewers
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

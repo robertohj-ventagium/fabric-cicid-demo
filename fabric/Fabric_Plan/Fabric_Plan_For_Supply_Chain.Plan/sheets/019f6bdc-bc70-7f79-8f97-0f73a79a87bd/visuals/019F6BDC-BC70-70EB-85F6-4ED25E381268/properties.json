@@ -1,0 +1,3193 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/plan/definition/PowerTable/Properties/1.0.0/schema.json",
+  "properties": {
+    "properties": {
+      "chartType": "COLUMN_VERTICAL",
+      "dimension": {
+        "height": 0.4,
+        "width": 0.3
+      },
+      "groupMeasureAssignments": [],
+      "groupName": "",
+      "layerProperties": {
+        "order": 0
+      },
+      "lockAspectRatio": false,
+      "mobileProperties": {},
+      "originEntityId": "",
+      "pivotAssignments": [],
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "preVisualId": "2",
+      "shapeType": "RECTANGLE",
+      "sortingConfig": [],
+      "splitByCategory": {
+        "pivotValueAssignments": [],
+        "splitByCategoryAssignments": [],
+        "splitByCategoryItems": [],
+        "splitByDelimiter": "-"
+      },
+      "superFilterAssignments": [
+        {
+          "configuration": {
+            "alphaNumericValues": {
+              "equalValue": null,
+              "maxValue": null,
+              "minValue": null
+            },
+            "enableNumericToFacet": false,
+            "filterMode": "basic",
+            "filterOperator": "is",
+            "hide": false,
+            "isExpanded": false,
+            "locked": false,
+            "name": "ForecastID",
+            "regex": "",
+            "scale": "none",
+            "selectAll": true,
+            "selectAllState": "UNSELECTED",
+            "singleSelect": false,
+            "slider": false,
+            "sort": [
+              {
+                "columnId": "ForecastID",
+                "columnName": "ForecastID",
+                "direction": "ASC",
+                "id": "ForecastID"
+              }
+            ],
+            "topN": {
+              "displayOthers": true,
+              "isRankEmptyItems": false,
+              "otherLabel": "Others",
+              "rankMeasure": "",
+              "rankMode": "TOP",
+              "rankType": "value",
+              "rankValue": 5
+            },
+            "visualType": "NUMERIC"
+          },
+          "filter": [],
+          "filterLevel": "visual",
+          "id": "ForecastID",
+          "pivotAssignments": [
+            {
+              "bucketId": "",
+              "columnName": "ForecastID",
+              "columnType": "Column",
+              "dataType": "Int64",
+              "id": "ForecastID",
+              "name": "ForecastID",
+              "order": 0,
+              "sourceId": "ForecastID",
+              "sourceType": "powerTables",
+              "tableName": "fact_forecast"
+            }
+          ],
+          "position": "RIGHT"
+        },
+        {
+          "configuration": {
+            "filterMode": "basic",
+            "filterOperator": "is",
+            "hide": false,
+            "isExpanded": false,
+            "locked": false,
+            "name": "ForecastVersion",
+            "selectAll": true,
+            "selectAllState": "UNSELECTED",
+            "singleSelect": false,
+            "sort": [
+              {
+                "columnId": "ForecastVersion",
+                "columnName": "ForecastVersion",
+                "direction": "ASC",
+                "id": "ForecastVersion"
+              }
+            ],
+            "topN": {
+              "displayOthers": true,
+              "isRankEmptyItems": false,
+              "otherLabel": "Others",
+              "rankMeasure": "",
+              "rankMode": "TOP",
+              "rankType": "value",
+              "rankValue": 5
+            },
+            "visualType": "FACET"
+          },
+          "filter": [],
+          "filterLevel": "visual",
+          "id": "ForecastVersion",
+          "pivotAssignments": [
+            {
+              "bucketId": "",
+              "columnName": "ForecastVersion",
+              "columnType": "Column",
+              "dataType": "String",
+              "id": "ForecastVersion",
+              "name": "ForecastVersion",
+              "order": 0,
+              "sourceId": "ForecastVersion",
+              "sourceType": "powerTables",
+              "tableName": "fact_forecast"
+            }
+          ],
+          "position": "RIGHT"
+        },
+        {
+          "configuration": {
+            "alphaNumericValues": {
+              "equalValue": null,
+              "maxValue": null,
+              "minValue": null
+            },
+            "enableNumericToFacet": false,
+            "filterMode": "basic",
+            "filterOperator": "is",
+            "hide": false,
+            "isExpanded": false,
+            "locked": false,
+            "name": "ForecastVersionID",
+            "regex": "",
+            "scale": "none",
+            "selectAll": true,
+            "selectAllState": "UNSELECTED",
+            "singleSelect": false,
+            "slider": false,
+            "sort": [
+              {
+                "columnId": "ForecastVersionID",
+                "columnName": "ForecastVersionID",
+                "direction": "ASC",
+                "id": "ForecastVersionID"
+              }
+            ],
+            "topN": {
+              "displayOthers": true,
+              "isRankEmptyItems": false,
+              "otherLabel": "Others",
+              "rankMeasure": "",
+              "rankMode": "TOP",
+              "rankType": "value",
+              "rankValue": 5
+            },
+            "visualType": "NUMERIC"
+          },
+          "filter": [],
+          "filterLevel": "visual",
+          "id": "ForecastVersionID",
+          "pivotAssignments": [
+            {
+              "bucketId": "",
+              "columnName": "ForecastVersionID",
+              "columnType": "Column",
+              "dataType": "Int64",
+              "id": "ForecastVersionID",
+              "name": "ForecastVersionID",
+              "order": 0,
+              "sourceId": "ForecastVersionID",
+              "sourceType": "powerTables",
+              "tableName": "fact_forecast"
+            }
+          ],
+          "position": "RIGHT"
+        },
+        {
+          "configuration": {
+            "alphaNumericValues": {
+              "equalValue": null,
+              "maxValue": null,
+              "minValue": null
+            },
+            "enableNumericToFacet": false,
+            "filterMode": "basic",
+            "filterOperator": "is",
+            "hide": false,
+            "isExpanded": false,
+            "locked": false,
+            "name": "CreationDateKey",
+            "regex": "",
+            "scale": "none",
+            "selectAll": true,
+            "selectAllState": "UNSELECTED",
+            "singleSelect": false,
+            "slider": false,
+            "sort": [
+              {
+                "columnId": "CreationDateKey",
+                "columnName": "CreationDateKey",
+                "direction": "ASC",
+                "id": "CreationDateKey"
+              }
+            ],
+            "topN": {
+              "displayOthers": true,
+              "isRankEmptyItems": false,
+              "otherLabel": "Others",
+              "rankMeasure": "",
+              "rankMode": "TOP",
+              "rankType": "value",
+              "rankValue": 5
+            },
+            "visualType": "NUMERIC"
+          },
+          "filter": [],
+          "filterLevel": "visual",
+          "id": "CreationDateKey",
+          "pivotAssignments": [
+            {
+              "bucketId": "",
+              "columnName": "CreationDateKey",
+              "columnType": "Column",
+              "dataType": "Int64",
+              "id": "CreationDateKey",
+              "name": "CreationDateKey",
+              "order": 0,
+              "sourceId": "CreationDateKey",
+              "sourceType": "powerTables",
+              "tableName": "fact_forecast"
+            }
+          ],
+          "position": "RIGHT"
+        },
+        {
+          "configuration": {
+            "alphaNumericValues": {
+              "equalValue": null,
+              "maxValue": null,
+              "minValue": null
+            },
+            "enableNumericToFacet": false,
+            "filterMode": "basic",
+            "filterOperator": "is",
+            "hide": false,
+            "isExpanded": false,
+            "locked": false,
+            "name": "ForecastDateKey",
+            "regex": "",
+            "scale": "none",
+            "selectAll": true,
+            "selectAllState": "UNSELECTED",
+            "singleSelect": false,
+            "slider": false,
+            "sort": [
+              {
+                "columnId": "ForecastDateKey",
+                "columnName": "ForecastDateKey",
+                "direction": "ASC",
+                "id": "ForecastDateKey"
+              }
+            ],
+            "topN": {
+              "displayOthers": true,
+              "isRankEmptyItems": false,
+              "otherLabel": "Others",
+              "rankMeasure": "",
+              "rankMode": "TOP",
+              "rankType": "value",
+              "rankValue": 5
+            },
+            "visualType": "NUMERIC"
+          },
+          "filter": [],
+          "filterLevel": "visual",
+          "id": "ForecastDateKey",
+          "pivotAssignments": [
+            {
+              "bucketId": "",
+              "columnName": "ForecastDateKey",
+              "columnType": "Column",
+              "dataType": "Int64",
+              "id": "ForecastDateKey",
+              "name": "ForecastDateKey",
+              "order": 0,
+              "sourceId": "ForecastDateKey",
+              "sourceType": "powerTables",
+              "tableName": "fact_forecast"
+            }
+          ],
+          "position": "RIGHT"
+        },
+        {
+          "configuration": {
+            "alphaNumericValues": {
+              "equalValue": null,
+              "maxValue": null,
+              "minValue": null
+            },
+            "enableNumericToFacet": false,
+            "filterMode": "basic",
+            "filterOperator": "is",
+            "hide": false,
+            "isExpanded": false,
+            "locked": false,
+            "name": "StoreKey",
+            "regex": "",
+            "scale": "none",
+            "selectAll": true,
+            "selectAllState": "UNSELECTED",
+            "singleSelect": false,
+            "slider": false,
+            "sort": [
+              {
+                "columnId": "StoreKey",
+                "columnName": "StoreKey",
+                "direction": "ASC",
+                "id": "StoreKey"
+              }
+            ],
+            "topN": {
+              "displayOthers": true,
+              "isRankEmptyItems": false,
+              "otherLabel": "Others",
+              "rankMeasure": "",
+              "rankMode": "TOP",
+              "rankType": "value",
+              "rankValue": 5
+            },
+            "visualType": "NUMERIC"
+          },
+          "filter": [],
+          "filterLevel": "visual",
+          "id": "StoreKey",
+          "pivotAssignments": [
+            {
+              "bucketId": "",
+              "columnName": "StoreKey",
+              "columnType": "Column",
+              "dataType": "Int64",
+              "id": "StoreKey",
+              "name": "StoreKey",
+              "order": 0,
+              "sourceId": "StoreKey",
+              "sourceType": "powerTables",
+              "tableName": "fact_forecast"
+            }
+          ],
+          "position": "RIGHT"
+        },
+        {
+          "configuration": {
+            "alphaNumericValues": {
+              "equalValue": null,
+              "maxValue": null,
+              "minValue": null
+            },
+            "enableNumericToFacet": false,
+            "filterMode": "basic",
+            "filterOperator": "is",
+            "hide": false,
+            "isExpanded": false,
+            "locked": false,
+            "name": "ProductKey",
+            "regex": "",
+            "scale": "none",
+            "selectAll": true,
+            "selectAllState": "UNSELECTED",
+            "singleSelect": false,
+            "slider": false,
+            "sort": [
+              {
+                "columnId": "ProductKey",
+                "columnName": "ProductKey",
+                "direction": "ASC",
+                "id": "ProductKey"
+              }
+            ],
+            "topN": {
+              "displayOthers": true,
+              "isRankEmptyItems": false,
+              "otherLabel": "Others",
+              "rankMeasure": "",
+              "rankMode": "TOP",
+              "rankType": "value",
+              "rankValue": 5
+            },
+            "visualType": "NUMERIC"
+          },
+          "filter": [],
+          "filterLevel": "visual",
+          "id": "ProductKey",
+          "pivotAssignments": [
+            {
+              "bucketId": "",
+              "columnName": "ProductKey",
+              "columnType": "Column",
+              "dataType": "Int64",
+              "id": "ProductKey",
+              "name": "ProductKey",
+              "order": 0,
+              "sourceId": "ProductKey",
+              "sourceType": "powerTables",
+              "tableName": "fact_forecast"
+            }
+          ],
+          "position": "RIGHT"
+        },
+        {
+          "configuration": {
+            "alphaNumericValues": {
+              "equalValue": null,
+              "maxValue": null,
+              "minValue": null
+            },
+            "enableNumericToFacet": false,
+            "filterMode": "basic",
+            "filterOperator": "is",
+            "hide": false,
+            "isExpanded": false,
+            "locked": false,
+            "name": "ForecastQuantity",
+            "regex": "",
+            "scale": "none",
+            "selectAll": true,
+            "selectAllState": "UNSELECTED",
+            "singleSelect": false,
+            "slider": false,
+            "sort": [
+              {
+                "columnId": "ForecastQuantity",
+                "columnName": "ForecastQuantity",
+                "direction": "ASC",
+                "id": "ForecastQuantity"
+              }
+            ],
+            "topN": {
+              "displayOthers": true,
+              "isRankEmptyItems": false,
+              "otherLabel": "Others",
+              "rankMeasure": "",
+              "rankMode": "TOP",
+              "rankType": "value",
+              "rankValue": 5
+            },
+            "visualType": "NUMERIC"
+          },
+          "filter": [],
+          "filterLevel": "visual",
+          "id": "ForecastQuantity",
+          "pivotAssignments": [
+            {
+              "bucketId": "",
+              "columnName": "ForecastQuantity",
+              "columnType": "Column",
+              "dataType": "Decimal",
+              "id": "ForecastQuantity",
+              "name": "ForecastQuantity",
+              "order": 0,
+              "sourceId": "ForecastQuantity",
+              "sourceType": "powerTables",
+              "tableName": "fact_forecast"
+            }
+          ],
+          "position": "RIGHT"
+        },
+        {
+          "configuration": {
+            "alphaNumericValues": {
+              "equalValue": null,
+              "maxValue": null,
+              "minValue": null
+            },
+            "enableNumericToFacet": false,
+            "filterMode": "basic",
+            "filterOperator": "is",
+            "hide": false,
+            "isExpanded": false,
+            "locked": false,
+            "name": "ForecastRevenue",
+            "regex": "",
+            "scale": "none",
+            "selectAll": true,
+            "selectAllState": "UNSELECTED",
+            "singleSelect": false,
+            "slider": false,
+            "sort": [
+              {
+                "columnId": "ForecastRevenue",
+                "columnName": "ForecastRevenue",
+                "direction": "ASC",
+                "id": "ForecastRevenue"
+              }
+            ],
+            "topN": {
+              "displayOthers": true,
+              "isRankEmptyItems": false,
+              "otherLabel": "Others",
+              "rankMeasure": "",
+              "rankMode": "TOP",
+              "rankType": "value",
+              "rankValue": 5
+            },
+            "visualType": "NUMERIC"
+          },
+          "filter": [],
+          "filterLevel": "visual",
+          "id": "ForecastRevenue",
+          "pivotAssignments": [
+            {
+              "bucketId": "",
+              "columnName": "ForecastRevenue",
+              "columnType": "Column",
+              "dataType": "Decimal",
+              "id": "ForecastRevenue",
+              "name": "ForecastRevenue",
+              "order": 0,
+              "sourceId": "ForecastRevenue",
+              "sourceType": "powerTables",
+              "tableName": "fact_forecast"
+            }
+          ],
+          "position": "RIGHT"
+        },
+        {
+          "configuration": {
+            "alphaNumericValues": {
+              "equalValue": null,
+              "maxValue": null,
+              "minValue": null
+            },
+            "enableNumericToFacet": false,
+            "filterMode": "basic",
+            "filterOperator": "is",
+            "hide": false,
+            "isExpanded": false,
+            "locked": false,
+            "name": "LowerBound",
+            "regex": "",
+            "scale": "none",
+            "selectAll": true,
+            "selectAllState": "UNSELECTED",
+            "singleSelect": false,
+            "slider": false,
+            "sort": [
+              {
+                "columnId": "LowerBound",
+                "columnName": "LowerBound",
+                "direction": "ASC",
+                "id": "LowerBound"
+              }
+            ],
+            "topN": {
+              "displayOthers": true,
+              "isRankEmptyItems": false,
+              "otherLabel": "Others",
+              "rankMeasure": "",
+              "rankMode": "TOP",
+              "rankType": "value",
+              "rankValue": 5
+            },
+            "visualType": "NUMERIC"
+          },
+          "filter": [],
+          "filterLevel": "visual",
+          "id": "LowerBound",
+          "pivotAssignments": [
+            {
+              "bucketId": "",
+              "columnName": "LowerBound",
+              "columnType": "Column",
+              "dataType": "Decimal",
+              "id": "LowerBound",
+              "name": "LowerBound",
+              "order": 0,
+              "sourceId": "LowerBound",
+              "sourceType": "powerTables",
+              "tableName": "fact_forecast"
+            }
+          ],
+          "position": "RIGHT"
+        },
+        {
+          "configuration": {
+            "alphaNumericValues": {
+              "equalValue": null,
+              "maxValue": null,
+              "minValue": null
+            },
+            "enableNumericToFacet": false,
+            "filterMode": "basic",
+            "filterOperator": "is",
+            "hide": false,
+            "isExpanded": false,
+            "locked": false,
+            "name": "UpperBound",
+            "regex": "",
+            "scale": "none",
+            "selectAll": true,
+            "selectAllState": "UNSELECTED",
+            "singleSelect": false,
+            "slider": false,
+            "sort": [
+              {
+                "columnId": "UpperBound",
+                "columnName": "UpperBound",
+                "direction": "ASC",
+                "id": "UpperBound"
+              }
+            ],
+            "topN": {
+              "displayOthers": true,
+              "isRankEmptyItems": false,
+              "otherLabel": "Others",
+              "rankMeasure": "",
+              "rankMode": "TOP",
+              "rankType": "value",
+              "rankValue": 5
+            },
+            "visualType": "NUMERIC"
+          },
+          "filter": [],
+          "filterLevel": "visual",
+          "id": "UpperBound",
+          "pivotAssignments": [
+            {
+              "bucketId": "",
+              "columnName": "UpperBound",
+              "columnType": "Column",
+              "dataType": "Decimal",
+              "id": "UpperBound",
+              "name": "UpperBound",
+              "order": 0,
+              "sourceId": "UpperBound",
+              "sourceType": "powerTables",
+              "tableName": "fact_forecast"
+            }
+          ],
+          "position": "RIGHT"
+        },
+        {
+          "configuration": {
+            "filterMode": "basic",
+            "filterOperator": "is",
+            "hide": false,
+            "isExpanded": false,
+            "locked": false,
+            "name": "ForecastModel",
+            "selectAll": true,
+            "selectAllState": "UNSELECTED",
+            "singleSelect": false,
+            "sort": [
+              {
+                "columnId": "ForecastModel",
+                "columnName": "ForecastModel",
+                "direction": "ASC",
+                "id": "ForecastModel"
+              }
+            ],
+            "topN": {
+              "displayOthers": true,
+              "isRankEmptyItems": false,
+              "otherLabel": "Others",
+              "rankMeasure": "",
+              "rankMode": "TOP",
+              "rankType": "value",
+              "rankValue": 5
+            },
+            "visualType": "FACET"
+          },
+          "filter": [],
+          "filterLevel": "visual",
+          "id": "ForecastModel",
+          "pivotAssignments": [
+            {
+              "bucketId": "",
+              "columnName": "ForecastModel",
+              "columnType": "Column",
+              "dataType": "String",
+              "id": "ForecastModel",
+              "name": "ForecastModel",
+              "order": 0,
+              "sourceId": "ForecastModel",
+              "sourceType": "powerTables",
+              "tableName": "fact_forecast"
+            }
+          ],
+          "position": "RIGHT"
+        },
+        {
+          "configuration": {
+            "filterMode": "basic",
+            "filterOperator": "is",
+            "hide": false,
+            "isExpanded": false,
+            "locked": false,
+            "name": "CreatedBy",
+            "selectAll": true,
+            "selectAllState": "UNSELECTED",
+            "singleSelect": false,
+            "sort": [
+              {
+                "columnId": "CreatedBy",
+                "columnName": "CreatedBy",
+                "direction": "ASC",
+                "id": "CreatedBy"
+              }
+            ],
+            "topN": {
+              "displayOthers": true,
+              "isRankEmptyItems": false,
+              "otherLabel": "Others",
+              "rankMeasure": "",
+              "rankMode": "TOP",
+              "rankType": "value",
+              "rankValue": 5
+            },
+            "visualType": "FACET"
+          },
+          "filter": [],
+          "filterLevel": "visual",
+          "id": "CreatedBy",
+          "pivotAssignments": [
+            {
+              "bucketId": "",
+              "columnName": "CreatedBy",
+              "columnType": "Column",
+              "dataType": "String",
+              "id": "CreatedBy",
+              "name": "CreatedBy",
+              "order": 0,
+              "sourceId": "CreatedBy",
+              "sourceType": "powerTables",
+              "tableName": "fact_forecast"
+            }
+          ],
+          "position": "RIGHT"
+        }
+      ],
+      "transformMeasure": "none",
+      "visualInteractions": {},
+      "visualState": {
+        "assignmentColumnMap": {
+          "2": {
+            "CreatedBy": {
+              "columnId": "",
+              "label": "",
+              "parentPath": [],
+              "source": "",
+              "sourceId": ""
+            },
+            "CreationDateKey": {
+              "columnId": "",
+              "label": "",
+              "parentPath": [],
+              "source": "",
+              "sourceId": ""
+            },
+            "ForecastDateKey": {
+              "columnId": "",
+              "label": "",
+              "parentPath": [],
+              "source": "",
+              "sourceId": ""
+            },
+            "ForecastID": {
+              "columnId": "",
+              "label": "",
+              "parentPath": [],
+              "source": "",
+              "sourceId": ""
+            },
+            "ForecastModel": {
+              "columnId": "",
+              "label": "",
+              "parentPath": [],
+              "source": "",
+              "sourceId": ""
+            },
+            "ForecastQuantity": {
+              "columnId": "",
+              "label": "",
+              "parentPath": [],
+              "source": "",
+              "sourceId": ""
+            },
+            "ForecastRevenue": {
+              "columnId": "",
+              "label": "",
+              "parentPath": [],
+              "source": "",
+              "sourceId": ""
+            },
+            "ForecastVersion": {
+              "columnId": "",
+              "label": "",
+              "parentPath": [],
+              "source": "",
+              "sourceId": ""
+            },
+            "ForecastVersionID": {
+              "columnId": "",
+              "label": "",
+              "parentPath": [],
+              "source": "",
+              "sourceId": ""
+            },
+            "LowerBound": {
+              "columnId": "",
+              "label": "",
+              "parentPath": [],
+              "source": "",
+              "sourceId": ""
+            },
+            "ProductKey": {
+              "columnId": "",
+              "label": "",
+              "parentPath": [],
+              "source": "",
+              "sourceId": ""
+            },
+            "StoreKey": {
+              "columnId": "",
+              "label": "",
+              "parentPath": [],
+              "source": "",
+              "sourceId": ""
+            },
+            "UpperBound": {
+              "columnId": "",
+              "label": "",
+              "parentPath": [],
+              "source": "",
+              "sourceId": ""
+            }
+          }
+        },
+        "columnMeta": {
+          "CreatedAt": {
+            "width": 112.865234375
+          },
+          "CreatedBy": {
+            "width": 100
+          },
+          "CreationDateKey": {
+            "width": 100
+          },
+          "ForecastDateKey": {
+            "width": 100
+          },
+          "ForecastID": {
+            "width": 100
+          },
+          "ForecastModel": {
+            "width": 100
+          },
+          "ForecastQuantity": {
+            "width": 100
+          },
+          "ForecastRevenue": {
+            "width": 100
+          },
+          "ForecastVersion": {
+            "width": 100
+          },
+          "ForecastVersionID": {
+            "width": 100
+          },
+          "LowerBound": {
+            "width": 100
+          },
+          "ProductKey": {
+            "width": 100
+          },
+          "StoreKey": {
+            "width": 100
+          },
+          "UpperBound": {
+            "width": 100
+          }
+        },
+        "ganttPivotData": {
+          "connectTo": [],
+          "customColumns": [],
+          "derivedColumnsMeta": [],
+          "displayColumns": [],
+          "effort": [],
+          "endDate": [],
+          "ganttBackendFilterColumns": [],
+          "ganttVirtualColumns": [],
+          "isDecimalEntryColumn": false,
+          "milestone": [],
+          "parentId": [],
+          "plannedEndDate": [],
+          "plannedStartDate": [],
+          "progress": [],
+          "resource": [],
+          "resourceGroupBy": [],
+          "startDate": [],
+          "taskId": [],
+          "taskNames": [],
+          "timeTrackingDatabaseName": null,
+          "timeTrackingDateId": null,
+          "timeTrackingEntityId": null,
+          "timeTrackingEntryId": null,
+          "timeTrackingSchemaName": null,
+          "timeTrackingSheetName": null,
+          "timeTrackingSourceId": null,
+          "timeTrackingTaskId": null,
+          "timeTrackingVisualId": null
+        },
+        "manageMeasures": [
+          {
+            "id": "ForecastID",
+            "label": "ForecastID",
+            "measureType": "data",
+            "name": "ForecastID",
+            "order": 0,
+            "visible": true
+          },
+          {
+            "id": "ForecastVersion",
+            "label": "ForecastVersion",
+            "measureType": "data",
+            "name": "ForecastVersion",
+            "order": 1,
+            "visible": true
+          },
+          {
+            "id": "ForecastVersionID",
+            "label": "ForecastVersionID",
+            "measureType": "data",
+            "name": "ForecastVersionID",
+            "order": 2,
+            "visible": true
+          },
+          {
+            "id": "CreationDateKey",
+            "label": "CreationDateKey",
+            "measureType": "data",
+            "name": "CreationDateKey",
+            "order": 3,
+            "visible": true
+          },
+          {
+            "id": "ForecastDateKey",
+            "label": "ForecastDateKey",
+            "measureType": "data",
+            "name": "ForecastDateKey",
+            "order": 4,
+            "visible": true
+          },
+          {
+            "id": "StoreKey",
+            "label": "StoreKey",
+            "measureType": "data",
+            "name": "StoreKey",
+            "order": 5,
+            "visible": true
+          },
+          {
+            "id": "ProductKey",
+            "label": "ProductKey",
+            "measureType": "data",
+            "name": "ProductKey",
+            "order": 6,
+            "visible": true
+          },
+          {
+            "id": "ForecastQuantity",
+            "label": "ForecastQuantity",
+            "measureType": "data",
+            "name": "ForecastQuantity",
+            "order": 7,
+            "visible": true
+          },
+          {
+            "id": "ForecastRevenue",
+            "label": "ForecastRevenue",
+            "measureType": "data",
+            "name": "ForecastRevenue",
+            "order": 8,
+            "visible": true
+          },
+          {
+            "id": "LowerBound",
+            "label": "LowerBound",
+            "measureType": "data",
+            "name": "LowerBound",
+            "order": 9,
+            "visible": true
+          },
+          {
+            "id": "UpperBound",
+            "label": "UpperBound",
+            "measureType": "data",
+            "name": "UpperBound",
+            "order": 10,
+            "visible": true
+          },
+          {
+            "id": "ForecastModel",
+            "label": "ForecastModel",
+            "measureType": "data",
+            "name": "ForecastModel",
+            "order": 11,
+            "visible": true
+          },
+          {
+            "id": "CreatedBy",
+            "label": "CreatedBy",
+            "measureType": "data",
+            "name": "CreatedBy",
+            "order": 12,
+            "visible": true
+          },
+          {
+            "id": "CreatedAt",
+            "label": "CreatedAt",
+            "measureType": "data",
+            "name": "CreatedAt",
+            "order": 13,
+            "visible": true
+          }
+        ],
+        "mdmLayout": {
+          "activeLayout": "table",
+          "childHeaderTableControlConfiguration": {},
+          "configuration": null,
+          "ganttViewColVisibility": {},
+          "layoutVisibility": {},
+          "parentApprovalMeta": {},
+          "tableModeColVisibility": {}
+        },
+        "superFilter": {
+          "CreatedBy": {
+            "appData": [],
+            "columnMeta": {
+              "columnGuid": "CreatedBy",
+              "columnMeta": {
+                "dbMeta": {
+                  "isIdentity": false,
+                  "isNullable": false,
+                  "isPrimaryKey": false,
+                  "type": "nvarchar"
+                },
+                "textFieldColumnType": "Any Value"
+              },
+              "columnName": "CreatedBy",
+              "columnType": 1,
+              "displayName": "",
+              "id": "13",
+              "lookupConfig": null,
+              "sourceId": 1,
+              "visualColumnType": 1
+            },
+            "configuration": {
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "CreatedBy",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "sort": [
+                {
+                  "columnId": "CreatedBy",
+                  "columnName": "CreatedBy",
+                  "direction": "ASC",
+                  "id": "CreatedBy"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "FACET"
+            },
+            "filter": [],
+            "isLoading": true,
+            "tableName": "fact_forecast",
+            "topNMeasureOptions": [
+              {
+                "id": "ForecastID",
+                "label": "ForecastID"
+              },
+              {
+                "id": "ForecastVersionID",
+                "label": "ForecastVersionID"
+              },
+              {
+                "id": "CreationDateKey",
+                "label": "CreationDateKey"
+              },
+              {
+                "id": "ForecastDateKey",
+                "label": "ForecastDateKey"
+              },
+              {
+                "id": "StoreKey",
+                "label": "StoreKey"
+              },
+              {
+                "id": "ProductKey",
+                "label": "ProductKey"
+              },
+              {
+                "id": "ForecastQuantity",
+                "label": "ForecastQuantity"
+              },
+              {
+                "id": "ForecastRevenue",
+                "label": "ForecastRevenue"
+              },
+              {
+                "id": "LowerBound",
+                "label": "LowerBound"
+              },
+              {
+                "id": "UpperBound",
+                "label": "UpperBound"
+              }
+            ]
+          },
+          "CreationDateKey": {
+            "appData": [],
+            "columnMeta": {
+              "columnGuid": "CreationDateKey",
+              "columnMeta": {
+                "dbMeta": {
+                  "isIdentity": false,
+                  "isNullable": false,
+                  "isPrimaryKey": false,
+                  "type": "int"
+                }
+              },
+              "columnName": "CreationDateKey",
+              "columnType": 6,
+              "displayName": "",
+              "id": "4",
+              "lookupConfig": null,
+              "sourceId": 1,
+              "visualColumnType": 1
+            },
+            "configuration": {
+              "alphaNumericValues": {
+                "equalValue": null,
+                "maxValue": null,
+                "minValue": null
+              },
+              "enableNumericToFacet": false,
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "CreationDateKey",
+              "regex": "",
+              "scale": "none",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "slider": false,
+              "sort": [
+                {
+                  "columnId": "CreationDateKey",
+                  "columnName": "CreationDateKey",
+                  "direction": "ASC",
+                  "id": "CreationDateKey"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "NUMERIC"
+            },
+            "filter": [],
+            "isLoading": true,
+            "tableName": "fact_forecast",
+            "topNMeasureOptions": [
+              {
+                "id": "ForecastID",
+                "label": "ForecastID"
+              },
+              {
+                "id": "ForecastVersionID",
+                "label": "ForecastVersionID"
+              },
+              {
+                "id": "CreationDateKey",
+                "label": "CreationDateKey"
+              },
+              {
+                "id": "ForecastDateKey",
+                "label": "ForecastDateKey"
+              },
+              {
+                "id": "StoreKey",
+                "label": "StoreKey"
+              },
+              {
+                "id": "ProductKey",
+                "label": "ProductKey"
+              },
+              {
+                "id": "ForecastQuantity",
+                "label": "ForecastQuantity"
+              },
+              {
+                "id": "ForecastRevenue",
+                "label": "ForecastRevenue"
+              },
+              {
+                "id": "LowerBound",
+                "label": "LowerBound"
+              },
+              {
+                "id": "UpperBound",
+                "label": "UpperBound"
+              }
+            ]
+          },
+          "ForecastDateKey": {
+            "appData": [],
+            "columnMeta": {
+              "columnGuid": "ForecastDateKey",
+              "columnMeta": {
+                "dbMeta": {
+                  "isIdentity": false,
+                  "isNullable": false,
+                  "isPrimaryKey": false,
+                  "type": "int"
+                }
+              },
+              "columnName": "ForecastDateKey",
+              "columnType": 6,
+              "displayName": "",
+              "id": "5",
+              "lookupConfig": null,
+              "sourceId": 1,
+              "visualColumnType": 1
+            },
+            "configuration": {
+              "alphaNumericValues": {
+                "equalValue": null,
+                "maxValue": null,
+                "minValue": null
+              },
+              "enableNumericToFacet": false,
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "ForecastDateKey",
+              "regex": "",
+              "scale": "none",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "slider": false,
+              "sort": [
+                {
+                  "columnId": "ForecastDateKey",
+                  "columnName": "ForecastDateKey",
+                  "direction": "ASC",
+                  "id": "ForecastDateKey"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "NUMERIC"
+            },
+            "filter": [],
+            "isLoading": true,
+            "tableName": "fact_forecast",
+            "topNMeasureOptions": [
+              {
+                "id": "ForecastID",
+                "label": "ForecastID"
+              },
+              {
+                "id": "ForecastVersionID",
+                "label": "ForecastVersionID"
+              },
+              {
+                "id": "CreationDateKey",
+                "label": "CreationDateKey"
+              },
+              {
+                "id": "ForecastDateKey",
+                "label": "ForecastDateKey"
+              },
+              {
+                "id": "StoreKey",
+                "label": "StoreKey"
+              },
+              {
+                "id": "ProductKey",
+                "label": "ProductKey"
+              },
+              {
+                "id": "ForecastQuantity",
+                "label": "ForecastQuantity"
+              },
+              {
+                "id": "ForecastRevenue",
+                "label": "ForecastRevenue"
+              },
+              {
+                "id": "LowerBound",
+                "label": "LowerBound"
+              },
+              {
+                "id": "UpperBound",
+                "label": "UpperBound"
+              }
+            ]
+          },
+          "ForecastID": {
+            "appData": [],
+            "columnMeta": {
+              "columnGuid": "ForecastID",
+              "columnMeta": {
+                "dbMeta": {
+                  "isIdentity": true,
+                  "isNullable": false,
+                  "isPrimaryKey": true,
+                  "type": "bigint"
+                }
+              },
+              "columnName": "ForecastID",
+              "columnType": 6,
+              "displayName": "",
+              "id": "1",
+              "lookupConfig": null,
+              "sourceId": 1,
+              "visualColumnType": 1
+            },
+            "configuration": {
+              "alphaNumericValues": {
+                "equalValue": null,
+                "maxValue": null,
+                "minValue": null
+              },
+              "enableNumericToFacet": false,
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "ForecastID",
+              "regex": "",
+              "scale": "none",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "slider": false,
+              "sort": [
+                {
+                  "columnId": "ForecastID",
+                  "columnName": "ForecastID",
+                  "direction": "ASC",
+                  "id": "ForecastID"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "NUMERIC"
+            },
+            "filter": [],
+            "isLoading": true,
+            "tableName": "fact_forecast",
+            "topNMeasureOptions": [
+              {
+                "id": "ForecastID",
+                "label": "ForecastID"
+              },
+              {
+                "id": "ForecastVersionID",
+                "label": "ForecastVersionID"
+              },
+              {
+                "id": "CreationDateKey",
+                "label": "CreationDateKey"
+              },
+              {
+                "id": "ForecastDateKey",
+                "label": "ForecastDateKey"
+              },
+              {
+                "id": "StoreKey",
+                "label": "StoreKey"
+              },
+              {
+                "id": "ProductKey",
+                "label": "ProductKey"
+              },
+              {
+                "id": "ForecastQuantity",
+                "label": "ForecastQuantity"
+              },
+              {
+                "id": "ForecastRevenue",
+                "label": "ForecastRevenue"
+              },
+              {
+                "id": "LowerBound",
+                "label": "LowerBound"
+              },
+              {
+                "id": "UpperBound",
+                "label": "UpperBound"
+              }
+            ]
+          },
+          "ForecastModel": {
+            "appData": [],
+            "columnMeta": {
+              "columnGuid": "ForecastModel",
+              "columnMeta": {
+                "dbMeta": {
+                  "isIdentity": false,
+                  "isNullable": true,
+                  "isPrimaryKey": false,
+                  "type": "nvarchar"
+                },
+                "textFieldColumnType": "Any Value"
+              },
+              "columnName": "ForecastModel",
+              "columnType": 1,
+              "displayName": "",
+              "id": "12",
+              "lookupConfig": null,
+              "sourceId": 1,
+              "visualColumnType": 1
+            },
+            "configuration": {
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "ForecastModel",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "sort": [
+                {
+                  "columnId": "ForecastModel",
+                  "columnName": "ForecastModel",
+                  "direction": "ASC",
+                  "id": "ForecastModel"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "FACET"
+            },
+            "filter": [],
+            "isLoading": true,
+            "tableName": "fact_forecast",
+            "topNMeasureOptions": [
+              {
+                "id": "ForecastID",
+                "label": "ForecastID"
+              },
+              {
+                "id": "ForecastVersionID",
+                "label": "ForecastVersionID"
+              },
+              {
+                "id": "CreationDateKey",
+                "label": "CreationDateKey"
+              },
+              {
+                "id": "ForecastDateKey",
+                "label": "ForecastDateKey"
+              },
+              {
+                "id": "StoreKey",
+                "label": "StoreKey"
+              },
+              {
+                "id": "ProductKey",
+                "label": "ProductKey"
+              },
+              {
+                "id": "ForecastQuantity",
+                "label": "ForecastQuantity"
+              },
+              {
+                "id": "ForecastRevenue",
+                "label": "ForecastRevenue"
+              },
+              {
+                "id": "LowerBound",
+                "label": "LowerBound"
+              },
+              {
+                "id": "UpperBound",
+                "label": "UpperBound"
+              }
+            ]
+          },
+          "ForecastQuantity": {
+            "appData": [],
+            "columnMeta": {
+              "columnGuid": "ForecastQuantity",
+              "columnMeta": {
+                "dbMeta": {
+                  "isIdentity": false,
+                  "isNullable": false,
+                  "isPrimaryKey": false,
+                  "type": "decimal"
+                }
+              },
+              "columnName": "ForecastQuantity",
+              "columnType": 13,
+              "displayName": "",
+              "id": "8",
+              "lookupConfig": null,
+              "sourceId": 1,
+              "visualColumnType": 1
+            },
+            "configuration": {
+              "alphaNumericValues": {
+                "equalValue": null,
+                "maxValue": null,
+                "minValue": null
+              },
+              "enableNumericToFacet": false,
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "ForecastQuantity",
+              "regex": "",
+              "scale": "none",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "slider": false,
+              "sort": [
+                {
+                  "columnId": "ForecastQuantity",
+                  "columnName": "ForecastQuantity",
+                  "direction": "ASC",
+                  "id": "ForecastQuantity"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "NUMERIC"
+            },
+            "filter": [],
+            "isLoading": true,
+            "tableName": "fact_forecast",
+            "topNMeasureOptions": [
+              {
+                "id": "ForecastID",
+                "label": "ForecastID"
+              },
+              {
+                "id": "ForecastVersionID",
+                "label": "ForecastVersionID"
+              },
+              {
+                "id": "CreationDateKey",
+                "label": "CreationDateKey"
+              },
+              {
+                "id": "ForecastDateKey",
+                "label": "ForecastDateKey"
+              },
+              {
+                "id": "StoreKey",
+                "label": "StoreKey"
+              },
+              {
+                "id": "ProductKey",
+                "label": "ProductKey"
+              },
+              {
+                "id": "ForecastQuantity",
+                "label": "ForecastQuantity"
+              },
+              {
+                "id": "ForecastRevenue",
+                "label": "ForecastRevenue"
+              },
+              {
+                "id": "LowerBound",
+                "label": "LowerBound"
+              },
+              {
+                "id": "UpperBound",
+                "label": "UpperBound"
+              }
+            ]
+          },
+          "ForecastRevenue": {
+            "appData": [],
+            "columnMeta": {
+              "columnGuid": "ForecastRevenue",
+              "columnMeta": {
+                "dbMeta": {
+                  "isIdentity": false,
+                  "isNullable": true,
+                  "isPrimaryKey": false,
+                  "type": "decimal"
+                }
+              },
+              "columnName": "ForecastRevenue",
+              "columnType": 13,
+              "displayName": "",
+              "id": "9",
+              "lookupConfig": null,
+              "sourceId": 1,
+              "visualColumnType": 1
+            },
+            "configuration": {
+              "alphaNumericValues": {
+                "equalValue": null,
+                "maxValue": null,
+                "minValue": null
+              },
+              "enableNumericToFacet": false,
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "ForecastRevenue",
+              "regex": "",
+              "scale": "none",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "slider": false,
+              "sort": [
+                {
+                  "columnId": "ForecastRevenue",
+                  "columnName": "ForecastRevenue",
+                  "direction": "ASC",
+                  "id": "ForecastRevenue"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "NUMERIC"
+            },
+            "filter": [],
+            "isLoading": true,
+            "tableName": "fact_forecast",
+            "topNMeasureOptions": [
+              {
+                "id": "ForecastID",
+                "label": "ForecastID"
+              },
+              {
+                "id": "ForecastVersionID",
+                "label": "ForecastVersionID"
+              },
+              {
+                "id": "CreationDateKey",
+                "label": "CreationDateKey"
+              },
+              {
+                "id": "ForecastDateKey",
+                "label": "ForecastDateKey"
+              },
+              {
+                "id": "StoreKey",
+                "label": "StoreKey"
+              },
+              {
+                "id": "ProductKey",
+                "label": "ProductKey"
+              },
+              {
+                "id": "ForecastQuantity",
+                "label": "ForecastQuantity"
+              },
+              {
+                "id": "ForecastRevenue",
+                "label": "ForecastRevenue"
+              },
+              {
+                "id": "LowerBound",
+                "label": "LowerBound"
+              },
+              {
+                "id": "UpperBound",
+                "label": "UpperBound"
+              }
+            ]
+          },
+          "ForecastVersion": {
+            "appData": [],
+            "columnMeta": {
+              "columnGuid": "ForecastVersion",
+              "columnMeta": {
+                "dbMeta": {
+                  "isIdentity": false,
+                  "isNullable": false,
+                  "isPrimaryKey": false,
+                  "type": "nvarchar"
+                },
+                "textFieldColumnType": "Any Value"
+              },
+              "columnName": "ForecastVersion",
+              "columnType": 1,
+              "displayName": "",
+              "id": "2",
+              "lookupConfig": null,
+              "sourceId": 1,
+              "visualColumnType": 1
+            },
+            "configuration": {
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "ForecastVersion",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "sort": [
+                {
+                  "columnId": "ForecastVersion",
+                  "columnName": "ForecastVersion",
+                  "direction": "ASC",
+                  "id": "ForecastVersion"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "FACET"
+            },
+            "filter": [],
+            "isLoading": true,
+            "tableName": "fact_forecast",
+            "topNMeasureOptions": [
+              {
+                "id": "ForecastID",
+                "label": "ForecastID"
+              },
+              {
+                "id": "ForecastVersionID",
+                "label": "ForecastVersionID"
+              },
+              {
+                "id": "CreationDateKey",
+                "label": "CreationDateKey"
+              },
+              {
+                "id": "ForecastDateKey",
+                "label": "ForecastDateKey"
+              },
+              {
+                "id": "StoreKey",
+                "label": "StoreKey"
+              },
+              {
+                "id": "ProductKey",
+                "label": "ProductKey"
+              },
+              {
+                "id": "ForecastQuantity",
+                "label": "ForecastQuantity"
+              },
+              {
+                "id": "ForecastRevenue",
+                "label": "ForecastRevenue"
+              },
+              {
+                "id": "LowerBound",
+                "label": "LowerBound"
+              },
+              {
+                "id": "UpperBound",
+                "label": "UpperBound"
+              }
+            ]
+          },
+          "ForecastVersionID": {
+            "appData": [],
+            "columnMeta": {
+              "columnGuid": "ForecastVersionID",
+              "columnMeta": {
+                "dbMeta": {
+                  "isIdentity": false,
+                  "isNullable": false,
+                  "isPrimaryKey": false,
+                  "type": "int"
+                }
+              },
+              "columnName": "ForecastVersionID",
+              "columnType": 6,
+              "displayName": "",
+              "id": "3",
+              "lookupConfig": null,
+              "sourceId": 1,
+              "visualColumnType": 1
+            },
+            "configuration": {
+              "alphaNumericValues": {
+                "equalValue": null,
+                "maxValue": null,
+                "minValue": null
+              },
+              "enableNumericToFacet": false,
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "ForecastVersionID",
+              "regex": "",
+              "scale": "none",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "slider": false,
+              "sort": [
+                {
+                  "columnId": "ForecastVersionID",
+                  "columnName": "ForecastVersionID",
+                  "direction": "ASC",
+                  "id": "ForecastVersionID"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "NUMERIC"
+            },
+            "filter": [],
+            "isLoading": true,
+            "tableName": "fact_forecast",
+            "topNMeasureOptions": [
+              {
+                "id": "ForecastID",
+                "label": "ForecastID"
+              },
+              {
+                "id": "ForecastVersionID",
+                "label": "ForecastVersionID"
+              },
+              {
+                "id": "CreationDateKey",
+                "label": "CreationDateKey"
+              },
+              {
+                "id": "ForecastDateKey",
+                "label": "ForecastDateKey"
+              },
+              {
+                "id": "StoreKey",
+                "label": "StoreKey"
+              },
+              {
+                "id": "ProductKey",
+                "label": "ProductKey"
+              },
+              {
+                "id": "ForecastQuantity",
+                "label": "ForecastQuantity"
+              },
+              {
+                "id": "ForecastRevenue",
+                "label": "ForecastRevenue"
+              },
+              {
+                "id": "LowerBound",
+                "label": "LowerBound"
+              },
+              {
+                "id": "UpperBound",
+                "label": "UpperBound"
+              }
+            ]
+          },
+          "LowerBound": {
+            "appData": [],
+            "columnMeta": {
+              "columnGuid": "LowerBound",
+              "columnMeta": {
+                "dbMeta": {
+                  "isIdentity": false,
+                  "isNullable": true,
+                  "isPrimaryKey": false,
+                  "type": "decimal"
+                }
+              },
+              "columnName": "LowerBound",
+              "columnType": 13,
+              "displayName": "",
+              "id": "10",
+              "lookupConfig": null,
+              "sourceId": 1,
+              "visualColumnType": 1
+            },
+            "configuration": {
+              "alphaNumericValues": {
+                "equalValue": null,
+                "maxValue": null,
+                "minValue": null
+              },
+              "enableNumericToFacet": false,
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "LowerBound",
+              "regex": "",
+              "scale": "none",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "slider": false,
+              "sort": [
+                {
+                  "columnId": "LowerBound",
+                  "columnName": "LowerBound",
+                  "direction": "ASC",
+                  "id": "LowerBound"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "NUMERIC"
+            },
+            "filter": [],
+            "isLoading": true,
+            "tableName": "fact_forecast",
+            "topNMeasureOptions": [
+              {
+                "id": "ForecastID",
+                "label": "ForecastID"
+              },
+              {
+                "id": "ForecastVersionID",
+                "label": "ForecastVersionID"
+              },
+              {
+                "id": "CreationDateKey",
+                "label": "CreationDateKey"
+              },
+              {
+                "id": "ForecastDateKey",
+                "label": "ForecastDateKey"
+              },
+              {
+                "id": "StoreKey",
+                "label": "StoreKey"
+              },
+              {
+                "id": "ProductKey",
+                "label": "ProductKey"
+              },
+              {
+                "id": "ForecastQuantity",
+                "label": "ForecastQuantity"
+              },
+              {
+                "id": "ForecastRevenue",
+                "label": "ForecastRevenue"
+              },
+              {
+                "id": "LowerBound",
+                "label": "LowerBound"
+              },
+              {
+                "id": "UpperBound",
+                "label": "UpperBound"
+              }
+            ]
+          },
+          "ProductKey": {
+            "appData": [],
+            "columnMeta": {
+              "columnGuid": "ProductKey",
+              "columnMeta": {
+                "dbMeta": {
+                  "isIdentity": false,
+                  "isNullable": false,
+                  "isPrimaryKey": false,
+                  "type": "int"
+                }
+              },
+              "columnName": "ProductKey",
+              "columnType": 6,
+              "displayName": "",
+              "id": "7",
+              "lookupConfig": null,
+              "sourceId": 1,
+              "visualColumnType": 1
+            },
+            "configuration": {
+              "alphaNumericValues": {
+                "equalValue": null,
+                "maxValue": null,
+                "minValue": null
+              },
+              "enableNumericToFacet": false,
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "ProductKey",
+              "regex": "",
+              "scale": "none",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "slider": false,
+              "sort": [
+                {
+                  "columnId": "ProductKey",
+                  "columnName": "ProductKey",
+                  "direction": "ASC",
+                  "id": "ProductKey"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "NUMERIC"
+            },
+            "filter": [],
+            "isLoading": true,
+            "tableName": "fact_forecast",
+            "topNMeasureOptions": [
+              {
+                "id": "ForecastID",
+                "label": "ForecastID"
+              },
+              {
+                "id": "ForecastVersionID",
+                "label": "ForecastVersionID"
+              },
+              {
+                "id": "CreationDateKey",
+                "label": "CreationDateKey"
+              },
+              {
+                "id": "ForecastDateKey",
+                "label": "ForecastDateKey"
+              },
+              {
+                "id": "StoreKey",
+                "label": "StoreKey"
+              },
+              {
+                "id": "ProductKey",
+                "label": "ProductKey"
+              },
+              {
+                "id": "ForecastQuantity",
+                "label": "ForecastQuantity"
+              },
+              {
+                "id": "ForecastRevenue",
+                "label": "ForecastRevenue"
+              },
+              {
+                "id": "LowerBound",
+                "label": "LowerBound"
+              },
+              {
+                "id": "UpperBound",
+                "label": "UpperBound"
+              }
+            ]
+          },
+          "StoreKey": {
+            "appData": [],
+            "columnMeta": {
+              "columnGuid": "StoreKey",
+              "columnMeta": {
+                "dbMeta": {
+                  "isIdentity": false,
+                  "isNullable": false,
+                  "isPrimaryKey": false,
+                  "type": "int"
+                }
+              },
+              "columnName": "StoreKey",
+              "columnType": 6,
+              "displayName": "",
+              "id": "6",
+              "lookupConfig": null,
+              "sourceId": 1,
+              "visualColumnType": 1
+            },
+            "configuration": {
+              "alphaNumericValues": {
+                "equalValue": null,
+                "maxValue": null,
+                "minValue": null
+              },
+              "enableNumericToFacet": false,
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "StoreKey",
+              "regex": "",
+              "scale": "none",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "slider": false,
+              "sort": [
+                {
+                  "columnId": "StoreKey",
+                  "columnName": "StoreKey",
+                  "direction": "ASC",
+                  "id": "StoreKey"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "NUMERIC"
+            },
+            "filter": [],
+            "isLoading": true,
+            "tableName": "fact_forecast",
+            "topNMeasureOptions": [
+              {
+                "id": "ForecastID",
+                "label": "ForecastID"
+              },
+              {
+                "id": "ForecastVersionID",
+                "label": "ForecastVersionID"
+              },
+              {
+                "id": "CreationDateKey",
+                "label": "CreationDateKey"
+              },
+              {
+                "id": "ForecastDateKey",
+                "label": "ForecastDateKey"
+              },
+              {
+                "id": "StoreKey",
+                "label": "StoreKey"
+              },
+              {
+                "id": "ProductKey",
+                "label": "ProductKey"
+              },
+              {
+                "id": "ForecastQuantity",
+                "label": "ForecastQuantity"
+              },
+              {
+                "id": "ForecastRevenue",
+                "label": "ForecastRevenue"
+              },
+              {
+                "id": "LowerBound",
+                "label": "LowerBound"
+              },
+              {
+                "id": "UpperBound",
+                "label": "UpperBound"
+              }
+            ]
+          },
+          "UpperBound": {
+            "appData": [],
+            "columnMeta": {
+              "columnGuid": "UpperBound",
+              "columnMeta": {
+                "dbMeta": {
+                  "isIdentity": false,
+                  "isNullable": true,
+                  "isPrimaryKey": false,
+                  "type": "decimal"
+                }
+              },
+              "columnName": "UpperBound",
+              "columnType": 13,
+              "displayName": "",
+              "id": "11",
+              "lookupConfig": null,
+              "sourceId": 1,
+              "visualColumnType": 1
+            },
+            "configuration": {
+              "alphaNumericValues": {
+                "equalValue": null,
+                "maxValue": null,
+                "minValue": null
+              },
+              "enableNumericToFacet": false,
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "UpperBound",
+              "regex": "",
+              "scale": "none",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "slider": false,
+              "sort": [
+                {
+                  "columnId": "UpperBound",
+                  "columnName": "UpperBound",
+                  "direction": "ASC",
+                  "id": "UpperBound"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "NUMERIC"
+            },
+            "filter": [],
+            "isLoading": true,
+            "tableName": "fact_forecast",
+            "topNMeasureOptions": [
+              {
+                "id": "ForecastID",
+                "label": "ForecastID"
+              },
+              {
+                "id": "ForecastVersionID",
+                "label": "ForecastVersionID"
+              },
+              {
+                "id": "CreationDateKey",
+                "label": "CreationDateKey"
+              },
+              {
+                "id": "ForecastDateKey",
+                "label": "ForecastDateKey"
+              },
+              {
+                "id": "StoreKey",
+                "label": "StoreKey"
+              },
+              {
+                "id": "ProductKey",
+                "label": "ProductKey"
+              },
+              {
+                "id": "ForecastQuantity",
+                "label": "ForecastQuantity"
+              },
+              {
+                "id": "ForecastRevenue",
+                "label": "ForecastRevenue"
+              },
+              {
+                "id": "LowerBound",
+                "label": "LowerBound"
+              },
+              {
+                "id": "UpperBound",
+                "label": "UpperBound"
+              }
+            ]
+          }
+        },
+        "superFilterAssignments": [
+          {
+            "configuration": {
+              "alphaNumericValues": {
+                "equalValue": null,
+                "maxValue": null,
+                "minValue": null
+              },
+              "enableNumericToFacet": false,
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "ForecastID",
+              "regex": "",
+              "scale": "none",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "slider": false,
+              "sort": [
+                {
+                  "columnId": "ForecastID",
+                  "columnName": "ForecastID",
+                  "direction": "ASC",
+                  "id": "ForecastID"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "NUMERIC"
+            },
+            "filter": [],
+            "filterLevel": "visual",
+            "id": "ForecastID",
+            "pivotAssignments": [
+              {
+                "bucketId": "",
+                "columnName": "ForecastID",
+                "columnType": "Column",
+                "dataType": "Int64",
+                "id": "ForecastID",
+                "name": "ForecastID",
+                "order": 0,
+                "sourceId": "ForecastID",
+                "sourceType": "powerTables",
+                "tableName": "fact_forecast"
+              }
+            ],
+            "position": "RIGHT"
+          },
+          {
+            "configuration": {
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "ForecastVersion",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "sort": [
+                {
+                  "columnId": "ForecastVersion",
+                  "columnName": "ForecastVersion",
+                  "direction": "ASC",
+                  "id": "ForecastVersion"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "FACET"
+            },
+            "filter": [],
+            "filterLevel": "visual",
+            "id": "ForecastVersion",
+            "pivotAssignments": [
+              {
+                "bucketId": "",
+                "columnName": "ForecastVersion",
+                "columnType": "Column",
+                "dataType": "String",
+                "id": "ForecastVersion",
+                "name": "ForecastVersion",
+                "order": 0,
+                "sourceId": "ForecastVersion",
+                "sourceType": "powerTables",
+                "tableName": "fact_forecast"
+              }
+            ],
+            "position": "RIGHT"
+          },
+          {
+            "configuration": {
+              "alphaNumericValues": {
+                "equalValue": null,
+                "maxValue": null,
+                "minValue": null
+              },
+              "enableNumericToFacet": false,
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "ForecastVersionID",
+              "regex": "",
+              "scale": "none",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "slider": false,
+              "sort": [
+                {
+                  "columnId": "ForecastVersionID",
+                  "columnName": "ForecastVersionID",
+                  "direction": "ASC",
+                  "id": "ForecastVersionID"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "NUMERIC"
+            },
+            "filter": [],
+            "filterLevel": "visual",
+            "id": "ForecastVersionID",
+            "pivotAssignments": [
+              {
+                "bucketId": "",
+                "columnName": "ForecastVersionID",
+                "columnType": "Column",
+                "dataType": "Int64",
+                "id": "ForecastVersionID",
+                "name": "ForecastVersionID",
+                "order": 0,
+                "sourceId": "ForecastVersionID",
+                "sourceType": "powerTables",
+                "tableName": "fact_forecast"
+              }
+            ],
+            "position": "RIGHT"
+          },
+          {
+            "configuration": {
+              "alphaNumericValues": {
+                "equalValue": null,
+                "maxValue": null,
+                "minValue": null
+              },
+              "enableNumericToFacet": false,
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "CreationDateKey",
+              "regex": "",
+              "scale": "none",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "slider": false,
+              "sort": [
+                {
+                  "columnId": "CreationDateKey",
+                  "columnName": "CreationDateKey",
+                  "direction": "ASC",
+                  "id": "CreationDateKey"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "NUMERIC"
+            },
+            "filter": [],
+            "filterLevel": "visual",
+            "id": "CreationDateKey",
+            "pivotAssignments": [
+              {
+                "bucketId": "",
+                "columnName": "CreationDateKey",
+                "columnType": "Column",
+                "dataType": "Int64",
+                "id": "CreationDateKey",
+                "name": "CreationDateKey",
+                "order": 0,
+                "sourceId": "CreationDateKey",
+                "sourceType": "powerTables",
+                "tableName": "fact_forecast"
+              }
+            ],
+            "position": "RIGHT"
+          },
+          {
+            "configuration": {
+              "alphaNumericValues": {
+                "equalValue": null,
+                "maxValue": null,
+                "minValue": null
+              },
+              "enableNumericToFacet": false,
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "ForecastDateKey",
+              "regex": "",
+              "scale": "none",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "slider": false,
+              "sort": [
+                {
+                  "columnId": "ForecastDateKey",
+                  "columnName": "ForecastDateKey",
+                  "direction": "ASC",
+                  "id": "ForecastDateKey"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "NUMERIC"
+            },
+            "filter": [],
+            "filterLevel": "visual",
+            "id": "ForecastDateKey",
+            "pivotAssignments": [
+              {
+                "bucketId": "",
+                "columnName": "ForecastDateKey",
+                "columnType": "Column",
+                "dataType": "Int64",
+                "id": "ForecastDateKey",
+                "name": "ForecastDateKey",
+                "order": 0,
+                "sourceId": "ForecastDateKey",
+                "sourceType": "powerTables",
+                "tableName": "fact_forecast"
+              }
+            ],
+            "position": "RIGHT"
+          },
+          {
+            "configuration": {
+              "alphaNumericValues": {
+                "equalValue": null,
+                "maxValue": null,
+                "minValue": null
+              },
+              "enableNumericToFacet": false,
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "StoreKey",
+              "regex": "",
+              "scale": "none",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "slider": false,
+              "sort": [
+                {
+                  "columnId": "StoreKey",
+                  "columnName": "StoreKey",
+                  "direction": "ASC",
+                  "id": "StoreKey"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "NUMERIC"
+            },
+            "filter": [],
+            "filterLevel": "visual",
+            "id": "StoreKey",
+            "pivotAssignments": [
+              {
+                "bucketId": "",
+                "columnName": "StoreKey",
+                "columnType": "Column",
+                "dataType": "Int64",
+                "id": "StoreKey",
+                "name": "StoreKey",
+                "order": 0,
+                "sourceId": "StoreKey",
+                "sourceType": "powerTables",
+                "tableName": "fact_forecast"
+              }
+            ],
+            "position": "RIGHT"
+          },
+          {
+            "configuration": {
+              "alphaNumericValues": {
+                "equalValue": null,
+                "maxValue": null,
+                "minValue": null
+              },
+              "enableNumericToFacet": false,
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "ProductKey",
+              "regex": "",
+              "scale": "none",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "slider": false,
+              "sort": [
+                {
+                  "columnId": "ProductKey",
+                  "columnName": "ProductKey",
+                  "direction": "ASC",
+                  "id": "ProductKey"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "NUMERIC"
+            },
+            "filter": [],
+            "filterLevel": "visual",
+            "id": "ProductKey",
+            "pivotAssignments": [
+              {
+                "bucketId": "",
+                "columnName": "ProductKey",
+                "columnType": "Column",
+                "dataType": "Int64",
+                "id": "ProductKey",
+                "name": "ProductKey",
+                "order": 0,
+                "sourceId": "ProductKey",
+                "sourceType": "powerTables",
+                "tableName": "fact_forecast"
+              }
+            ],
+            "position": "RIGHT"
+          },
+          {
+            "configuration": {
+              "alphaNumericValues": {
+                "equalValue": null,
+                "maxValue": null,
+                "minValue": null
+              },
+              "enableNumericToFacet": false,
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "ForecastQuantity",
+              "regex": "",
+              "scale": "none",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "slider": false,
+              "sort": [
+                {
+                  "columnId": "ForecastQuantity",
+                  "columnName": "ForecastQuantity",
+                  "direction": "ASC",
+                  "id": "ForecastQuantity"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "NUMERIC"
+            },
+            "filter": [],
+            "filterLevel": "visual",
+            "id": "ForecastQuantity",
+            "pivotAssignments": [
+              {
+                "bucketId": "",
+                "columnName": "ForecastQuantity",
+                "columnType": "Column",
+                "dataType": "Decimal",
+                "id": "ForecastQuantity",
+                "name": "ForecastQuantity",
+                "order": 0,
+                "sourceId": "ForecastQuantity",
+                "sourceType": "powerTables",
+                "tableName": "fact_forecast"
+              }
+            ],
+            "position": "RIGHT"
+          },
+          {
+            "configuration": {
+              "alphaNumericValues": {
+                "equalValue": null,
+                "maxValue": null,
+                "minValue": null
+              },
+              "enableNumericToFacet": false,
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "ForecastRevenue",
+              "regex": "",
+              "scale": "none",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "slider": false,
+              "sort": [
+                {
+                  "columnId": "ForecastRevenue",
+                  "columnName": "ForecastRevenue",
+                  "direction": "ASC",
+                  "id": "ForecastRevenue"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "NUMERIC"
+            },
+            "filter": [],
+            "filterLevel": "visual",
+            "id": "ForecastRevenue",
+            "pivotAssignments": [
+              {
+                "bucketId": "",
+                "columnName": "ForecastRevenue",
+                "columnType": "Column",
+                "dataType": "Decimal",
+                "id": "ForecastRevenue",
+                "name": "ForecastRevenue",
+                "order": 0,
+                "sourceId": "ForecastRevenue",
+                "sourceType": "powerTables",
+                "tableName": "fact_forecast"
+              }
+            ],
+            "position": "RIGHT"
+          },
+          {
+            "configuration": {
+              "alphaNumericValues": {
+                "equalValue": null,
+                "maxValue": null,
+                "minValue": null
+              },
+              "enableNumericToFacet": false,
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "LowerBound",
+              "regex": "",
+              "scale": "none",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "slider": false,
+              "sort": [
+                {
+                  "columnId": "LowerBound",
+                  "columnName": "LowerBound",
+                  "direction": "ASC",
+                  "id": "LowerBound"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "NUMERIC"
+            },
+            "filter": [],
+            "filterLevel": "visual",
+            "id": "LowerBound",
+            "pivotAssignments": [
+              {
+                "bucketId": "",
+                "columnName": "LowerBound",
+                "columnType": "Column",
+                "dataType": "Decimal",
+                "id": "LowerBound",
+                "name": "LowerBound",
+                "order": 0,
+                "sourceId": "LowerBound",
+                "sourceType": "powerTables",
+                "tableName": "fact_forecast"
+              }
+            ],
+            "position": "RIGHT"
+          },
+          {
+            "configuration": {
+              "alphaNumericValues": {
+                "equalValue": null,
+                "maxValue": null,
+                "minValue": null
+              },
+              "enableNumericToFacet": false,
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "UpperBound",
+              "regex": "",
+              "scale": "none",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "slider": false,
+              "sort": [
+                {
+                  "columnId": "UpperBound",
+                  "columnName": "UpperBound",
+                  "direction": "ASC",
+                  "id": "UpperBound"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "NUMERIC"
+            },
+            "filter": [],
+            "filterLevel": "visual",
+            "id": "UpperBound",
+            "pivotAssignments": [
+              {
+                "bucketId": "",
+                "columnName": "UpperBound",
+                "columnType": "Column",
+                "dataType": "Decimal",
+                "id": "UpperBound",
+                "name": "UpperBound",
+                "order": 0,
+                "sourceId": "UpperBound",
+                "sourceType": "powerTables",
+                "tableName": "fact_forecast"
+              }
+            ],
+            "position": "RIGHT"
+          },
+          {
+            "configuration": {
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "ForecastModel",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "sort": [
+                {
+                  "columnId": "ForecastModel",
+                  "columnName": "ForecastModel",
+                  "direction": "ASC",
+                  "id": "ForecastModel"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "FACET"
+            },
+            "filter": [],
+            "filterLevel": "visual",
+            "id": "ForecastModel",
+            "pivotAssignments": [
+              {
+                "bucketId": "",
+                "columnName": "ForecastModel",
+                "columnType": "Column",
+                "dataType": "String",
+                "id": "ForecastModel",
+                "name": "ForecastModel",
+                "order": 0,
+                "sourceId": "ForecastModel",
+                "sourceType": "powerTables",
+                "tableName": "fact_forecast"
+              }
+            ],
+            "position": "RIGHT"
+          },
+          {
+            "configuration": {
+              "filterMode": "basic",
+              "filterOperator": "is",
+              "hide": false,
+              "isExpanded": false,
+              "locked": false,
+              "name": "CreatedBy",
+              "selectAll": true,
+              "selectAllState": "UNSELECTED",
+              "singleSelect": false,
+              "sort": [
+                {
+                  "columnId": "CreatedBy",
+                  "columnName": "CreatedBy",
+                  "direction": "ASC",
+                  "id": "CreatedBy"
+                }
+              ],
+              "topN": {
+                "displayOthers": true,
+                "isRankEmptyItems": false,
+                "otherLabel": "Others",
+                "rankMeasure": "",
+                "rankMode": "TOP",
+                "rankType": "value",
+                "rankValue": 5
+              },
+              "visualType": "FACET"
+            },
+            "filter": [],
+            "filterLevel": "visual",
+            "id": "CreatedBy",
+            "pivotAssignments": [
+              {
+                "bucketId": "",
+                "columnName": "CreatedBy",
+                "columnType": "Column",
+                "dataType": "String",
+                "id": "CreatedBy",
+                "name": "CreatedBy",
+                "order": 0,
+                "sourceId": "CreatedBy",
+                "sourceType": "powerTables",
+                "tableName": "fact_forecast"
+              }
+            ],
+            "position": "RIGHT"
+          }
+        ],
+        "superFilterMetaConfig": {
+          "orderedFilterIds": [
+            "ForecastID",
+            "ForecastVersion",
+            "ForecastVersionID",
+            "CreationDateKey",
+            "ForecastDateKey",
+            "StoreKey",
+            "ProductKey",
+            "ForecastQuantity",
+            "ForecastRevenue",
+            "LowerBound",
+            "UpperBound",
+            "ForecastModel",
+            "CreatedBy"
+          ]
+        }
+      },
+      "visualStyles": {
+        "background": {
+          "backgroundColor": "#fff",
+          "isEnabled": true
+        },
+        "border": {
+          "color": "#ddd",
+          "isEnabled": false,
+          "side": "all",
+          "width": 0
+        },
+        "cornerRadius": {
+          "isCustomCornerRadius": false,
+          "isEnabled": true,
+          "radiusBottomLeft": 0,
+          "radiusBottomRight": 0,
+          "radiusTopLeft": 0,
+          "radiusTopRight": 0
+        },
+        "isTooltipEnabled": true,
+        "padding": {
+          "bottomPadding": 5,
+          "isCustomPaddingSize": false,
+          "isEnabled": true,
+          "leftPadding": 5,
+          "rightPadding": 5,
+          "topPadding": 5
+        },
+        "shadow": {
+          "angle": 0,
+          "blur": 0,
+          "color": "#000000",
+          "distance": 10,
+          "isEnabled": false,
+          "opacity": 100,
+          "placement": "outer",
+          "side": "center",
+          "width": 0
+        },
+        "showHelperTooltips": true,
+        "showSelectedSeriesInTooltip": false,
+        "tooltipPageId": "auto",
+        "tooltipStyle": {
+          "backgroundColor": "#FFFFFF",
+          "bold": false,
+          "fontFamily": "Segoe UI",
+          "fontSize": 12,
+          "italic": false,
+          "labelColor": "#252423",
+          "underline": false,
+          "valueColor": "#252423"
+        },
+        "tooltipType": "default",
+        "varianceInTooltip": true,
+        "varianceTooltipType": "both"
+      },
+      "visualType": 30
+    },
+    "schema": "0.0.1"
+  }
+}

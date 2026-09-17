@@ -1,0 +1,147 @@
+table DimAccount
+	lineageTag: bf380fc0-4c54-4229-be83-20df03e796a7
+	sourceLineageTag: [dbo].[DimAccount]
+
+	measure 'Actuals Amount' =
+			
+			VAR Positive =
+			    CALCULATE(
+			        SUM(FactFinance[Amount]),
+			        DimAccount[Operator] = "+"
+			    )
+			VAR Negative =
+			    CALCULATE(
+			        SUM(FactFinance[Amount]),
+			        DimAccount[Operator] = "-"
+			    )
+			RETURN
+			    Positive - Negative
+		lineageTag: 6dcf5956-f267-42d4-bb28-68a0f3c1c0be
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column AccountKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 00f9c2e9-d8ae-43cf-a52c-9ef8bec40792
+		sourceLineageTag: AccountKey
+		summarizeBy: none
+		sourceColumn: AccountKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column ParentAccountKey
+		dataType: int64
+		formatString: 0
+		lineageTag: ca092275-334b-47ae-956d-bf0a265ac7b5
+		sourceLineageTag: ParentAccountKey
+		summarizeBy: none
+		sourceColumn: ParentAccountKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column AccountCodeAlternateKey
+		dataType: int64
+		formatString: 0
+		lineageTag: caf47c08-f884-4e07-ac3e-cf5c924ab8da
+		sourceLineageTag: AccountCodeAlternateKey
+		summarizeBy: count
+		sourceColumn: AccountCodeAlternateKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column ParentAccountCodeAlternateKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 7a7792e4-31b0-40af-8e79-c3de871c259e
+		sourceLineageTag: ParentAccountCodeAlternateKey
+		summarizeBy: count
+		sourceColumn: ParentAccountCodeAlternateKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column AccountDescription
+		dataType: string
+		lineageTag: ca87c3aa-9ec8-4096-8a61-81c3bd153618
+		sourceLineageTag: AccountDescription
+		summarizeBy: none
+		sourceColumn: AccountDescription
+
+		annotation SummarizationSetBy = Automatic
+
+	column AccountType
+		dataType: string
+		lineageTag: 66be665a-4220-4e7d-8908-995fb1284ed7
+		sourceLineageTag: AccountType
+		summarizeBy: none
+		sourceColumn: AccountType
+
+		annotation SummarizationSetBy = Automatic
+
+	column Operator
+		dataType: string
+		lineageTag: ae136296-db8e-4f0b-96bd-9a3f6684ccc7
+		sourceLineageTag: Operator
+		summarizeBy: none
+		sourceColumn: Operator
+
+		annotation SummarizationSetBy = Automatic
+
+	column CustomMembers
+		dataType: string
+		lineageTag: 0495ee27-0596-4f03-a4d3-884140109d2b
+		sourceLineageTag: CustomMembers
+		summarizeBy: none
+		sourceColumn: CustomMembers
+
+		annotation SummarizationSetBy = Automatic
+
+	column ValueType
+		dataType: string
+		lineageTag: 6a62b06e-e7ee-4899-9ba1-b15593dd127d
+		sourceLineageTag: ValueType
+		summarizeBy: none
+		sourceColumn: ValueType
+
+		annotation SummarizationSetBy = Automatic
+
+	column CustomMemberOptions
+		dataType: string
+		lineageTag: da3ed6ab-d684-44b0-b155-8c174253464f
+		sourceLineageTag: CustomMemberOptions
+		summarizeBy: none
+		sourceColumn: CustomMemberOptions
+
+		annotation SummarizationSetBy = Automatic
+
+	column MSSQL_System_Uniquifier_50099219
+		dataType: int64
+		formatString: 0
+		lineageTag: 3de0bb96-c58f-4faf-b6c9-9f4df846e541
+		sourceLineageTag: MSSQL_System_Uniquifier_50099219
+		summarizeBy: sum
+		sourceColumn: MSSQL_System_Uniquifier_50099219
+
+		annotation SummarizationSetBy = Automatic
+
+	column Budget
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: bb04d304-1e25-4da5-923d-e464eecd946c
+		sourceLineageTag: Budget
+		summarizeBy: sum
+		sourceColumn: Budget
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	partition DimAccount = entity
+		mode: directLake
+		source
+			entityName: DimAccount
+			schemaName: dbo
+			expressionSource: 'DirectLake - Adventure_Works_DW_2017'
+

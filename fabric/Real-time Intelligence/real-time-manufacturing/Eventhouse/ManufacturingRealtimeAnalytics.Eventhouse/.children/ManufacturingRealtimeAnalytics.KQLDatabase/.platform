@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "KQLDatabase",
+    "displayName": "ManufacturingRealtimeAnalytics",
+    "description": "machinedata"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "ee6bd592-1315-aa58-408e-a4eb1c548ab0"
+  }
+}

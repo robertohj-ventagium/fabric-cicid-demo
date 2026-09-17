@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Ventagium_DB_Test"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "8d08933f-abb3-86bf-4ab0-3b04ef82cc03"
+  }
+}

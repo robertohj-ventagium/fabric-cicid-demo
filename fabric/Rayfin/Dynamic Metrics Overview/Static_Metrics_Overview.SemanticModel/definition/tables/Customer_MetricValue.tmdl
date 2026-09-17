@@ -1,0 +1,44 @@
+table Customer_MetricValue
+	lineageTag: ee401af6-2733-42de-8a80-276b418634fe
+	sourceLineageTag: [customer].[MetricValue]
+
+	column MetricID
+		dataType: int64
+		formatString: 0
+		lineageTag: e4547fb9-b1cf-4751-90e4-03eb749fe67e
+		sourceLineageTag: MetricID
+		summarizeBy: none
+		sourceColumn: MetricID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 2b4550e9-30de-4001-b0bb-615f1667fa70
+		sourceLineageTag: Date
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column Value
+		dataType: double
+		lineageTag: 216871c2-49ad-46ea-9da1-d6d2802e9757
+		sourceLineageTag: Value
+		summarizeBy: sum
+		sourceColumn: Value
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition Customer_MetricValue = entity
+		mode: directLake
+		source
+			entityName: MetricValue
+			schemaName: customer
+			expressionSource: 'DirectLake - Static_Metrics_Lakehouse'
+
+	changedProperty = Name
+

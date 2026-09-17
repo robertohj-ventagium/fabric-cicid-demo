@@ -1,0 +1,195 @@
+table ventagium_projects
+	lineageTag: d96870d7-8bb1-4714-a075-92c440499b2f
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: 8f5ba35a-07af-4221-a527-45712f94cdf6
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column entity_id
+		dataType: int64
+		formatString: 0
+		lineageTag: ef5efc98-04e2-4c0b-afa2-15213cf0008e
+		summarizeBy: none
+		sourceColumn: entity_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column name
+		dataType: string
+		lineageTag: 2d24f417-d6b6-4011-8f36-6bfe34e0343f
+		summarizeBy: none
+		sourceColumn: name
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_world_changing_project
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 2149c376-203a-4672-94e9-cfb703e0836d
+		summarizeBy: none
+		sourceColumn: is_world_changing_project
+
+		annotation SummarizationSetBy = Automatic
+
+	column business_objectives
+		dataType: string
+		lineageTag: cdf296f0-4eef-4b41-843a-218f0fca19d7
+		summarizeBy: none
+		sourceColumn: business_objectives
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_canceled
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: b75600b9-7414-47f3-bbdc-8d34ebb4f0ef
+		summarizeBy: none
+		sourceColumn: is_canceled
+
+		annotation SummarizationSetBy = Automatic
+
+	column status
+		dataType: int64
+		formatString: 0
+		lineageTag: 8ddd39a1-704a-4218-8336-b65e62e8ac95
+		summarizeBy: sum
+		sourceColumn: status
+
+		annotation SummarizationSetBy = Automatic
+
+	column capability_type_id
+		dataType: int64
+		formatString: 0
+		lineageTag: fe0d2a80-41c6-4d03-a012-122d172d8586
+		summarizeBy: sum
+		sourceColumn: capability_type_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column record_start_datetime
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: f0539824-9244-4701-825b-f805d56455fd
+		summarizeBy: none
+		sourceColumn: record_start_datetime
+
+		variation Variation
+			isDefault
+			relationship: 57a04758-2c19-46b4-9d57-34e777dc74fa
+			defaultHierarchy: LocalDateTable_c51aaaa4-ddaa-4180-b3eb-05695ed27ff9.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column record_end_datetime
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: ebd9cb65-a993-484b-970e-90b766920025
+		summarizeBy: none
+		sourceColumn: record_end_datetime
+
+		variation Variation
+			isDefault
+			relationship: c0655fb8-ecc0-421d-892a-cb26dd414576
+			defaultHierarchy: LocalDateTable_c99761ca-3f1e-4084-8b54-922ec2131a91.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column sequence
+		dataType: int64
+		formatString: 0
+		lineageTag: 3ca8fb76-7a7c-41a2-94ff-d9310f8bf9f4
+		summarizeBy: sum
+		sourceColumn: sequence
+
+		annotation SummarizationSetBy = Automatic
+
+	column executive_sponsor_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 4e54cfb9-562a-4a59-8236-49fa9849631f
+		summarizeBy: none
+		sourceColumn: executive_sponsor_id
+
+		annotation SummarizationSetBy = User
+
+	column product_owner_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 362f5be8-1288-4521-9235-c62f9ba65244
+		summarizeBy: none
+		sourceColumn: product_owner_id
+
+		annotation SummarizationSetBy = User
+
+	column capability_owner_user_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 4e994f5a-1e7e-4b73-99bd-6f0ba75925cb
+		summarizeBy: none
+		sourceColumn: capability_owner_user_id
+
+		annotation SummarizationSetBy = User
+
+	column deal_id
+		dataType: int64
+		formatString: 0
+		lineageTag: bd9b5d1b-56eb-44a8-a093-5466fafac183
+		summarizeBy: sum
+		sourceColumn: deal_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column expected_year_month_due_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: a5ff7b4c-3f86-47cd-8dba-2cf57a61ee05
+		summarizeBy: none
+		sourceColumn: expected_year_month_due_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column expected_year_month_start_date =
+			
+			VAR PrevDay = 'ventagium_projects'[expected_year_month_due_date] - 1
+			RETURN
+			DATE(
+			    YEAR(PrevDay),
+			    (QUARTER(PrevDay) - 1) * 3 + 1,
+			    1
+			)
+		formatString: General Date
+		lineageTag: a7aa7b08-d6bf-4c89-89b7-0ca686c27718
+		summarizeBy: none
+
+		variation Variation
+			isDefault
+			relationship: b552afb9-77ee-4c04-8df3-ce8344a0ccfd
+			defaultHierarchy: LocalDateTable_5fbdd0d1-825d-4c13-8baf-2f7a59d3694c.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column dates_are_different = [expected_year_month_start_date] <> [expected_year_month_due_date]
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 75d346d3-c1aa-4bc7-9c3b-b6ed4e50f40b
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition ventagium_projects = m
+		mode: import
+		source =
+				let
+				  Source = Sql.Database("ventagiumgeneralserver2.database.windows.net", "Ventagium_Database"),
+				  #"Navigation 1" = Source{[Schema = "dbo", Item = "ventagium_projects"]}[Data]
+				in
+				  #"Navigation 1"
+
+	annotation PBI_ResultType = Table
+

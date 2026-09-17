@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Notebook",
+    "displayName": "Fabric_Jumpstart__Real_Time_Manufacturing"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "7a012045-5b2f-9338-4b73-0e24ace87400"
+  }
+}

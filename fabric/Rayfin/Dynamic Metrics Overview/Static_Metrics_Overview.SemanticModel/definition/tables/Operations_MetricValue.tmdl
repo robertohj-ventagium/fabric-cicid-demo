@@ -1,0 +1,44 @@
+table Operations_MetricValue
+	lineageTag: 3bf190ea-4a28-43a9-9265-b6c834acfc42
+	sourceLineageTag: [operations].[MetricValue]
+
+	column MetricID
+		dataType: int64
+		formatString: 0
+		lineageTag: 48b31d68-289c-4169-a99c-b8dd9937ae38
+		sourceLineageTag: MetricID
+		summarizeBy: none
+		sourceColumn: MetricID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 7ca3fc77-dce3-4ece-992b-70964ab88c97
+		sourceLineageTag: Date
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column Value
+		dataType: double
+		lineageTag: 66efa1e3-c728-4aa2-89f1-926464c6e050
+		sourceLineageTag: Value
+		summarizeBy: sum
+		sourceColumn: Value
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition Operations_MetricValue = entity
+		mode: directLake
+		source
+			entityName: MetricValue
+			schemaName: operations
+			expressionSource: 'DirectLake - Static_Metrics_Lakehouse'
+
+	changedProperty = Name
+

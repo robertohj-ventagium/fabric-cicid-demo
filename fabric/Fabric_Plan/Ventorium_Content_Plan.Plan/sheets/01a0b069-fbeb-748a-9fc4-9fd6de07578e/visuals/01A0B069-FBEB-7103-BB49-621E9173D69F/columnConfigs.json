@@ -1,0 +1,98 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/plan/definition/PowerTable/ColumnConfigs/1.0.0/schema.json",
+  "columnConfigs": [
+    {
+      "allowEdit": 0,
+      "columnGuid": "id",
+      "columnMeta": {
+        "allowNegative": true,
+        "dbMeta": {
+          "isIdentity": true,
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "type": "int"
+        },
+        "defaultValue": "",
+        "defaultValueType": "NONE",
+        "isPrimaryKey": true,
+        "largeNumberAbbrevation": "",
+        "max": "",
+        "min": "",
+        "negativeValueFormat": "-0",
+        "prefix": "",
+        "resetToDefaultOnRowModify": false,
+        "suffix": "",
+        "thousandSeparator": "",
+        "updateValueOnRowModify": false
+      },
+      "columnName": "id",
+      "columnType": 6,
+      "description": "",
+      "displayName": "id",
+      "hideColumn": 0,
+      "mandatory": 1,
+      "recordGuid": "4420DF40-BDB2-F111-A6A6-6045BD4CC385",
+      "visualColumnType": 1
+    },
+    {
+      "allowEdit": 1,
+      "columnGuid": "campaign_id",
+      "columnMeta": {
+        "allowNegative": true,
+        "dbMeta": {
+          "isIdentity": false,
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "type": "int"
+        },
+        "defaultValue": "",
+        "defaultValueType": "NONE",
+        "isPrimaryKey": false,
+        "largeNumberAbbrevation": "",
+        "max": "",
+        "min": "",
+        "negativeValueFormat": "-0",
+        "prefix": "",
+        "resetToDefaultOnRowModify": false,
+        "suffix": "",
+        "thousandSeparator": "",
+        "updateValueOnRowModify": false
+      },
+      "columnName": "campaign_id",
+      "columnType": 6,
+      "description": "",
+      "displayName": "",
+      "hideColumn": 0,
+      "mandatory": 1,
+      "recordGuid": "4520DF40-BDB2-F111-A6A6-6045BD4CC385",
+      "visualColumnType": 1
+    },
+    {
+      "allowEdit": 1,
+      "columnGuid": "content_title",
+      "columnMeta": {
+        "dbMeta": {
+          "isIdentity": false,
+          "isNullable": false,
+          "isPrimaryKey": false,
+          "type": "nvarchar"
+        },
+        "defaultValue": "",
+        "defaultValueType": "NONE",
+        "isPrimaryKey": false,
+        "maximumAllowedLength": "",
+        "resetToDefaultOnRowModify": false,
+        "textFieldColumnType": "Any Value",
+        "updateValueOnRowModify": false
+      },
+      "columnName": "content_title",
+      "columnType": 1,
+      "description": "",
+      "displayName": "",
+      "hideColumn": 0,
+      "mandatory": 1,
+      "recordGuid": "4620DF40-BDB2-F111-A6A6-6045BD4CC385",
+      "visualColumnType": 1
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Eventstream",
+    "displayName": "SensorDataEvents",
+    "description": ""
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "ff810aa8-0d17-933e-4a9e-d0a490034e04"
+  }
+}

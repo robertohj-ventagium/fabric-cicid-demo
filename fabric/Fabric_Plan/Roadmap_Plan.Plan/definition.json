@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/plan/definition/Definition/1.0.0/schema.json",
+  "cube": {
+    "partitionRefIds": []
+  },
+  "semanticModelReference": {
+    "artifactId": null,
+    "connectionId": "10d341a4-b56d-45ec-971e-354193ceb152",
+    "datasetRelations": [],
+    "directLakeMode": false,
+    "directQueryMode": false,
+    "recordGuid": "019f5d24-5d0d-700a-bfd1-ae19da092c6e",
+    "semanticModelId": "ef82cc03-3b04-4ab0-86bf-abb38d08933f",
+    "semanticModelName": "Ventagium_DB_Test",
+    "semanticModelWorkspaceId": "1beb3139-2c5d-4cb3-b416-c46404555b49",
+    "semanticModelWorkspaceName": "00_Experiments",
+    "sourceType": "WORKLOAD",
+    "url": "https://app.powerbi.com/groups/1beb3139-2c5d-4cb3-b416-c46404555b49/datasets/ef82cc03-3b04-4ab0-86bf-abb38d08933f"
+  },
+  "sheets": [
+    {
+      "displayName": "Roadmap2",
+      "isHidden": false,
+      "recordGuid": "019f5d24-5d0d-7be2-8763-feac90f6b1eb",
+      "sheetType": "REPORTING",
+      "workloadItemEntityVisuals": [
+        {
+          "isEmbedded": false,
+          "visualId": "019f5d24-5d0d-7b0f-8fee-898418bc4c21",
+          "visualType": "ANALYTICS_PLUS"
+        }
+      ]
+    }
+  ],
+  "workloadItemName": "Roadmap_Plan"
+}

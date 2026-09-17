@@ -1,0 +1,32 @@
+relationship c67cae55-aa86-68db-6679-9408d417cb42
+	fromColumn: CreditProfiles.CustomerID
+	toColumn: Customers.CustomerID
+
+relationship 4804aed0-fc77-2837-0762-2219077ed2f9
+	fromColumn: Loans.CustomerID
+	toColumn: Customers.CustomerID
+
+relationship e3f843d6-9fce-7dbd-944d-7a4aa85b9215
+	fromColumn: Transactions.CustomerID
+	toColumn: Customers.CustomerID
+
+relationship 612a0ab7-aca5-c1cf-7163-dbe9dd941e94
+	fromColumn: Payments.LoanID
+	toColumn: Loans.LoanID
+
+relationship b6d0be4f-d8f2-9f1f-a452-bcbb7cd28d7b
+	fromColumn: LoanApplications.CustomerID
+	toColumn: Customers.CustomerID
+
+relationship 3664bcc8-2eef-f473-cd4e-b6b397549a27
+	fromColumn: DocumentationRequests.ApplicationID
+	toColumn: LoanApplications.ApplicationID
+
+relationship f7974de8-cba7-70d2-c4f0-d2c646ba0b42
+	fromColumn: ApplicationComments.ApplicationID
+	toColumn: LoanApplications.ApplicationID
+
+relationship 633ba34d-3dc1-b22d-120d-7dd4c39d1097
+	fromColumn: ApplicationHistories.ApplicationID
+	toColumn: LoanApplications.ApplicationID
+

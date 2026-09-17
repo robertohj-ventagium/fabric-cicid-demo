@@ -1,0 +1,138 @@
+table fact_actual_sales
+	lineageTag: 1f045402-5fa8-4db3-b597-3e4face870b5
+	sourceLineageTag: [dbo].[fact_actual_sales]
+
+	column DateKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 93f3fe83-7ce5-40de-b806-9a7ccbc6130a
+		sourceLineageTag: DateKey
+		summarizeBy: none
+		sourceColumn: DateKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column StoreKey
+		dataType: int64
+		formatString: 0
+		lineageTag: e0156e5e-a6cb-4b44-8065-9a844e642220
+		sourceLineageTag: StoreKey
+		summarizeBy: none
+		sourceColumn: StoreKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 53337725-5428-4606-af2c-247a5ce882c7
+		sourceLineageTag: ProductKey
+		summarizeBy: none
+		sourceColumn: ProductKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column ActualQuantity
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 12f821ca-8f91-4662-916f-89498a041940
+		sourceLineageTag: ActualQuantity
+		summarizeBy: sum
+		sourceColumn: ActualQuantity
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column GrossRevenue
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 230fa94e-f3b4-4b73-b9b5-3b33245bef1a
+		sourceLineageTag: GrossRevenue
+		summarizeBy: sum
+		sourceColumn: GrossRevenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column DiscountAmount
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 56d09d67-68b5-4aa3-b947-a7f16ea7f441
+		sourceLineageTag: DiscountAmount
+		summarizeBy: sum
+		sourceColumn: DiscountAmount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column TransactionCount
+		dataType: int64
+		formatString: 0
+		lineageTag: 35fb84e7-a20c-4888-b83c-453c3e2d60e5
+		sourceLineageTag: TransactionCount
+		summarizeBy: sum
+		sourceColumn: TransactionCount
+
+		annotation SummarizationSetBy = Automatic
+
+	column PromotionFlag
+		dataType: int64
+		formatString: 0
+		lineageTag: 12d38931-b29d-42e7-a78e-72818f4821e5
+		sourceLineageTag: PromotionFlag
+		summarizeBy: sum
+		sourceColumn: PromotionFlag
+
+		annotation SummarizationSetBy = Automatic
+
+	column PromotionID
+		dataType: string
+		lineageTag: a3419102-845a-4f3a-a0c1-4465989aec19
+		sourceLineageTag: PromotionID
+		summarizeBy: none
+		sourceColumn: PromotionID
+
+		annotation SummarizationSetBy = Automatic
+
+	column LoadedAt
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: ee0fe655-5992-4239-8802-3389ff9ece6d
+		sourceLineageTag: LoadedAt
+		summarizeBy: none
+		sourceColumn: LoadedAt
+
+		annotation SummarizationSetBy = Automatic
+
+	column NetRevenue
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: a2ccfd1a-27e4-4728-a26e-a7f832c169dd
+		sourceLineageTag: NetRevenue
+		summarizeBy: sum
+		sourceColumn: NetRevenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column MSSQL_System_Uniquifier_1941581955
+		dataType: int64
+		formatString: 0
+		lineageTag: 431a93ba-7079-4a32-a2b4-2bcfc7b782c6
+		sourceLineageTag: MSSQL_System_Uniquifier_1941581955
+		summarizeBy: sum
+		sourceColumn: MSSQL_System_Uniquifier_1941581955
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_actual_sales = entity
+		mode: directLake
+		source
+			entityName: fact_actual_sales
+			schemaName: dbo
+			expressionSource: 'DirectLake - Test_Store_DB'
+

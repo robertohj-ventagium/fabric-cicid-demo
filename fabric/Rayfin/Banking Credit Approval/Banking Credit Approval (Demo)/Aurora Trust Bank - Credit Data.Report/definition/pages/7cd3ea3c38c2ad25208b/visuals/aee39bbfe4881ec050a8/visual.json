@@ -1,0 +1,226 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
+  "name": "aee39bbfe4881ec050a8",
+  "position": {
+    "x": 32,
+    "y": 488,
+    "z": 2000,
+    "height": 208,
+    "width": 792,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CreditProfiles"
+                    }
+                  },
+                  "Property": "CreditProfileID"
+                }
+              },
+              "queryRef": "CreditProfiles.CreditProfileID",
+              "nativeQueryRef": "Credit Profile ID",
+              "displayName": "Credit Profile ID"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CreditProfiles"
+                    }
+                  },
+                  "Property": "CreditScore"
+                }
+              },
+              "queryRef": "Sum(CreditProfiles.CreditScore)",
+              "nativeQueryRef": "Score",
+              "displayName": "Score"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CreditProfiles"
+                    }
+                  },
+                  "Property": "CreditUtilization"
+                }
+              },
+              "queryRef": "Sum(CreditProfiles.CreditUtilization)",
+              "nativeQueryRef": "Utilization",
+              "displayName": "Utilization"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CreditProfiles"
+                    }
+                  },
+                  "Property": "DelinquenciesLast12Months"
+                }
+              },
+              "queryRef": "Sum(CreditProfiles.DelinquenciesLast12Months)",
+              "nativeQueryRef": "Delinquencies 12 M",
+              "displayName": "Delinquencies 12 M"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CreditProfiles"
+                    }
+                  },
+                  "Property": "TotalOutstandingDebt"
+                }
+              },
+              "queryRef": "Sum(CreditProfiles.TotalOutstandingDebt)",
+              "nativeQueryRef": "Outstanding Debt",
+              "displayName": "Outstanding Debt"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CreditProfiles"
+                    }
+                  },
+                  "Property": "CreditHistoryYears"
+                }
+              },
+              "queryRef": "Sum(CreditProfiles.CreditHistoryYears)",
+              "nativeQueryRef": "Cred Hist Years",
+              "displayName": "Cred Hist Years"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "CreditProfiles"
+                  }
+                },
+                "Property": "CreditHistoryYears"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "visualContainerObjects": {
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Minimal'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "preset": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Custom'"
+                }
+              }
+            },
+            "shadowSpread": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            },
+            "angle": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "shadowDistance": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "85D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

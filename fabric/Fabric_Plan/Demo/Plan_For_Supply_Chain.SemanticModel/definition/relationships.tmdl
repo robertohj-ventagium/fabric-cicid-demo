@@ -1,0 +1,41 @@
+relationship af317f5f-205e-98d1-b60c-0477ee5eb368
+	fromColumn: fact_actual_sales.DateKey
+	toColumn: dim_date.DateKey
+
+relationship ae05c56c-172c-609f-a94b-7dffab4954d4
+	fromColumn: fact_actual_sales.StoreKey
+	toColumn: dim_store.StoreKey
+
+relationship bd73e95c-a1a4-e1f3-7026-cdfa6f6d78f1
+	fromColumn: fact_actual_sales.ProductKey
+	toColumn: dim_product.ProductKey
+
+relationship 00aec6af-6040-822e-745d-542a0c5e52cb
+	fromColumn: fact_forecast.ForecastDateKey
+	toColumn: dim_date.DateKey
+
+relationship ea5ff454-a259-ed40-4095-680718f42a57
+	isActive: false
+	fromColumn: fact_forecast.CreationDateKey
+	toColumn: dim_date.DateKey
+
+relationship e0f9b20e-e60b-1904-4a9f-c6bde5da5600
+	fromColumn: fact_forecast.StoreKey
+	toColumn: dim_store.StoreKey
+
+relationship 921b4e01-6685-05e4-7e84-bb2411e80de9
+	fromColumn: fact_forecast.ProductKey
+	toColumn: dim_product.ProductKey
+
+relationship 0c2bde4f-49f0-6595-c9b4-1370f732ed69
+	fromColumn: fact_planning_scenario.DateKey
+	toColumn: dim_date.DateKey
+
+relationship 180893b6-4fd3-e8ef-e023-242460a4397f
+	fromColumn: fact_planning_scenario.StoreKey
+	toColumn: dim_store.StoreKey
+
+relationship 7723a1ea-05ec-53a6-10ea-ba7a26f5d3da
+	fromColumn: fact_planning_scenario.ProductKey
+	toColumn: dim_product.ProductKey
+

@@ -1,0 +1,225 @@
+table DimAccountHierarchy
+	lineageTag: 302484ce-0ce8-4a5a-9601-6bd4f65f3d41
+	sourceLineageTag: [dbo].[DimAccountHierarchy]
+
+	column AccountKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 90d91d21-d9b1-4bea-8a1a-0bed7591ca97
+		sourceLineageTag: AccountKey
+		summarizeBy: none
+		sourceColumn: AccountKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column ParentAccountKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 5e242bd9-a0b8-4fbc-b2b1-f576f3c5931f
+		sourceLineageTag: ParentAccountKey
+		summarizeBy: none
+		sourceColumn: ParentAccountKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column AccountCodeAlternateKey
+		dataType: string
+		lineageTag: c1c27f7e-7ace-463e-ac61-e91704b1ff6c
+		sourceLineageTag: AccountCodeAlternateKey
+		summarizeBy: none
+		sourceColumn: AccountCodeAlternateKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column ParentAccountCodeAlternateKey
+		dataType: string
+		lineageTag: 4d3253b0-7873-49be-8eeb-0d573afaf08f
+		sourceLineageTag: ParentAccountCodeAlternateKey
+		summarizeBy: none
+		sourceColumn: ParentAccountCodeAlternateKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column AccountDescription
+		dataType: string
+		lineageTag: 0411a320-eaa9-4251-9419-c924f676a144
+		sourceLineageTag: AccountDescription
+		summarizeBy: none
+		sourceColumn: AccountDescription
+
+		annotation SummarizationSetBy = Automatic
+
+	column AccountType
+		dataType: string
+		lineageTag: c982585a-2ca4-472f-a864-5fa6f16787b1
+		sourceLineageTag: AccountType
+		summarizeBy: none
+		sourceColumn: AccountType
+
+		annotation SummarizationSetBy = Automatic
+
+	column Operator
+		dataType: string
+		lineageTag: 846cd4f1-72c2-4d74-b103-85e072349d14
+		sourceLineageTag: Operator
+		summarizeBy: none
+		sourceColumn: Operator
+
+		annotation SummarizationSetBy = Automatic
+
+	column CustomMembers
+		dataType: string
+		lineageTag: d892df3b-80e3-46a1-b18c-1a0d1d211b77
+		sourceLineageTag: CustomMembers
+		summarizeBy: none
+		sourceColumn: CustomMembers
+
+		annotation SummarizationSetBy = Automatic
+
+	column ValueType
+		dataType: string
+		lineageTag: 873308d8-a797-4996-8459-414fec44c092
+		sourceLineageTag: ValueType
+		summarizeBy: none
+		sourceColumn: ValueType
+
+		annotation SummarizationSetBy = Automatic
+
+	column CustomMemberOptions
+		dataType: string
+		lineageTag: cdc56deb-05a7-435d-af3d-9675fd537c28
+		sourceLineageTag: CustomMemberOptions
+		summarizeBy: none
+		sourceColumn: CustomMemberOptions
+
+		annotation SummarizationSetBy = Automatic
+
+	column HierarchyLevel
+		dataType: int64
+		formatString: 0
+		lineageTag: ea0e0919-291f-4195-b4d5-52c5715a7d75
+		sourceLineageTag: HierarchyLevel
+		summarizeBy: none
+		sourceColumn: HierarchyLevel
+
+		annotation SummarizationSetBy = Automatic
+
+	column Level1
+		dataType: string
+		lineageTag: 383a341a-63a2-43de-8cd6-2f071c792833
+		sourceLineageTag: Level1
+		summarizeBy: none
+		sourceColumn: Level1
+
+		annotation SummarizationSetBy = Automatic
+
+	column Level2
+		dataType: string
+		lineageTag: 0ca6c141-335e-4af2-90c5-5b06f7ba3f9f
+		sourceLineageTag: Level2
+		summarizeBy: none
+		sourceColumn: Level2
+
+		annotation SummarizationSetBy = Automatic
+
+	column Level3
+		dataType: string
+		lineageTag: e9d1df9f-e1d8-4802-8878-a9710993344e
+		sourceLineageTag: Level3
+		summarizeBy: none
+		sourceColumn: Level3
+
+		annotation SummarizationSetBy = Automatic
+
+	column Level4
+		dataType: string
+		lineageTag: e9e9ee8d-2900-4b34-b8c4-03294695d631
+		sourceLineageTag: Level4
+		summarizeBy: none
+		sourceColumn: Level4
+
+		annotation SummarizationSetBy = Automatic
+
+	column Level5
+		dataType: string
+		lineageTag: 80a9fe98-9c77-4892-9828-94124008f8ca
+		sourceLineageTag: Level5
+		summarizeBy: none
+		sourceColumn: Level5
+
+		annotation SummarizationSetBy = Automatic
+
+	column Level6
+		dataType: string
+		lineageTag: b3d30b31-cb22-49cb-9392-ecac5a61aa25
+		sourceLineageTag: Level6
+		summarizeBy: none
+		sourceColumn: Level6
+
+		annotation SummarizationSetBy = Automatic
+
+	column Level7
+		dataType: string
+		lineageTag: 6c98d436-620c-4252-a009-e87d3153d3be
+		sourceLineageTag: Level7
+		summarizeBy: none
+		sourceColumn: Level7
+
+		annotation SummarizationSetBy = Automatic
+
+	column Level8
+		dataType: string
+		lineageTag: 89fb0d9a-f188-4fce-ac34-2d1c63717cdd
+		sourceLineageTag: Level8
+		summarizeBy: none
+		sourceColumn: Level8
+
+		annotation SummarizationSetBy = Automatic
+
+	column Level9
+		dataType: string
+		lineageTag: 66eb8d21-89a4-4a06-aba0-d3ef47e3501e
+		sourceLineageTag: Level9
+		summarizeBy: none
+		sourceColumn: Level9
+
+		annotation SummarizationSetBy = Automatic
+
+	column Level10
+		dataType: string
+		lineageTag: 765febab-31e9-4c16-bc3e-d6bcbbe7b0af
+		sourceLineageTag: Level10
+		summarizeBy: none
+		sourceColumn: Level10
+
+		annotation SummarizationSetBy = Automatic
+
+	column MSSQL_System_Uniquifier_418100530
+		dataType: int64
+		formatString: 0
+		lineageTag: a046d4a1-0ca7-46d0-b050-dc7378adbe41
+		sourceLineageTag: MSSQL_System_Uniquifier_418100530
+		summarizeBy: none
+		sourceColumn: MSSQL_System_Uniquifier_418100530
+
+		annotation SummarizationSetBy = Automatic
+
+	column Budget
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: ff29d5fd-898e-410c-a421-f7b3bfc63cdb
+		sourceLineageTag: Budget
+		summarizeBy: none
+		sourceColumn: Budget
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	partition DimAccountHierarchy = entity
+		mode: directLake
+		source
+			entityName: DimAccountHierarchy
+			schemaName: dbo
+			expressionSource: 'DirectLake - Adventure_Works_DW_2017'
+

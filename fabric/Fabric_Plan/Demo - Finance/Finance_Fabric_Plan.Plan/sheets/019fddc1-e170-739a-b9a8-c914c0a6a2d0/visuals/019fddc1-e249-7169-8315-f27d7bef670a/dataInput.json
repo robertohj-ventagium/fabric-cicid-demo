@@ -1,0 +1,302 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/plan/definition/Planning/DataInput/1.0.0/schema.json",
+  "columns": [
+    {
+      "boundToFilterContext": 10,
+      "columnMeta": {
+        "data_type": "Number",
+        "description": null,
+        "id": "4361030802255218941",
+        "label": "Sum of Amount",
+        "measure_type": {
+          "Native": {
+            "measure_role": "ACMeasure"
+          }
+        },
+        "name": "Sum of Amount"
+      },
+      "dataInputType": 6,
+      "description": null,
+      "measureGuid": "4361030802255218941",
+      "name": "Sum of Amount",
+      "sidecarHydrationLeaseAt": null,
+      "sidecarHydrationStatus": 10,
+      "status": 10,
+      "visualId": "019fddc1-e249-7169-8315-f27d7bef670a"
+    },
+    {
+      "boundToFilterContext": 10,
+      "columnMeta": {
+        "data_type": "Number",
+        "description": "",
+        "id": "9339461087578069113",
+        "label": "Budget",
+        "measure_type": {
+          "DataInput": {
+            "allow_input": "ReadAndEdit",
+            "bound_to_filter_context": true,
+            "column_type": {
+              "Number": {
+                "default_value": null,
+                "distribute_parent_value_to_children": true,
+                "max_value": null,
+                "min_value": null
+              }
+            },
+            "disable_write_access": false,
+            "id": "",
+            "on_change_formula": "",
+            "title": ""
+          }
+        }
+      },
+      "dataInputType": 6,
+      "description": null,
+      "measureGuid": "9339461087578069113",
+      "name": "Budget",
+      "sidecarHydrationLeaseAt": null,
+      "sidecarHydrationStatus": 10,
+      "status": 10,
+      "visualId": "019fddc1-e249-7169-8315-f27d7bef670a"
+    },
+    {
+      "boundToFilterContext": 10,
+      "columnMeta": {
+        "data_type": "Text",
+        "description": "",
+        "id": "4266803781744796785",
+        "label": "Notes",
+        "measure_type": {
+          "VisualColumn": {
+            "DataInput": {
+              "allow_input": "ReadAndEdit",
+              "bound_to_filter_context": true,
+              "column_type": {
+                "ShortText": {
+                  "allow_entry_on_totals_or_subtotals": true,
+                  "default_value": null,
+                  "field_validation": "AnyValue",
+                  "maximum_length": null,
+                  "minimum_length": null,
+                  "prevent_null": false
+                }
+              },
+              "disable_write_access": false,
+              "id": "",
+              "on_change_formula": "",
+              "title": "Notes"
+            }
+          }
+        }
+      },
+      "dataInputType": 1,
+      "description": null,
+      "measureGuid": "4266803781744796785",
+      "name": "Notes",
+      "sidecarHydrationLeaseAt": null,
+      "sidecarHydrationStatus": 10,
+      "status": 10,
+      "visualId": "019fddc1-e249-7169-8315-f27d7bef670a"
+    },
+    {
+      "boundToFilterContext": 20,
+      "columnMeta": {
+        "data_type": "Number",
+        "description": "",
+        "id": "4748341612385053457",
+        "label": "Budget Q1 2014",
+        "measure_type": {
+          "VisualColumn": {
+            "Formula": {
+              "formula": "C_12548091506372652422.M_4361030802255218941 * 1.25"
+            }
+          }
+        }
+      },
+      "dataInputType": 6,
+      "description": null,
+      "measureGuid": "4748341612385053457",
+      "name": "Budget Q1 2014",
+      "sidecarHydrationLeaseAt": null,
+      "sidecarHydrationStatus": 10,
+      "status": 10,
+      "visualId": "019fddc1-e249-7169-8315-f27d7bef670a"
+    },
+    {
+      "boundToFilterContext": 10,
+      "columnMeta": {
+        "data_type": "Text",
+        "description": null,
+        "id": "4945016107218662795",
+        "label": "Manager Approval",
+        "measure_type": {
+          "VisualColumn": {
+            "DataInput": {
+              "allow_input": "ReadAndEdit",
+              "bound_to_filter_context": true,
+              "column_type": {
+                "SingleSelect": {
+                  "advanced": null,
+                  "allow_entry_on_totals_or_subtotals": true,
+                  "allow_user_to_add_new_option": false,
+                  "default_value": null,
+                  "icon_position": "left",
+                  "option_style": "Chip",
+                  "options": [
+                    {
+                      "color": "#FFE69C",
+                      "display_name": "In Progress",
+                      "icon": "circle-fill",
+                      "order": 1,
+                      "value": "custom_select_HMHCPqSy"
+                    },
+                    {
+                      "color": "#9ACBEB",
+                      "display_name": "Submitted",
+                      "icon": "circle-fill",
+                      "order": 2,
+                      "value": "custom_select_7VDBm6FA"
+                    },
+                    {
+                      "color": "#FD7E14",
+                      "display_name": "Reopened",
+                      "icon": "circle-fill",
+                      "order": 3,
+                      "value": "custom_select_A9VKdKCY"
+                    }
+                  ],
+                  "options_source": {
+                    "Static": [
+                      {
+                        "color": "#FFE69C",
+                        "display_name": "In Progress",
+                        "icon": "circle-fill",
+                        "order": 1,
+                        "value": "custom_select_HMHCPqSy"
+                      },
+                      {
+                        "color": "#9ACBEB",
+                        "display_name": "Submitted",
+                        "icon": "circle-fill",
+                        "order": 2,
+                        "value": "custom_select_7VDBm6FA"
+                      },
+                      {
+                        "color": "#FD7E14",
+                        "display_name": "Reopened",
+                        "icon": "circle-fill",
+                        "order": 3,
+                        "value": "custom_select_A9VKdKCY"
+                      }
+                    ]
+                  },
+                  "prevent_null": null
+                }
+              },
+              "disable_write_access": false,
+              "id": "",
+              "on_change_formula": "IF(THIS == 'Submitted', SETVALUE(M_2812040014886125465, 'Pending'), '')\nIF(THIS == 'Submitted', NOTIFY_USER(['jesus.martinez@ventagium.com', 'luis.martinez@ventagium.com'], '', ''), '')",
+              "title": ""
+            }
+          }
+        }
+      },
+      "dataInputType": 2,
+      "description": null,
+      "measureGuid": "4945016107218662795",
+      "name": "Manager Approval",
+      "sidecarHydrationLeaseAt": null,
+      "sidecarHydrationStatus": 10,
+      "status": 10,
+      "visualId": "019fddc1-e249-7169-8315-f27d7bef670a"
+    },
+    {
+      "boundToFilterContext": 10,
+      "columnMeta": {
+        "data_type": "Text",
+        "description": null,
+        "id": "2812040014886125465",
+        "label": "General Manager Approval",
+        "measure_type": {
+          "VisualColumn": {
+            "DataInput": {
+              "allow_input": "ReadAndEdit",
+              "bound_to_filter_context": true,
+              "column_type": {
+                "SingleSelect": {
+                  "advanced": null,
+                  "allow_entry_on_totals_or_subtotals": true,
+                  "allow_user_to_add_new_option": false,
+                  "default_value": null,
+                  "icon_position": "left",
+                  "option_style": "Chip",
+                  "options": [
+                    {
+                      "color": "#E2E3E5",
+                      "display_name": "Pending",
+                      "icon": "circle-fill",
+                      "order": 1,
+                      "value": "custom_select_M35Licgi"
+                    },
+                    {
+                      "color": "#A8E6A1",
+                      "display_name": "Approved",
+                      "icon": "circle-fill",
+                      "order": 2,
+                      "value": "custom_select_thBYzjyS"
+                    },
+                    {
+                      "color": "#ff6f7c",
+                      "display_name": "Rejected",
+                      "icon": "circle-fill",
+                      "order": 3,
+                      "value": "custom_select_JTwOUeX1"
+                    }
+                  ],
+                  "options_source": {
+                    "Static": [
+                      {
+                        "color": "#E2E3E5",
+                        "display_name": "Pending",
+                        "icon": "circle-fill",
+                        "order": 1,
+                        "value": "custom_select_M35Licgi"
+                      },
+                      {
+                        "color": "#A8E6A1",
+                        "display_name": "Approved",
+                        "icon": "circle-fill",
+                        "order": 2,
+                        "value": "custom_select_thBYzjyS"
+                      },
+                      {
+                        "color": "#ff6f7c",
+                        "display_name": "Rejected",
+                        "icon": "circle-fill",
+                        "order": 3,
+                        "value": "custom_select_JTwOUeX1"
+                      }
+                    ]
+                  },
+                  "prevent_null": null
+                }
+              },
+              "disable_write_access": false,
+              "id": "",
+              "on_change_formula": "IF(THIS == 'Rejected', SETVALUE(M_4945016107218662795, 'Reopened'), '')\nIF(HAS(['Approved','Rejected'], THIS), NOTIFY_USER(['luis.martinez@ventagium.com'], '', ''), '')",
+              "title": ""
+            }
+          }
+        }
+      },
+      "dataInputType": 2,
+      "description": null,
+      "measureGuid": "2812040014886125465",
+      "name": "General Manager Approval",
+      "sidecarHydrationLeaseAt": null,
+      "sidecarHydrationStatus": 10,
+      "status": 10,
+      "visualId": "019fddc1-e249-7169-8315-f27d7bef670a"
+    }
+  ]
+}

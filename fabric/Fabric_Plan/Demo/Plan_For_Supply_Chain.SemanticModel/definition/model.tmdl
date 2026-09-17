@@ -1,0 +1,23 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["DirectLake - Test_Store_DB"]
+
+annotation PBI_ProTooling = ["DirectLakeOnOneLakeInWeb","WebModelingEdit","RemoteModeling","TMDLView_Desktop"]
+
+ref table dim_date
+ref table fact_forecast
+ref table dim_store
+ref table dim_product
+ref table fact_actual_sales
+ref table fact_planning_scenario
+ref table *Measures
+ref table fact_promotion_uplift
+

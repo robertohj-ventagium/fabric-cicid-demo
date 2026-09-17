@@ -1,0 +1,80 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/plan/definition/Definition/1.0.0/schema.json",
+  "cube": {
+    "partitionRefIds": []
+  },
+  "semanticModelReference": {
+    "artifactId": null,
+    "connectionId": "62f8547d-d3db-48ad-b1e7-373ccab96acb",
+    "datasetRelations": [],
+    "directLakeMode": false,
+    "directQueryMode": false,
+    "recordGuid": "019f6bdc-bc70-7ee2-958c-382d05dbaa30",
+    "semanticModelId": "d681e157-a08e-4de9-b6b9-85e2a93afce9",
+    "semanticModelName": "Plan_For_Supply_Chain",
+    "semanticModelWorkspaceId": "1beb3139-2c5d-4cb3-b416-c46404555b49",
+    "semanticModelWorkspaceName": "00_Experiments",
+    "sourceType": "WORKLOAD",
+    "url": "https://app.powerbi.com/groups/1beb3139-2c5d-4cb3-b416-c46404555b49/datasets/d681e157-a08e-4de9-b6b9-85e2a93afce9"
+  },
+  "sheets": [
+    {
+      "displayName": "PS1. Demand Forecast Overview",
+      "isHidden": false,
+      "recordGuid": "019f6bdc-bc70-739c-97e7-b9c243b7f644",
+      "sheetType": "PLANNING",
+      "workloadItemEntityVisuals": [
+        {
+          "isEmbedded": false,
+          "visualId": "019f6bdc-bc70-7cc9-a256-6b40be8118bf",
+          "visualType": "PLANNING"
+        }
+      ]
+    },
+    {
+      "displayName": "PT1. Master Demand Plan",
+      "isHidden": false,
+      "recordGuid": "019f6bdc-bc70-7f79-8f97-0f73a79a87bd",
+      "sheetType": "POWERTABLE",
+      "workloadItemEntityVisuals": [
+        {
+          "isEmbedded": false,
+          "visualId": "019f6bdc-bc70-70eb-85f6-4ed25e381268",
+          "visualType": "POWERTABLE"
+        }
+      ]
+    },
+    {
+      "displayName": "IS1. Forecast Accuracy",
+      "isHidden": false,
+      "recordGuid": "019f6bdc-bc70-752e-9f07-7dd87623b0be",
+      "sheetType": "REPORTING",
+      "workloadItemEntityVisuals": [
+        {
+          "isEmbedded": false,
+          "visualId": "019f6bdc-bc70-78e4-88a6-d8c1d577f13a",
+          "visualType": "ANALYTICS_PLUS"
+        },
+        {
+          "isEmbedded": false,
+          "visualId": "019f6bdc-bc70-743f-86f8-4d1ea60cb9c0",
+          "visualType": "INFORIVER"
+        }
+      ]
+    },
+    {
+      "displayName": "Planning 1",
+      "isHidden": false,
+      "recordGuid": "019f6bdc-bc70-7a2f-865b-88a097c05821",
+      "sheetType": "PLANNING",
+      "workloadItemEntityVisuals": [
+        {
+          "isEmbedded": false,
+          "visualId": "019f6bdc-bc70-7f84-a0c3-65db10713b71",
+          "visualType": "PLANNING"
+        }
+      ]
+    }
+  ],
+  "workloadItemName": "Fabric_Plan_For_Supply_Chain"
+}

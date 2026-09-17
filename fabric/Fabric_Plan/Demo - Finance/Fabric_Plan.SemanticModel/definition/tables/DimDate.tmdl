@@ -1,0 +1,180 @@
+table DimDate
+	lineageTag: 08fdb30b-8a07-431a-8249-349a82b86eb8
+	sourceLineageTag: [dbo].[DimDate]
+	dataCategory: Time
+
+	column DateKey
+		dataType: int64
+		formatString: 0
+		lineageTag: b8add100-7164-483d-8b8c-01b513a11c19
+		sourceLineageTag: DateKey
+		summarizeBy: none
+		sourceColumn: DateKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column FullDateAlternateKey
+		dataType: dateTime
+		isKey
+		formatString: Short Date
+		lineageTag: 1ae20056-758d-4d26-9641-af85ef87ee40
+		sourceLineageTag: FullDateAlternateKey
+		summarizeBy: none
+		sourceColumn: FullDateAlternateKey
+
+		changedProperty = FormatString
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column DayNumberOfWeek
+		dataType: int64
+		formatString: 0
+		lineageTag: 1e464390-2bd8-47bd-8cdc-895c00bd3542
+		sourceLineageTag: DayNumberOfWeek
+		summarizeBy: none
+		sourceColumn: DayNumberOfWeek
+
+		annotation SummarizationSetBy = Automatic
+
+	column EnglishDayNameOfWeek
+		dataType: string
+		lineageTag: 15fab0d2-85ac-485b-8ceb-48480292a855
+		sourceLineageTag: EnglishDayNameOfWeek
+		summarizeBy: none
+		sourceColumn: EnglishDayNameOfWeek
+
+		annotation SummarizationSetBy = Automatic
+
+	column SpanishDayNameOfWeek
+		dataType: string
+		lineageTag: c3316b02-f2ea-4a73-9411-f8a09f1bab03
+		sourceLineageTag: SpanishDayNameOfWeek
+		summarizeBy: none
+		sourceColumn: SpanishDayNameOfWeek
+
+		annotation SummarizationSetBy = Automatic
+
+	column DayNumberOfMonth
+		dataType: int64
+		formatString: 0
+		lineageTag: 36ad0cba-186d-47bd-bf47-027bff57664e
+		sourceLineageTag: DayNumberOfMonth
+		summarizeBy: none
+		sourceColumn: DayNumberOfMonth
+
+		annotation SummarizationSetBy = Automatic
+
+	column DayNumberOfYear
+		dataType: int64
+		formatString: 0
+		lineageTag: ce3f8e5c-c062-475a-b59f-207a6fee6550
+		sourceLineageTag: DayNumberOfYear
+		summarizeBy: none
+		sourceColumn: DayNumberOfYear
+
+		annotation SummarizationSetBy = Automatic
+
+	column WeekNumberOfYear
+		dataType: int64
+		formatString: 0
+		lineageTag: a18a31db-88e9-40b2-a9b7-bcd1ba1c3f86
+		sourceLineageTag: WeekNumberOfYear
+		summarizeBy: none
+		sourceColumn: WeekNumberOfYear
+
+		annotation SummarizationSetBy = Automatic
+
+	column EnglishMonthName
+		dataType: string
+		lineageTag: d7250c3e-d24b-4781-a479-17e8ecf38812
+		sourceLineageTag: EnglishMonthName
+		summarizeBy: none
+		sourceColumn: EnglishMonthName
+
+		annotation SummarizationSetBy = Automatic
+
+	column SpanishMonthName
+		dataType: string
+		lineageTag: 2cd806eb-a4cb-41b0-aae5-cb6fa5157273
+		sourceLineageTag: SpanishMonthName
+		summarizeBy: none
+		sourceColumn: SpanishMonthName
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthNumberOfYear
+		dataType: int64
+		formatString: 0
+		lineageTag: 068540f0-96ed-4f35-a5c9-8f380455136e
+		sourceLineageTag: MonthNumberOfYear
+		summarizeBy: none
+		sourceColumn: MonthNumberOfYear
+
+		annotation SummarizationSetBy = Automatic
+
+	column CalendarQuarter
+		dataType: int64
+		formatString: 0
+		lineageTag: f83244e2-4077-4af0-9cbe-ea1279853a9b
+		sourceLineageTag: CalendarQuarter
+		summarizeBy: none
+		sourceColumn: CalendarQuarter
+
+		annotation SummarizationSetBy = Automatic
+
+	column CalendarYear
+		dataType: int64
+		formatString: 0
+		lineageTag: 26906fde-43aa-43b4-90b5-af4b05b1497f
+		sourceLineageTag: CalendarYear
+		summarizeBy: none
+		sourceColumn: CalendarYear
+
+		annotation SummarizationSetBy = Automatic
+
+	column CalendarSemester
+		dataType: int64
+		formatString: 0
+		lineageTag: f0786dd3-a86d-42b7-ba6a-6915aad26f5f
+		sourceLineageTag: CalendarSemester
+		summarizeBy: none
+		sourceColumn: CalendarSemester
+
+		annotation SummarizationSetBy = Automatic
+
+	column MSSQL_System_Uniquifier_386100416
+		dataType: int64
+		formatString: 0
+		lineageTag: c8ac7914-4c91-4c1d-b4a9-bf9e18f0837c
+		sourceLineageTag: MSSQL_System_Uniquifier_386100416
+		summarizeBy: none
+		sourceColumn: MSSQL_System_Uniquifier_386100416
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'CalendarYear Jerarquía'
+		lineageTag: 52fe5adf-495d-4ae7-a6f1-43a73e134192
+
+		level CalendarYear
+			lineageTag: 97e901d9-f432-49fc-a792-9815d6ddd090
+			column: CalendarYear
+
+		level CalendarQuarter
+			lineageTag: 01bfb534-1aff-4599-99dc-91f10352cedc
+			column: CalendarQuarter
+
+		level EnglishMonthName
+			lineageTag: fe5fe5d5-3be1-4484-a9d8-047e0e417b9e
+			column: EnglishMonthName
+
+	partition DimDate = entity
+		mode: directLake
+		source
+			entityName: DimDate
+			schemaName: dbo
+			expressionSource: 'DirectLake - Adventure_Works_DW_2017'
+

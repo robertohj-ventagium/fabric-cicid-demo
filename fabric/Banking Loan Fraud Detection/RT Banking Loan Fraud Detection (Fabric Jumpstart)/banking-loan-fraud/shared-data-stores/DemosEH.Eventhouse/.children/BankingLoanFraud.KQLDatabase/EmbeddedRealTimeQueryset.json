@@ -1,0 +1,27 @@
+{
+  "queryset": {
+    "version": "1.0.0",
+    "dataSources": [
+      {
+        "id": "4f8a97ff-d2dc-45bc-ba41-7fdf37059571",
+        "clusterUri": "https://trd-esjdhnzxwpz139b7gd.z3.kusto.fabric.microsoft.com",
+        "type": "Fabric",
+        "databaseItemId": "ef6909cb-2a5f-42df-9105-73bc7c27678e"
+      },
+      {
+        "id": "49ff0056-be32-42cf-932e-7047e6868a78",
+        "clusterUri": "https://trd-vfp4k92h5dfbeyj41t.z5.kusto.fabric.microsoft.com",
+        "type": "Fabric",
+        "databaseItemId": "0db589d5-5fac-4165-b12c-ad3410ecaebb"
+      }
+    ],
+    "tabs": [
+      {
+        "id": "bbfddb08-0145-468d-9c7b-c86e29c5da4d",
+        "content": "bronze_banking\n| count\n\nbronze_banking\n| summarize count() by country\n\n\nbronze_banking\n| summarize count() by browser\n\nbronze_banking\n| summarize count() by device_type\n\nbronze_banking\n| summarize count() by bin(timestamp,5m)\n\n\n.delete table bronze_banking records with (whatif=true) <| bronze_banking | where timestamp < datetime(2026-08-18)\n\n.delete table bronze_banking records <| bronze_banking | where timestamp < datetime(2026-08-18)\n\n\n\n\n.show ingestion failures \n\n.clear table bronze_banking data\n\nbronze_banking\n| extend ingestion_time = ingestion_time()\n| project timestamp, ingestion_time, transaction_id\n| order by ingestion_time desc",
+        "title": "Tab",
+        "dataSourceId": "49ff0056-be32-42cf-932e-7047e6868a78"
+      }
+    ]
+  }
+}

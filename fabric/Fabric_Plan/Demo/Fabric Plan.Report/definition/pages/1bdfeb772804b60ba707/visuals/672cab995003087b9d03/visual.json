@@ -1,0 +1,342 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "672cab995003087b9d03",
+  "position": {
+    "x": 15.714285714285715,
+    "y": 154.28571428571431,
+    "z": 10000,
+    "height": 517.14285714285722,
+    "width": 1251.4285714285716,
+    "tabOrder": 9000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_planning_scenario"
+                    }
+                  },
+                  "Property": "ScenarioName"
+                }
+              },
+              "queryRef": "fact_planning_scenario.ScenarioName",
+              "nativeQueryRef": "Scenario",
+              "displayName": "Scenario"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_planning_scenario"
+                    }
+                  },
+                  "Property": "CreatedBy"
+                }
+              },
+              "queryRef": "fact_planning_scenario.CreatedBy",
+              "nativeQueryRef": "Creator",
+              "displayName": "Creator"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "fact_planning_scenario"
+                        }
+                      },
+                      "Property": "AdjustedForecast"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(fact_planning_scenario.AdjustedForecast)",
+              "nativeQueryRef": "Adjusted Forecast",
+              "displayName": "Adjusted Forecast",
+              "format": "#,0.00"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "fact_planning_scenario"
+                        }
+                      },
+                      "Property": "AdjustmentPct"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(fact_planning_scenario.AdjustmentPct)",
+              "nativeQueryRef": "Adjustment Pct",
+              "displayName": "Adjustment Pct",
+              "format": "#,0.00"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_planning_scenario"
+                    }
+                  },
+                  "Property": "AdjustmentType"
+                }
+              },
+              "queryRef": "fact_planning_scenario.AdjustmentType",
+              "nativeQueryRef": "Adjustment Type",
+              "displayName": "Adjustment Type"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "fact_planning_scenario"
+                        }
+                      },
+                      "Property": "BaselineForecast"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(fact_planning_scenario.BaselineForecast)",
+              "nativeQueryRef": "Base Forecast",
+              "displayName": "Base Forecast",
+              "format": "#,0.00"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "453.6666687464533D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "fact_planning_scenario.ScenarioName"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "147.66666490410034D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "fact_planning_scenario.CreatedBy"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "189.666665647268D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(fact_planning_scenario.AdjustedForecast)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "154.33333367615745D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(fact_planning_scenario.AdjustmentPct)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "163.33333333333334D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "fact_planning_scenario.AdjustmentType"
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {}
+        }
+      ],
+      "total": [
+        {
+          "properties": {
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Minimal'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "447eed69c8111bdc0a03",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fact_planning_scenario"
+              }
+            },
+            "Property": "ScenarioName"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "825e80093b9c7de04aeb",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fact_planning_scenario"
+              }
+            },
+            "Property": "CreatedBy"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "9784a434513e2e9dd3ab",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "fact_planning_scenario"
+                  }
+                },
+                "Property": "AdjustedForecast"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "fa0d9c15b22006685754",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "fact_planning_scenario"
+                  }
+                },
+                "Property": "AdjustmentPct"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "9ed861037307b5cd1a1e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fact_planning_scenario"
+              }
+            },
+            "Property": "AdjustmentType"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "bff919c0b76120e63d7b",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "fact_planning_scenario"
+                  }
+                },
+                "Property": "BaselineForecast"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}

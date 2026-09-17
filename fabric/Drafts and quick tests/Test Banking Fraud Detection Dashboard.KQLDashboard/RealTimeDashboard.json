@@ -1,0 +1,127 @@
+{
+  "schema_version": 78,
+  "flavor": "RTDashboard_Regular",
+  "changeDetection": {
+    "kind": "liveUpdates",
+    "fallbackRefreshRate": "5m",
+    "minRefreshRate": "30s"
+  },
+  "tiles": [
+    {
+      "id": "05494908-36f8-4ef5-9eb2-26f9cbd952cb",
+      "title": "New Tile",
+      "visualType": "kpi",
+      "pageId": "e21c0392-e5bb-445c-83ce-56fc6b3dd769",
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "width": 9,
+        "height": 7
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "6df0a433-be8d-446d-bedd-83a3bbd4471b"
+      },
+      "visualOptions": {
+        "kpi__valueColumn": null,
+        "kpi__visualType": "gauge",
+        "kpi__minValue": 0,
+        "kpi__maxValue": 100,
+        "kpi__showMinMaxLabels": true,
+        "kpi__conditionalFormattingEnabled": true,
+        "kpi__valueFormat": {
+          "format": "automatic",
+          "maxDecimalPlaces": 2,
+          "showUnitLabel": true,
+          "unit": "%"
+        },
+        "kpi__conditionalFormatting": {
+          "showBadges": false,
+          "showZoneMarks": true,
+          "zone1": {
+            "range": [
+              0,
+              33
+            ],
+            "indicator": {
+              "icon": "recommended",
+              "label": "OK"
+            }
+          },
+          "zone2": {
+            "range": [
+              33,
+              67
+            ],
+            "indicator": {
+              "icon": "recommended",
+              "label": "Warning"
+            }
+          },
+          "zone3": {
+            "range": [
+              67,
+              100
+            ],
+            "indicator": {
+              "icon": "recommended",
+              "label": "Danger"
+            }
+          }
+        },
+        "kpi__referenceLines": {
+          "showLabels": false,
+          "lines": []
+        }
+      }
+    }
+  ],
+  "baseQueries": [],
+  "parameters": [
+    {
+      "kind": "duration",
+      "id": "5311b313-72a0-4f47-aa96-b9707499c320",
+      "displayName": "Time range",
+      "description": "",
+      "beginVariableName": "_startTime",
+      "endVariableName": "_endTime",
+      "defaultValue": {
+        "kind": "dynamic",
+        "count": 1,
+        "unit": "hours"
+      },
+      "showOnPages": {
+        "kind": "all"
+      }
+    }
+  ],
+  "dataSources": [
+    {
+      "id": "ed37ff54-d721-42e8-95c3-a0ac1b6c1aa3",
+      "kind": "kusto-trident",
+      "name": "BankingLoanFraud",
+      "clusterUri": "",
+      "databaseArtifactId": "0db589d5-5fac-4165-b12c-ad3410ecaebb",
+      "database": "10ecaebb-ad34-b12c-4165-5fac0db589d5",
+      "workspace": "00000000-0000-0000-0000-000000000000"
+    }
+  ],
+  "pages": [
+    {
+      "name": "Page 1",
+      "id": "e21c0392-e5bb-445c-83ce-56fc6b3dd769"
+    }
+  ],
+  "queries": [
+    {
+      "dataSource": {
+        "kind": "inline",
+        "dataSourceId": "ed37ff54-d721-42e8-95c3-a0ac1b6c1aa3"
+      },
+      "text": "bronze_banking\n| count",
+      "id": "6df0a433-be8d-446d-bedd-83a3bbd4471b",
+      "usedVariables": []
+    }
+  ],
+  "embeddedApps": []
+}

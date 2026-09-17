@@ -1,0 +1,28 @@
+[
+  {
+    "name": "sensors_parsed",
+    "path": "/Tables/ManufacturingRealtimeAnalytics",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Tables/sensors_parsed",
+        "itemId": "ee6bd592-1315-aa58-408e-a4eb1c548ab0",
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "artifactType": "KustoDatabase"
+      }
+    }
+  },
+  {
+    "name": "production_quality",
+    "path": "/Tables/ManufacturingRealtimeAnalytics",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Tables/production_quality",
+        "itemId": "ee6bd592-1315-aa58-408e-a4eb1c548ab0",
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "artifactType": "KustoDatabase"
+      }
+    }
+  }
+]

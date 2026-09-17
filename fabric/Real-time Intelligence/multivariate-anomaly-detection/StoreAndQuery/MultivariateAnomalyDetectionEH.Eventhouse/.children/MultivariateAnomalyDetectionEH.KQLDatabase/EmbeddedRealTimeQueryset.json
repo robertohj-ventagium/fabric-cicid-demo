@@ -1,0 +1,22 @@
+{
+  "queryset": {
+    "version": "1.0.0",
+    "dataSources": [
+      {
+        "id": "6086fdb3-e825-48e5-927e-59f0b7a6e0bf",
+        "clusterUri": "https://trd-p0k8tmjs6xrw31c0aq.z8.kusto.fabric.microsoft.com",
+        "type": "Fabric",
+        "databaseItemId": "4ca3a859-3057-44f5-8ecd-e261e09969b4",
+        "databaseItemName": "MultivariateAnomalyDetectionEH"
+      }
+    ],
+    "tabs": [
+      {
+        "id": "577a82b4-8e91-432b-81b8-2f00a63d0033",
+        "content": "",
+        "title": "",
+        "dataSourceId": "6086fdb3-e825-48e5-927e-59f0b7a6e0bf"
+      }
+    ]
+  }
+}

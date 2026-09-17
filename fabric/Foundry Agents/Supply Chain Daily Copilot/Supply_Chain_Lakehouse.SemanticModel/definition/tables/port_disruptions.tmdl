@@ -1,0 +1,122 @@
+table port_disruptions
+	lineageTag: a6c3a1ec-29c3-48d9-b386-522d00a64b71
+	sourceLineageTag: [dbo].[port_disruptions]
+
+	column port_name
+		dataType: string
+		lineageTag: bdaf0bde-30fc-43b7-a0a2-10be6114aebf
+		sourceLineageTag: port_name
+		summarizeBy: none
+		sourceColumn: port_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column country
+		dataType: string
+		lineageTag: b6fcfa2e-43db-43ab-a703-209343e6a318
+		sourceLineageTag: country
+		summarizeBy: none
+		sourceColumn: country
+
+		annotation SummarizationSetBy = Automatic
+
+	column disruption_type
+		dataType: string
+		lineageTag: 152d0080-bb79-4ac5-9c04-178e518a1e02
+		sourceLineageTag: disruption_type
+		summarizeBy: none
+		sourceColumn: disruption_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column severity
+		dataType: string
+		lineageTag: b5c41d14-de61-492c-a718-641a420d0c88
+		sourceLineageTag: severity
+		summarizeBy: none
+		sourceColumn: severity
+
+		annotation SummarizationSetBy = Automatic
+
+	column status
+		dataType: string
+		lineageTag: d4eb248f-73b7-47f3-a598-f4bebc6c5e9b
+		sourceLineageTag: status
+		summarizeBy: none
+		sourceColumn: status
+
+		annotation SummarizationSetBy = Automatic
+
+	column description
+		dataType: string
+		lineageTag: d4146026-9f6f-43bc-ae5d-69986eadecbf
+		sourceLineageTag: description
+		summarizeBy: none
+		sourceColumn: description
+
+		annotation SummarizationSetBy = Automatic
+
+	column estimated_delay_days
+		dataType: int64
+		formatString: 0
+		lineageTag: c8436536-0a87-41c9-82e8-62892a9fac04
+		sourceLineageTag: estimated_delay_days
+		summarizeBy: sum
+		sourceColumn: estimated_delay_days
+
+		annotation SummarizationSetBy = Automatic
+
+	column affected_container_volume
+		dataType: int64
+		formatString: 0
+		lineageTag: f841f4aa-8f14-4ecf-ae34-5fb3a1a58d7d
+		sourceLineageTag: affected_container_volume
+		summarizeBy: sum
+		sourceColumn: affected_container_volume
+
+		annotation SummarizationSetBy = Automatic
+
+	column affected_operations
+		dataType: string
+		lineageTag: d653c91b-4db0-4df4-bae9-1d8ffec46aac
+		sourceLineageTag: affected_operations
+		summarizeBy: none
+		sourceColumn: affected_operations
+
+		annotation SummarizationSetBy = Automatic
+
+	column recommended_action
+		dataType: string
+		lineageTag: 645838c2-06ed-4327-9037-7e49ee19b925
+		sourceLineageTag: recommended_action
+		summarizeBy: none
+		sourceColumn: recommended_action
+
+		annotation SummarizationSetBy = Automatic
+
+	column date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 36daf4ee-e0b7-49d2-ba79-059a69c65a3e
+		sourceLineageTag: date
+		summarizeBy: none
+		sourceColumn: date
+
+		annotation SummarizationSetBy = Automatic
+
+	column affected_warehouse
+		dataType: string
+		lineageTag: 02a3dd83-2974-4d68-9d9c-d4a9ca145983
+		sourceLineageTag: affected_warehouse
+		summarizeBy: none
+		sourceColumn: affected_warehouse
+
+		annotation SummarizationSetBy = Automatic
+
+	partition port_disruptions = entity
+		mode: directLake
+		source
+			entityName: port_disruptions
+			schemaName: dbo
+			expressionSource: 'DirectLake - Supply_Chain_Lakehouse'
+

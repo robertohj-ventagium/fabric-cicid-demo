@@ -1,0 +1,109 @@
+table inventory_daily
+	lineageTag: 41a5204a-f41f-4b63-8280-0f624caabf20
+	sourceLineageTag: [dbo].[inventory_daily]
+
+	column date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 8062839e-e7d1-4d8b-b176-afcfa220e57d
+		sourceLineageTag: date
+		summarizeBy: none
+		sourceColumn: date
+
+		annotation SummarizationSetBy = Automatic
+
+	column warehouse
+		dataType: string
+		lineageTag: 5b65607a-1a81-48b8-943f-6d938b480245
+		sourceLineageTag: warehouse
+		summarizeBy: none
+		sourceColumn: warehouse
+
+		annotation SummarizationSetBy = Automatic
+
+	column product
+		dataType: string
+		lineageTag: 8b71d455-f4c0-400b-9611-71d3dda9aa1f
+		sourceLineageTag: product
+		summarizeBy: none
+		sourceColumn: product
+
+		annotation SummarizationSetBy = Automatic
+
+	column on_hand_qty
+		dataType: int64
+		formatString: 0
+		lineageTag: ca796008-1c20-4e52-8c1d-107b264f015b
+		sourceLineageTag: on_hand_qty
+		summarizeBy: sum
+		sourceColumn: on_hand_qty
+
+		annotation SummarizationSetBy = Automatic
+
+	column reserved_qty
+		dataType: int64
+		formatString: 0
+		lineageTag: 6fb43268-4d32-4de8-a594-b93dfe0967ab
+		sourceLineageTag: reserved_qty
+		summarizeBy: sum
+		sourceColumn: reserved_qty
+
+		annotation SummarizationSetBy = Automatic
+
+	column available_qty
+		dataType: int64
+		formatString: 0
+		lineageTag: 4de09165-ebf0-49b2-a106-10aa4dac7c67
+		sourceLineageTag: available_qty
+		summarizeBy: sum
+		sourceColumn: available_qty
+
+		annotation SummarizationSetBy = Automatic
+
+	column inbound_qty
+		dataType: int64
+		formatString: 0
+		lineageTag: 1d474d5a-f8a4-4aef-ab93-d8030113cb98
+		sourceLineageTag: inbound_qty
+		summarizeBy: sum
+		sourceColumn: inbound_qty
+
+		annotation SummarizationSetBy = Automatic
+
+	column safety_stock_qty
+		dataType: int64
+		formatString: 0
+		lineageTag: 4ed8531f-6e9c-4726-a639-52514598c7dd
+		sourceLineageTag: safety_stock_qty
+		summarizeBy: sum
+		sourceColumn: safety_stock_qty
+
+		annotation SummarizationSetBy = Automatic
+
+	column days_of_supply
+		dataType: double
+		lineageTag: 36cfc453-9f1f-4525-a0f7-fb4977a2c254
+		sourceLineageTag: days_of_supply
+		summarizeBy: sum
+		sourceColumn: days_of_supply
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column inventory_status
+		dataType: string
+		lineageTag: 5744148b-bd0a-4f35-b740-133d0fb10288
+		sourceLineageTag: inventory_status
+		summarizeBy: none
+		sourceColumn: inventory_status
+
+		annotation SummarizationSetBy = Automatic
+
+	partition inventory_daily = entity
+		mode: directLake
+		source
+			entityName: inventory_daily
+			schemaName: dbo
+			expressionSource: 'DirectLake - Supply_Chain_Lakehouse'
+

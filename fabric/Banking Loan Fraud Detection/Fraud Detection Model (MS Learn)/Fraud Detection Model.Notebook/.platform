@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Notebook",
+    "displayName": "Fraud Detection Model"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "0aac9399-a9d4-9794-4079-866c68cfbf9f"
+  }
+}

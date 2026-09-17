@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Notebook",
+    "displayName": "Banking_Data Ingestion",
+    "description": "Ingestion of CSV synthetic files into Banking_Data_Lakehouse"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "4993fac5-dff2-916e-451e-a4d86ae4896c"
+  }
+}

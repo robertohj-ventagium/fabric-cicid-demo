@@ -1,0 +1,114 @@
+table kpis_daily
+	lineageTag: 64f54df6-ad6b-4242-9947-06685f320eb6
+	sourceLineageTag: [dbo].[kpis_daily]
+
+	column date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: ddd7d593-4727-4948-9141-35d1e354c7d0
+		sourceLineageTag: date
+		summarizeBy: none
+		sourceColumn: date
+
+		annotation SummarizationSetBy = Automatic
+
+	column warehouse
+		dataType: string
+		lineageTag: 31525230-b222-4918-8162-2cd24610ebf7
+		sourceLineageTag: warehouse
+		summarizeBy: none
+		sourceColumn: warehouse
+
+		annotation SummarizationSetBy = Automatic
+
+	column otif
+		dataType: double
+		lineageTag: c4a6b816-9cf1-4c2d-a4d4-5a3eefafe025
+		sourceLineageTag: otif
+		summarizeBy: sum
+		sourceColumn: otif
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column fill_rate
+		dataType: double
+		lineageTag: eff6786c-f801-420b-8688-287847873cba
+		sourceLineageTag: fill_rate
+		summarizeBy: sum
+		sourceColumn: fill_rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column forecast_accuracy
+		dataType: double
+		lineageTag: c20b2ca7-c731-4984-8f80-af5a0e8b3723
+		sourceLineageTag: forecast_accuracy
+		summarizeBy: sum
+		sourceColumn: forecast_accuracy
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column inventory_turns
+		dataType: double
+		lineageTag: 625feecb-27d4-4cf4-b96d-5fae74d7a71b
+		sourceLineageTag: inventory_turns
+		summarizeBy: sum
+		sourceColumn: inventory_turns
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column inventory_value
+		dataType: int64
+		formatString: 0
+		lineageTag: f6f1acf5-c484-4b50-8cbc-33d95dad2056
+		sourceLineageTag: inventory_value
+		summarizeBy: sum
+		sourceColumn: inventory_value
+
+		annotation SummarizationSetBy = Automatic
+
+	column backorders
+		dataType: int64
+		formatString: 0
+		lineageTag: 6739be27-86f9-4c46-93a0-72196574b481
+		sourceLineageTag: backorders
+		summarizeBy: sum
+		sourceColumn: backorders
+
+		annotation SummarizationSetBy = Automatic
+
+	column late_orders
+		dataType: int64
+		formatString: 0
+		lineageTag: 07ae8f0b-2e21-4ade-b0e7-15f31d80cdda
+		sourceLineageTag: late_orders
+		summarizeBy: sum
+		sourceColumn: late_orders
+
+		annotation SummarizationSetBy = Automatic
+
+	column stockouts
+		dataType: int64
+		formatString: 0
+		lineageTag: 877df57f-32b0-431b-b8fa-8a743337c17a
+		sourceLineageTag: stockouts
+		summarizeBy: sum
+		sourceColumn: stockouts
+
+		annotation SummarizationSetBy = Automatic
+
+	partition kpis_daily = entity
+		mode: directLake
+		source
+			entityName: kpis_daily
+			schemaName: dbo
+			expressionSource: 'DirectLake - Supply_Chain_Lakehouse'
+

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Map",
+    "displayName": "AssetStatus",
+    "description": "Asset Status Map for Multivariate Anomaly Detection"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "66ac7fa7-bf02-bc98-4d6a-866e2a54e1fa"
+  }
+}

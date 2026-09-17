@@ -1,0 +1,84 @@
+table ApplicationHistories
+	lineageTag: af5de007-80a2-49e7-9274-489b0064548d
+	sourceLineageTag: [dbo].[ApplicationHistories]
+
+	column id
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: b83b9650-9491-4d9f-ad86-e395928fd05b
+		sourceLineageTag: id
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column ApplicationID
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 801d0f02-0d2b-4a3b-96c1-5e4906266f9c
+		sourceLineageTag: ApplicationID
+		summarizeBy: none
+		sourceColumn: ApplicationID
+
+		annotation SummarizationSetBy = Automatic
+
+	column EventDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 36f58034-ac9d-495d-b5fe-1c03eae0b323
+		sourceLineageTag: EventDate
+		summarizeBy: none
+		sourceColumn: EventDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column EventType
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: d9452502-61b4-4a6d-8dfb-8919660fa83b
+		sourceLineageTag: EventType
+		summarizeBy: none
+		sourceColumn: EventType
+
+		annotation SummarizationSetBy = Automatic
+
+	column HistoryID
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a45388f3-7bea-4f72-815d-120c4a954286
+		sourceLineageTag: HistoryID
+		summarizeBy: none
+		sourceColumn: HistoryID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Notes
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a9febc1a-ed73-4ff1-b95d-6823dacac5b4
+		sourceLineageTag: Notes
+		summarizeBy: none
+		sourceColumn: Notes
+
+		annotation SummarizationSetBy = Automatic
+
+	column PerformedBy
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 95958316-b68f-4d0e-8a8d-0d6aa286ba3e
+		sourceLineageTag: PerformedBy
+		summarizeBy: none
+		sourceColumn: PerformedBy
+
+		annotation SummarizationSetBy = Automatic
+
+	partition ApplicationHistories = entity
+		mode: directLake
+		source
+			entityName: ApplicationHistories
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

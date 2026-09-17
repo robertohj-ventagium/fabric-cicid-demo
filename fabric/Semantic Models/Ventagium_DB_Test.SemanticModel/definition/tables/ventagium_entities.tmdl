@@ -1,0 +1,343 @@
+table ventagium_entities
+	lineageTag: 1fa8a410-9e9b-445a-b614-9e3e61112cb7
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: 78dba1d5-efe8-466e-a06c-09cbf30f92d2
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column create_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 15d055a0-3bf3-4a89-bdc1-5899b268df46
+		summarizeBy: none
+		sourceColumn: create_date
+
+		variation Variation
+			isDefault
+			relationship: ffda5668-aa3d-408f-8580-5e87527ee3ba
+			defaultHierarchy: LocalDateTable_96cd3fac-325c-4aa4-9525-8d751c3457f9.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column name
+		dataType: string
+		lineageTag: 7464583b-11b4-4679-b85e-cdafcca1921e
+		summarizeBy: none
+		sourceColumn: name
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_client
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 99cceddb-0337-41a0-b6d5-78259bad0e2a
+		summarizeBy: none
+		sourceColumn: is_client
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_supplier
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 9f935ce4-2a93-40d6-9ac7-fec9187ba5e4
+		summarizeBy: none
+		sourceColumn: is_supplier
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_prospect
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 21c26758-9324-4ae5-8477-df6917958b7a
+		summarizeBy: none
+		sourceColumn: is_prospect
+
+		annotation SummarizationSetBy = Automatic
+
+	column sales_representative_id
+		dataType: int64
+		formatString: 0
+		lineageTag: d35e7438-7d82-42c7-bc6e-41f16e8afde3
+		summarizeBy: sum
+		sourceColumn: sales_representative_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_architect_user_id
+		dataType: int64
+		formatString: 0
+		lineageTag: c3edb6ed-b748-47ca-b82d-01f69276fa13
+		summarizeBy: sum
+		sourceColumn: data_architect_user_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column account_manager_user_id
+		dataType: int64
+		formatString: 0
+		lineageTag: a2b41c92-bbb9-4a6b-8043-5587b2446c87
+		summarizeBy: sum
+		sourceColumn: account_manager_user_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column tech_lead_user_id
+		dataType: int64
+		formatString: 0
+		lineageTag: adf0dea9-b9f6-43c4-87c2-c3a83b2ccd01
+		summarizeBy: sum
+		sourceColumn: tech_lead_user_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column tax_id
+		dataType: string
+		lineageTag: ee722405-62d0-4c59-bf0a-5a1b8962d408
+		summarizeBy: none
+		sourceColumn: tax_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column tax_regime
+		dataType: int64
+		formatString: 0
+		lineageTag: 90e86a8c-1bcb-4215-9b75-6b7aff346f1d
+		summarizeBy: sum
+		sourceColumn: tax_regime
+
+		annotation SummarizationSetBy = Automatic
+
+	column zip_code
+		dataType: string
+		lineageTag: f18b08e7-3cb9-492c-8922-694ded9758da
+		summarizeBy: none
+		sourceColumn: zip_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column currency
+		dataType: string
+		lineageTag: 0e5c2837-8a3c-49e6-9a08-db597b9444c6
+		summarizeBy: none
+		sourceColumn: currency
+
+		annotation SummarizationSetBy = Automatic
+
+	column country_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 5e536dd9-1f3c-4d3d-8356-01835ac7ab30
+		summarizeBy: sum
+		sourceColumn: country_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column channel_id
+		dataType: int64
+		formatString: 0
+		lineageTag: b1bcfc7d-f800-4095-8a8b-7d1c80e76c06
+		summarizeBy: sum
+		sourceColumn: channel_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column employee_referall_id
+		dataType: int64
+		formatString: 0
+		lineageTag: b4e885eb-5885-4fed-b6b7-ad7650210955
+		summarizeBy: sum
+		sourceColumn: employee_referall_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column invoicing_instructions
+		dataType: string
+		lineageTag: d8b04d84-0cf1-43f7-b38b-a2bdbd06d22e
+		summarizeBy: none
+		sourceColumn: invoicing_instructions
+
+		annotation SummarizationSetBy = Automatic
+
+	column net_days_payment_terms
+		dataType: int64
+		formatString: 0
+		lineageTag: e4fa7d1c-29f9-4366-959e-117e770a3cb4
+		summarizeBy: sum
+		sourceColumn: net_days_payment_terms
+
+		annotation SummarizationSetBy = Automatic
+
+	column bank_name
+		dataType: string
+		lineageTag: ae2d88ab-ae31-4ab9-b05a-f49244e37e03
+		summarizeBy: none
+		sourceColumn: bank_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column account_number
+		dataType: int64
+		formatString: 0
+		lineageTag: 70408d82-0400-4f0f-9e88-dd085b36d138
+		summarizeBy: sum
+		sourceColumn: account_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column preferred_language_code
+		dataType: string
+		lineageTag: 0dc81fe1-96eb-4f35-8f91-0c3633126db7
+		summarizeBy: none
+		sourceColumn: preferred_language_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column emails_for_invoicing
+		dataType: string
+		lineageTag: a4f86da4-886a-46dd-897f-370b69b9391e
+		summarizeBy: none
+		sourceColumn: emails_for_invoicing
+
+		annotation SummarizationSetBy = Automatic
+
+	column type_of_industry_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 8dc23699-068d-4584-8f11-55d420857a5f
+		summarizeBy: sum
+		sourceColumn: type_of_industry_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column has_valens_initial_guide_been_sent
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 47d50610-533d-4190-91d9-f6ed2614a333
+		summarizeBy: none
+		sourceColumn: has_valens_initial_guide_been_sent
+
+		annotation SummarizationSetBy = Automatic
+
+	column billing_entity_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 6949e1e1-c3d4-46bc-8af3-377eb0348297
+		summarizeBy: sum
+		sourceColumn: billing_entity_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_ventagium_entity
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 3eed23d7-174c-47db-955a-956469b77155
+		summarizeBy: none
+		sourceColumn: is_ventagium_entity
+
+		annotation SummarizationSetBy = Automatic
+
+	column campaign_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 972e5f8c-7ddb-44e7-802e-d6347bb68bf4
+		summarizeBy: sum
+		sourceColumn: campaign_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column office_365_id
+		dataType: string
+		lineageTag: ca5dfbd9-c862-4a89-9691-22459b841649
+		summarizeBy: none
+		sourceColumn: office_365_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column responsible_user_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 796134af-4fc7-4b94-a388-586298c0c5fa
+		summarizeBy: sum
+		sourceColumn: responsible_user_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column entity_type
+		dataType: string
+		lineageTag: c6b2765d-1bfd-4ec5-b87c-fa84d7a04f4b
+		summarizeBy: none
+		sourceColumn: entity_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_active_client
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 121c81ee-d2f8-442e-abc2-3e7cfe7d89eb
+		summarizeBy: none
+		sourceColumn: is_active_client
+
+		annotation SummarizationSetBy = Automatic
+
+	column brand_name
+		dataType: string
+		lineageTag: 76c9c51f-44fb-4a85-a237-26a5c9a97371
+		summarizeBy: none
+		sourceColumn: brand_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column payables_general_ledger_account
+		dataType: int64
+		formatString: 0
+		lineageTag: 0007045b-6d05-4c28-990a-9d21da4af2a9
+		summarizeBy: sum
+		sourceColumn: payables_general_ledger_account
+
+		annotation SummarizationSetBy = Automatic
+
+	column receivables_general_ledger_account
+		dataType: int64
+		formatString: 0
+		lineageTag: c1ca3c09-536d-4ef5-9002-38f3eb7bf089
+		summarizeBy: sum
+		sourceColumn: receivables_general_ledger_account
+
+		annotation SummarizationSetBy = Automatic
+
+	column income_transaction_general_ledger_account
+		dataType: int64
+		formatString: 0
+		lineageTag: 18184ba2-b366-4ec0-8f06-56db5fd5a675
+		summarizeBy: sum
+		sourceColumn: income_transaction_general_ledger_account
+
+		annotation SummarizationSetBy = Automatic
+
+	column expense_transaction_general_ledger_account
+		dataType: int64
+		formatString: 0
+		lineageTag: 54b07e42-eaab-493e-aadc-e1185558edc3
+		summarizeBy: sum
+		sourceColumn: expense_transaction_general_ledger_account
+
+		annotation SummarizationSetBy = Automatic
+
+	partition ventagium_entities = m
+		mode: import
+		source =
+				let
+				  Source = Sql.Database("ventagiumgeneralserver2.database.windows.net", "Ventagium_Database"),
+				  #"Navigation 1" = Source{[Schema = "dbo", Item = "ventagium_entities"]}[Data]
+				in
+				  #"Navigation 1"
+
+	annotation PBI_ResultType = Table
+

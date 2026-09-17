@@ -1,0 +1,114 @@
+table weather
+	lineageTag: 13636579-0d0f-4be7-8326-a08e5d068c52
+	sourceLineageTag: [dbo].[weather]
+
+	column location
+		dataType: string
+		lineageTag: ce3c2f0f-d758-44de-8528-539ecb50e7e6
+		sourceLineageTag: location
+		summarizeBy: none
+		sourceColumn: location
+
+		annotation SummarizationSetBy = Automatic
+
+	column location_type
+		dataType: string
+		lineageTag: 444350c1-8733-4d20-aedc-8a61cf3f9771
+		sourceLineageTag: location_type
+		summarizeBy: none
+		sourceColumn: location_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column temperature_c
+		dataType: int64
+		formatString: 0
+		lineageTag: c3432eef-3666-4dc5-b976-0210ede54d98
+		sourceLineageTag: temperature_c
+		summarizeBy: sum
+		sourceColumn: temperature_c
+
+		annotation SummarizationSetBy = Automatic
+
+	column precipitation_mm
+		dataType: int64
+		formatString: 0
+		lineageTag: b8a3a610-86df-4ef1-a466-f3f7c723b1b8
+		sourceLineageTag: precipitation_mm
+		summarizeBy: sum
+		sourceColumn: precipitation_mm
+
+		annotation SummarizationSetBy = Automatic
+
+	column wind_speed_kmh
+		dataType: int64
+		formatString: 0
+		lineageTag: a025df96-5384-49ed-8f85-d4db3d357c88
+		sourceLineageTag: wind_speed_kmh
+		summarizeBy: sum
+		sourceColumn: wind_speed_kmh
+
+		annotation SummarizationSetBy = Automatic
+
+	column weather_condition
+		dataType: string
+		lineageTag: 6f72a015-e9cd-4742-9b17-83ef77bad56e
+		sourceLineageTag: weather_condition
+		summarizeBy: none
+		sourceColumn: weather_condition
+
+		annotation SummarizationSetBy = Automatic
+
+	column severity
+		dataType: string
+		lineageTag: c5037370-c7e6-4c86-b8c8-97cfc80839b7
+		sourceLineageTag: severity
+		summarizeBy: none
+		sourceColumn: severity
+
+		annotation SummarizationSetBy = Automatic
+
+	column disruption_risk
+		dataType: string
+		lineageTag: 2aad8382-8217-439e-b152-ff1bec6295ef
+		sourceLineageTag: disruption_risk
+		summarizeBy: none
+		sourceColumn: disruption_risk
+
+		annotation SummarizationSetBy = Automatic
+
+	column affected_operations
+		dataType: string
+		lineageTag: 71e20d5a-d399-45f0-97d9-9fbcdc9dca8d
+		sourceLineageTag: affected_operations
+		summarizeBy: none
+		sourceColumn: affected_operations
+
+		annotation SummarizationSetBy = Automatic
+
+	column recommendation
+		dataType: string
+		lineageTag: d6782a19-a33a-4ecf-ae1a-cc3c4165e401
+		sourceLineageTag: recommendation
+		summarizeBy: none
+		sourceColumn: recommendation
+
+		annotation SummarizationSetBy = Automatic
+
+	column date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: e479c2ec-fb7b-4dbc-9d27-a8b8b79f42d1
+		sourceLineageTag: date
+		summarizeBy: none
+		sourceColumn: date
+
+		annotation SummarizationSetBy = Automatic
+
+	partition weather = entity
+		mode: directLake
+		source
+			entityName: weather
+			schemaName: dbo
+			expressionSource: 'DirectLake - Supply_Chain_Lakehouse'
+

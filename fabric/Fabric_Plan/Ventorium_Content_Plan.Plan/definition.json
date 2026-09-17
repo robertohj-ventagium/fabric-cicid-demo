@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/plan/definition/Definition/1.0.0/schema.json",
+  "appDBconnection": "6b9fb400-a77c-49f6-9da7-0857dce7412b",
+  "cube": {
+    "partitionRefIds": []
+  },
+  "sheets": [
+    {
+      "displayName": "Content_Plan",
+      "isHidden": false,
+      "recordGuid": "01a0b069-fbeb-748a-9fc4-9fd6de07578e",
+      "sheetType": "POWERTABLE",
+      "workloadItemEntityVisuals": [
+        {
+          "isEmbedded": false,
+          "visualId": "01a0b069-fbeb-7103-bb49-621e9173d69f",
+          "visualType": "POWERTABLE"
+        }
+      ]
+    }
+  ],
+  "workloadItemName": "Ventorium_Content_Plan"
+}

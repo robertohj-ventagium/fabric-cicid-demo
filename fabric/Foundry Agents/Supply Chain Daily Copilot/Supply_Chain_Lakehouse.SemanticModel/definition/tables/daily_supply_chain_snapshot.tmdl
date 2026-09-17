@@ -1,0 +1,153 @@
+table daily_supply_chain_snapshot
+	lineageTag: 8acd9a65-ed09-415a-b890-4e36df948de8
+	sourceLineageTag: [dbo].[daily_supply_chain_snapshot]
+
+	column date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: c6e36b4b-db4e-43c8-92ae-d8e438cfb412
+		sourceLineageTag: date
+		summarizeBy: none
+		sourceColumn: date
+
+		annotation SummarizationSetBy = Automatic
+
+	column overall_otif
+		dataType: double
+		lineageTag: ca49499b-3eae-459a-b9e5-1936a37f59f4
+		sourceLineageTag: overall_otif
+		summarizeBy: sum
+		sourceColumn: overall_otif
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column overall_fill_rate
+		dataType: double
+		lineageTag: 6197146d-f2e6-448d-bc08-445e53a53b4f
+		sourceLineageTag: overall_fill_rate
+		summarizeBy: sum
+		sourceColumn: overall_fill_rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column forecast_accuracy
+		dataType: double
+		lineageTag: ce50419b-3c22-41df-be5f-3ab2503ef8df
+		sourceLineageTag: forecast_accuracy
+		summarizeBy: sum
+		sourceColumn: forecast_accuracy
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column critical_inventory_items
+		dataType: int64
+		formatString: 0
+		lineageTag: 79883a20-18d2-4c80-bac6-f27f8ac01385
+		sourceLineageTag: critical_inventory_items
+		summarizeBy: sum
+		sourceColumn: critical_inventory_items
+
+		annotation SummarizationSetBy = Automatic
+
+	column inventory_below_safety_stock
+		dataType: int64
+		formatString: 0
+		lineageTag: dd375f95-9fb5-49c6-b764-04d3dd74b0ec
+		sourceLineageTag: inventory_below_safety_stock
+		summarizeBy: sum
+		sourceColumn: inventory_below_safety_stock
+
+		annotation SummarizationSetBy = Automatic
+
+	column delayed_orders
+		dataType: int64
+		formatString: 0
+		lineageTag: 0c0b215b-376f-4f63-aee2-d1d4704f5bbb
+		sourceLineageTag: delayed_orders
+		summarizeBy: sum
+		sourceColumn: delayed_orders
+
+		annotation SummarizationSetBy = Automatic
+
+	column high_priority_emails
+		dataType: int64
+		formatString: 0
+		lineageTag: 5dc6f8f6-8283-4051-9d78-bd2c210648b5
+		sourceLineageTag: high_priority_emails
+		summarizeBy: sum
+		sourceColumn: high_priority_emails
+
+		annotation SummarizationSetBy = Automatic
+
+	column supplier_issues
+		dataType: int64
+		formatString: 0
+		lineageTag: 6b196774-ea6d-4da3-a8a4-e48bb7b641bc
+		sourceLineageTag: supplier_issues
+		summarizeBy: sum
+		sourceColumn: supplier_issues
+
+		annotation SummarizationSetBy = Automatic
+
+	column weather_alerts
+		dataType: int64
+		formatString: 0
+		lineageTag: e4f99009-24f5-42f4-a956-261207d078dc
+		sourceLineageTag: weather_alerts
+		summarizeBy: sum
+		sourceColumn: weather_alerts
+
+		annotation SummarizationSetBy = Automatic
+
+	column container_delays
+		dataType: int64
+		formatString: 0
+		lineageTag: ec6e6146-42b4-4ef5-9ba5-410bb00aaff8
+		sourceLineageTag: container_delays
+		summarizeBy: sum
+		sourceColumn: container_delays
+
+		annotation SummarizationSetBy = Automatic
+
+	column port_disruptions
+		dataType: int64
+		formatString: 0
+		lineageTag: bee601fe-187b-427e-b3a8-84dbcb1ed4c8
+		sourceLineageTag: port_disruptions
+		summarizeBy: sum
+		sourceColumn: port_disruptions
+
+		annotation SummarizationSetBy = Automatic
+
+	column overall_risk_score
+		dataType: int64
+		formatString: 0
+		lineageTag: 6e045cb1-679b-44df-9605-e71e2a56abdf
+		sourceLineageTag: overall_risk_score
+		summarizeBy: sum
+		sourceColumn: overall_risk_score
+
+		annotation SummarizationSetBy = Automatic
+
+	column overall_status
+		dataType: string
+		lineageTag: 5c7127d2-1a1b-45d2-a149-1a1873a72cff
+		sourceLineageTag: overall_status
+		summarizeBy: none
+		sourceColumn: overall_status
+
+		annotation SummarizationSetBy = Automatic
+
+	partition daily_supply_chain_snapshot = entity
+		mode: directLake
+		source
+			entityName: daily_supply_chain_snapshot
+			schemaName: dbo
+			expressionSource: 'DirectLake - Supply_Chain_Lakehouse'
+

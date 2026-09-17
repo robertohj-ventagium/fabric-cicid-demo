@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/plan/definition/Definition/1.0.0/schema.json",
+  "appDBconnection": "e12cdbe3-efd5-47a2-b1ae-360825dd45c6",
+  "cube": {
+    "partitionRefIds": []
+  },
+  "semanticModelReference": {
+    "artifactId": null,
+    "connectionId": "62f8547d-d3db-48ad-b1e7-373ccab96acb",
+    "datasetRelations": [],
+    "directLakeMode": false,
+    "directQueryMode": false,
+    "recordGuid": "019f6bda-71d2-7c6a-b802-8efdefea0ffb",
+    "semanticModelId": "d681e157-a08e-4de9-b6b9-85e2a93afce9",
+    "semanticModelName": "Plan_For_Supply_Chain",
+    "semanticModelWorkspaceId": "1beb3139-2c5d-4cb3-b416-c46404555b49",
+    "semanticModelWorkspaceName": "00_Experiments",
+    "sourceType": "WORKLOAD",
+    "url": "https://app.powerbi.com/groups/1beb3139-2c5d-4cb3-b416-c46404555b49/datasets/d681e157-a08e-4de9-b6b9-85e2a93afce9"
+  },
+  "sheets": [
+    {
+      "displayName": "Product_Forecast",
+      "isHidden": false,
+      "recordGuid": "019f6bda-71d2-71a0-8912-88f9ac2c3769",
+      "sheetType": "PLANNING",
+      "workloadItemEntityVisuals": [
+        {
+          "isEmbedded": false,
+          "visualId": "019f6bda-71d2-74d3-9d13-ce9b316e7b87",
+          "visualType": "PLANNING"
+        }
+      ]
+    }
+  ],
+  "workloadItemName": "Fabric_Plan_Forecast"
+}

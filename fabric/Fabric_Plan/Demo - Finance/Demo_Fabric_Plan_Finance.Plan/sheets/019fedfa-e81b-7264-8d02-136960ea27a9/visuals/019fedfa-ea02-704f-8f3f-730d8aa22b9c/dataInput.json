@@ -1,0 +1,278 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/plan/definition/Planning/DataInput/1.0.0/schema.json",
+  "columns": [
+    {
+      "boundToFilterContext": 10,
+      "columnMeta": {
+        "data_type": "Number",
+        "description": "",
+        "id": "15381677387228054950",
+        "label": "Budget",
+        "measure_type": {
+          "DataInput": {
+            "allow_input": "ReadAndEdit",
+            "bound_to_filter_context": true,
+            "column_type": {
+              "Number": {
+                "default_value": null,
+                "distribute_parent_value_to_children": true,
+                "max_value": null,
+                "min_value": null
+              }
+            },
+            "disable_write_access": false,
+            "id": "",
+            "on_change_formula": "",
+            "title": "Budget"
+          }
+        }
+      },
+      "dataInputType": 6,
+      "description": null,
+      "measureGuid": "15381677387228054950",
+      "name": "Budget",
+      "sidecarHydrationLeaseAt": null,
+      "sidecarHydrationStatus": 10,
+      "status": 10,
+      "visualId": "019fedfa-ea02-704f-8f3f-730d8aa22b9c"
+    },
+    {
+      "boundToFilterContext": 10,
+      "columnMeta": {
+        "data_type": "Text",
+        "description": "",
+        "id": "7467587041009042515",
+        "label": "Notes",
+        "measure_type": {
+          "VisualColumn": {
+            "DataInput": {
+              "allow_input": "ReadAndEdit",
+              "bound_to_filter_context": true,
+              "column_type": {
+                "ShortText": {
+                  "allow_entry_on_totals_or_subtotals": true,
+                  "default_value": null,
+                  "field_validation": "AnyValue",
+                  "maximum_length": null,
+                  "minimum_length": null,
+                  "prevent_null": false
+                }
+              },
+              "disable_write_access": false,
+              "id": "",
+              "on_change_formula": "",
+              "title": "Notes"
+            }
+          }
+        }
+      },
+      "dataInputType": 1,
+      "description": null,
+      "measureGuid": "7467587041009042515",
+      "name": "Notes",
+      "sidecarHydrationLeaseAt": null,
+      "sidecarHydrationStatus": 10,
+      "status": 10,
+      "visualId": "019fedfa-ea02-704f-8f3f-730d8aa22b9c"
+    },
+    {
+      "boundToFilterContext": 10,
+      "columnMeta": {
+        "data_type": "Number",
+        "description": null,
+        "id": "10102932694277100779",
+        "label": "Actuals",
+        "measure_type": {
+          "Native": {
+            "measure_role": "ACMeasure"
+          }
+        },
+        "name": "Actuals"
+      },
+      "dataInputType": 6,
+      "description": null,
+      "measureGuid": "10102932694277100779",
+      "name": "Actuals",
+      "sidecarHydrationLeaseAt": null,
+      "sidecarHydrationStatus": 10,
+      "status": 10,
+      "visualId": "019fedfa-ea02-704f-8f3f-730d8aa22b9c"
+    },
+    {
+      "boundToFilterContext": 10,
+      "columnMeta": {
+        "data_type": "Text",
+        "description": null,
+        "id": "2186492751091012163",
+        "label": "CEO",
+        "measure_type": {
+          "VisualColumn": {
+            "DataInput": {
+              "allow_input": "ReadAndEdit",
+              "bound_to_filter_context": true,
+              "column_type": {
+                "SingleSelect": {
+                  "advanced": null,
+                  "allow_entry_on_totals_or_subtotals": true,
+                  "allow_user_to_add_new_option": false,
+                  "default_value": null,
+                  "icon_position": "left",
+                  "option_style": "Chip",
+                  "options": [
+                    {
+                      "color": "#E2E3E5",
+                      "display_name": "Pending",
+                      "icon": "circle-fill",
+                      "order": 1,
+                      "value": "custom_select_Eidjl1ON"
+                    },
+                    {
+                      "color": "#A8E6A1",
+                      "display_name": "Approved",
+                      "icon": "circle-fill",
+                      "order": 2,
+                      "value": "custom_select_yd8c49ol"
+                    },
+                    {
+                      "color": "#ff6f7c",
+                      "display_name": "Rejected",
+                      "icon": "circle-fill",
+                      "order": 3,
+                      "value": "custom_select_vu8382aw"
+                    }
+                  ],
+                  "options_source": {
+                    "Static": [
+                      {
+                        "color": "#E2E3E5",
+                        "display_name": "Pending",
+                        "icon": "circle-fill",
+                        "order": 1,
+                        "value": "custom_select_Eidjl1ON"
+                      },
+                      {
+                        "color": "#A8E6A1",
+                        "display_name": "Approved",
+                        "icon": "circle-fill",
+                        "order": 2,
+                        "value": "custom_select_yd8c49ol"
+                      },
+                      {
+                        "color": "#ff6f7c",
+                        "display_name": "Rejected",
+                        "icon": "circle-fill",
+                        "order": 3,
+                        "value": "custom_select_vu8382aw"
+                      }
+                    ]
+                  },
+                  "prevent_null": null
+                }
+              },
+              "disable_write_access": false,
+              "id": "",
+              "on_change_formula": "IF(THIS == 'Rejected', SETVALUE(M_7407343651583796129, 'Reopened'), '')\nIF(HAS(['Approved','Rejected'], THIS), NOTIFY_USER(['jesus.martinez@ventagium.com', 'ricardo.saldana@ventagium.com'], '', ''), '')",
+              "title": "CEO"
+            }
+          }
+        }
+      },
+      "dataInputType": 2,
+      "description": null,
+      "measureGuid": "2186492751091012163",
+      "name": "CEO",
+      "sidecarHydrationLeaseAt": null,
+      "sidecarHydrationStatus": 10,
+      "status": 10,
+      "visualId": "019fedfa-ea02-704f-8f3f-730d8aa22b9c"
+    },
+    {
+      "boundToFilterContext": 10,
+      "columnMeta": {
+        "data_type": "Text",
+        "description": null,
+        "id": "7407343651583796129",
+        "label": "CFO",
+        "measure_type": {
+          "VisualColumn": {
+            "DataInput": {
+              "allow_input": "ReadAndEdit",
+              "bound_to_filter_context": true,
+              "column_type": {
+                "SingleSelect": {
+                  "advanced": null,
+                  "allow_entry_on_totals_or_subtotals": true,
+                  "allow_user_to_add_new_option": false,
+                  "default_value": null,
+                  "icon_position": "left",
+                  "option_style": "Chip",
+                  "options": [
+                    {
+                      "color": "#FFE69C",
+                      "display_name": "In Progress",
+                      "icon": "circle-fill",
+                      "order": 1,
+                      "value": "custom_select_0ObbSvFc"
+                    },
+                    {
+                      "color": "#9ACBEB",
+                      "display_name": "Submitted",
+                      "icon": "circle-fill",
+                      "order": 2,
+                      "value": "custom_select_omauGh9d"
+                    },
+                    {
+                      "color": "#FD7E14",
+                      "display_name": "Reopened",
+                      "icon": "circle-fill",
+                      "order": 3,
+                      "value": "custom_select_ISD3kdwY"
+                    }
+                  ],
+                  "options_source": {
+                    "Static": [
+                      {
+                        "color": "#FFE69C",
+                        "display_name": "In Progress",
+                        "icon": "circle-fill",
+                        "order": 1,
+                        "value": "custom_select_0ObbSvFc"
+                      },
+                      {
+                        "color": "#9ACBEB",
+                        "display_name": "Submitted",
+                        "icon": "circle-fill",
+                        "order": 2,
+                        "value": "custom_select_omauGh9d"
+                      },
+                      {
+                        "color": "#FD7E14",
+                        "display_name": "Reopened",
+                        "icon": "circle-fill",
+                        "order": 3,
+                        "value": "custom_select_ISD3kdwY"
+                      }
+                    ]
+                  },
+                  "prevent_null": null
+                }
+              },
+              "disable_write_access": false,
+              "id": "",
+              "on_change_formula": "IF(THIS == 'Submitted', SETVALUE(M_2186492751091012163, 'Pending'), '')\nIF(THIS == 'Submitted', NOTIFY_USER(['arturo.torres@ventagium.com', 'jesus.martinez@ventagium.com'], '', ''), '')",
+              "title": "CFO"
+            }
+          }
+        }
+      },
+      "dataInputType": 2,
+      "description": null,
+      "measureGuid": "7407343651583796129",
+      "name": "CFO",
+      "sidecarHydrationLeaseAt": null,
+      "sidecarHydrationStatus": 10,
+      "status": 10,
+      "visualId": "019fedfa-ea02-704f-8f3f-730d8aa22b9c"
+    }
+  ]
+}

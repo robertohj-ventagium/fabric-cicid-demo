@@ -1,0 +1,44 @@
+table Finance_MetricValue
+	lineageTag: 8d3b3052-4aa7-4b32-adf1-92ce4cb4399f
+	sourceLineageTag: [finance].[MetricValue]
+
+	column MetricID
+		dataType: int64
+		formatString: 0
+		lineageTag: e4c7e89f-b8d1-48d3-88dd-30ec9648d366
+		sourceLineageTag: MetricID
+		summarizeBy: none
+		sourceColumn: MetricID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 2bb35380-69ae-4fd2-b495-0f00be5494b0
+		sourceLineageTag: Date
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column Value
+		dataType: double
+		lineageTag: a6f31474-f8f5-4ca9-9486-3bc133c43713
+		sourceLineageTag: Value
+		summarizeBy: sum
+		sourceColumn: Value
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition Finance_MetricValue = entity
+		mode: directLake
+		source
+			entityName: MetricValue
+			schemaName: finance
+			expressionSource: 'DirectLake - Static_Metrics_Lakehouse'
+
+	changedProperty = Name
+

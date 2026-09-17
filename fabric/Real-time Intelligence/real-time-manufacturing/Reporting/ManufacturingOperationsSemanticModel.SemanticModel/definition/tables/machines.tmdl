@@ -1,0 +1,142 @@
+table machines
+	lineageTag: 04b61421-d961-4efd-bfaa-b10192a0f8dd
+	sourceLineageTag: [masterdata].[machines]
+
+	column machine_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 7a2b25a2-13f0-469f-9699-e83704bdacb8
+		sourceLineageTag: machine_id
+		summarizeBy: none
+		sourceColumn: machine_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column equipment_number
+		dataType: string
+		lineageTag: 6b936352-35cb-42fd-83f4-da244245755f
+		sourceLineageTag: equipment_number
+		summarizeBy: none
+		sourceColumn: equipment_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column machine_name
+		dataType: string
+		lineageTag: 4a7c4ffd-2d27-4bbc-b740-454b6e24b57e
+		sourceLineageTag: machine_name
+		summarizeBy: none
+		sourceColumn: machine_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column site_id
+		dataType: int64
+		formatString: 0
+		lineageTag: a717eeb5-1cca-48c1-ab8c-314ea7b2ce27
+		sourceLineageTag: site_id
+		summarizeBy: none
+		sourceColumn: site_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column equipment_category
+		dataType: string
+		lineageTag: 979aa97e-8bde-40b6-980c-90fb6f60016a
+		sourceLineageTag: equipment_category
+		summarizeBy: none
+		sourceColumn: equipment_category
+
+		annotation SummarizationSetBy = Automatic
+
+	column technical_object_type
+		dataType: string
+		lineageTag: 2c40f3b9-fd37-4669-a750-5dde3c4ad5c6
+		sourceLineageTag: technical_object_type
+		summarizeBy: none
+		sourceColumn: technical_object_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column manufacturer
+		dataType: string
+		lineageTag: 51c0d98a-92fe-48f5-bece-e32352d0e646
+		sourceLineageTag: manufacturer
+		summarizeBy: none
+		sourceColumn: manufacturer
+
+		annotation SummarizationSetBy = Automatic
+
+	column manufacturer_part_type
+		dataType: string
+		lineageTag: 222c782e-3bf5-42c9-b80d-9a1bbd684f26
+		sourceLineageTag: manufacturer_part_type
+		summarizeBy: none
+		sourceColumn: manufacturer_part_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column construction_year
+		dataType: string
+		lineageTag: a95c6745-d3e1-41b3-8a5d-fef96a9cb87e
+		sourceLineageTag: construction_year
+		summarizeBy: none
+		sourceColumn: construction_year
+
+		annotation SummarizationSetBy = Automatic
+
+	column construction_month
+		dataType: string
+		lineageTag: ce761fee-e560-4927-93db-d655278359d6
+		sourceLineageTag: construction_month
+		summarizeBy: none
+		sourceColumn: construction_month
+
+		annotation SummarizationSetBy = Automatic
+
+	column serial_number
+		dataType: string
+		lineageTag: 5e0bc24e-89c9-4e30-92f2-8355a438ef30
+		sourceLineageTag: serial_number
+		summarizeBy: none
+		sourceColumn: serial_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column operation_start_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: abf10fff-ac46-4e42-b638-5e53a27915c0
+		sourceLineageTag: operation_start_date
+		summarizeBy: none
+		sourceColumn: operation_start_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column acquisition_value
+		dataType: double
+		lineageTag: 13fe1241-af9b-4ddf-847f-8bd39f78f1f1
+		sourceLineageTag: acquisition_value
+		summarizeBy: none
+		sourceColumn: acquisition_value
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column currency
+		dataType: string
+		lineageTag: 57d2428e-079e-4670-886a-9d11af382d79
+		sourceLineageTag: currency
+		summarizeBy: none
+		sourceColumn: currency
+
+		annotation SummarizationSetBy = Automatic
+
+	partition machines = entity
+		mode: directLake
+		source
+			entityName: machines
+			schemaName: masterdata
+			expressionSource: 'DirectLake - ManufacturingData'
+
