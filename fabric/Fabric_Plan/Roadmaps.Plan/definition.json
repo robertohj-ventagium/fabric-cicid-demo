@@ -1,8 +1,0 @@
-{
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/plan/definition/Definition/1.0.0/schema.json",
-  "cube": {
-    "partitionRefIds": []
-  },
-  "sheets": [],
-  "workloadItemName": "Roadmaps"
-}

@@ -1,9 +1,0 @@
-expression 'DirectLake - Static_Metrics_Lakehouse' =
-		let
-		    Source = AzureStorage.DataLake("https://onelake.dfs.fabric.microsoft.com/1beb3139-2c5d-4cb3-b416-c46404555b49/a47a5921-a371-4f6b-8ecc-b96d44023928", [HierarchicalNavigation=true])
-		in
-		    Source
-	lineageTag: a5bd467a-e968-41b9-8072-2f30a5659ce1
-
-	annotation PBI_IncludeFutureArtifacts = False
-
