@@ -1,0 +1,79 @@
+table dimdate
+	lineageTag: 22853a12-b773-4ab0-8c27-642f9112608d
+	sourceLineageTag: [dbo].[dimdate]
+
+	column Date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: cbb60b17-e7b7-434c-8d68-7ba4d4937094
+		sourceLineageTag: Date
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		dataType: int64
+		formatString: 0
+		lineageTag: b4d22cd3-1fc1-4a48-bd7c-755691be1418
+		sourceLineageTag: Year
+		summarizeBy: none
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month
+		dataType: int64
+		formatString: 0
+		lineageTag: 6241ad30-eb5c-4c2b-b298-1912c2521af9
+		sourceLineageTag: Month
+		summarizeBy: none
+		sourceColumn: Month
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthName
+		dataType: string
+		lineageTag: 478790cd-125a-406c-89ee-c2d160f984ae
+		sourceLineageTag: MonthName
+		summarizeBy: none
+		sourceColumn: MonthName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quarter
+		dataType: int64
+		formatString: 0
+		lineageTag: 665619fd-b810-45ad-b83f-dbd4faa8d297
+		sourceLineageTag: Quarter
+		summarizeBy: none
+		sourceColumn: Quarter
+
+		annotation SummarizationSetBy = Automatic
+
+	column WeekOfYear
+		dataType: int64
+		formatString: 0
+		lineageTag: 1fc30d01-8649-468f-b112-8de2657ecf86
+		sourceLineageTag: WeekOfYear
+		summarizeBy: none
+		sourceColumn: WeekOfYear
+
+		annotation SummarizationSetBy = Automatic
+
+	column DayOfWeek
+		dataType: string
+		lineageTag: 284755bf-8a61-441f-a21d-23df8d4b38bc
+		sourceLineageTag: DayOfWeek
+		summarizeBy: none
+		sourceColumn: DayOfWeek
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dimdate = entity
+		mode: directLake
+		source
+			entityName: dimdate
+			schemaName: dbo
+			expressionSource: 'DirectLake - Supply_Chain_Lakehouse'
+
