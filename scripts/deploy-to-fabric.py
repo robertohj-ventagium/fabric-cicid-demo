@@ -15,6 +15,7 @@ Example demonstrating:
 import os,argparse, requests, ast
 from fabric_cicd import FabricWorkspace, publish_all_items, unpublish_all_orphan_items,change_log_level,append_feature_flag
 from azure.identity import ClientSecretCredential
+from azure.identity import DefaultAzureCredential   
 
 # function to return the workspace ID
 def get_workspace_id(p_ws_name, p_token):
@@ -58,7 +59,6 @@ print('Obtaining token...')
 # Use Service Principal for the most secure access
 #token_credential = ClientSecretCredential(client_id=args.azclientid, client_secret=args.azspsecret, tenant_id=args.aztenantid)
 # Alternatively, use DefaultAzureCredential() for quick test - Do not use in production
-# from azure.identity import DefaultAzureCredential   # Comment if using ClientSecretCredential
 token_credential = DefaultAzureCredential()         # Comment if using ClientSecretCredential
 
 # get target environment name
