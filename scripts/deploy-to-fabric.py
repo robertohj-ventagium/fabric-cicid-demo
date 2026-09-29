@@ -54,6 +54,7 @@ parser.add_argument('--target_env',type=str, help= 'target environment')
 parser.add_argument('--items_in_scope',type=str, help= 'Defines the item types to be deployed')
 args = parser.parse_args()
 item_types_in_scope = args.items_in_scope
+print("item_types_in_scope: {item_type_in_scope}")
 
 #get the token#
 print('Obtaining token...')
