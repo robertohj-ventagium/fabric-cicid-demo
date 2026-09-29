@@ -31,6 +31,7 @@ def get_workspace_id(p_ws_name, p_token):
     if response.status_code == 200:
         workspaces = response.json()["value"]
         for workspace in workspaces:
+            print(f"Workspace detected: {workspace['displayName']}")
             if workspace["displayName"] == p_ws_name:
                 ws_id = workspace["id"] 
                 return workspace["id"]
