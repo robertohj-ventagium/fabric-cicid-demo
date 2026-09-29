@@ -31,12 +31,11 @@ def get_workspace_id(p_ws_name, p_token):
     if response.status_code == 200:
         workspaces = response.json()["value"]
         for workspace in workspaces:
-            print(f"Workspace detected: {workspace['displayName']}")
             if workspace["displayName"] == p_ws_name:
                 ws_id = workspace["id"] 
                 return workspace["id"]
         if ws_id == '':
-            return f"Error: Workspace {p_ws_name} could not found."
+            return f"Error: Workspace {p_ws_name} could not be found."
     else:
         return f"Error: {response.status_code}, {response.text}"
 
@@ -85,7 +84,7 @@ token = token_credential.get_token(scope)
 # call the workspace ID lookup function
 lookup_response = get_workspace_id(workspace_name, token)
 if lookup_response.startswith("Error"):
-    errmsg=f"{lookup_response}. Perhaps workspace name is set incorrectly in the variable group of does not map to environment name + 'WorkspaceName'"
+    errmsg=f"{lookup_response}. Perhaps workspace name is set incorrectly in the variable group or it does not map to environment name + 'WorkspaceName'"
     raise ValueError(errmsg)
 else:
     wks_id = lookup_response
