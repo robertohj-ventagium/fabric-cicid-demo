@@ -2,9 +2,10 @@ trigger:
   branches:
     include:
     - preprod
+    - prod
   paths:
     include:
-    - fabric/Fabric_CICD/**
+    - fabric/**
 
 parameters:
 - name: items_in_scope
@@ -15,10 +16,16 @@ parameters:
 variables:
   - name: target_env
     value: ${{ replace(variables['Build.SourceBranch'], 'refs/heads/', '') }}
-  # This variable group is linked to Azure Key Vault and secrets contain tenant id, service principal client id, secret
-  - group: fabric_cicd_group_sensitive
-  # This variable group contains the workspace names based on naming convention "[branch]WorkspaceName". It also contains the gitFolder to be referenced in the python script.
   - group: fabric_cicd_group_non_sensitive
+  # The fabric_cicd_group_non_sensitive variable group contains the workspace variables whose name follows the naming convention "[branch]WorkspaceName".
+  # E.g., devWorkspaceName, preprodWorkspaceName, prodWorkspaceName, etc.
+  # This is MANDATORY as this naming convention is expected in the python script
+  # It also contains the gitFolder to be referenced in the python script.
+  - group: fabric_cicd_group_sensitive
+  # The fabric_cicd_group_sensitive contains sensitive values (like secrets);
+  # Linking this variable group to Azure Key Vault is recommended. 
+  # This variable group contains the Service Principal data: tenant id, client id and client secret
+  # Alternative: don't link to Azure Key Vault but treat values as secrets
 stages:
   - stage: DeployToFabric
     displayName: "Deploy to Fabric Workspace"
