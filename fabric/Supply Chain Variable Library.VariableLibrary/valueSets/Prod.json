@@ -1,0 +1,34 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/variableLibrary/definition/valueSet/1.0.0/schema.json",
+  "name": "Prod",
+  "variableOverrides": [
+    {
+      "name": "ENVIRONMENT",
+      "value": "Production"
+    },
+    {
+      "name": "SEED",
+      "value": 300
+    },
+    {
+      "name": "PRODUCTS",
+      "value": 40
+    },
+    {
+      "name": "LOCATIONS",
+      "value": 6
+    },
+    {
+      "name": "DAYS",
+      "value": 90
+    },
+    {
+      "name": "DEMAND_MULTIPLIER",
+      "value": 1.15
+    },
+    {
+      "name": "STOCKOUT_PROBABILITY",
+      "value": 0.04
+    }
+  ]
+}
