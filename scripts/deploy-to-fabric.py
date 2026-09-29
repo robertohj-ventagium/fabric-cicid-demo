@@ -3,7 +3,8 @@
 
 """
 Example demonstrating:  
-1. Access variable group values from Python. Note for sensitive variables ensure the variable group is linked to key vault. See https://learn.microsoft.com/en-us/azure/devops/pipelines/library/link-variable-groups-to-key-vaults?view=azure-devops
+1. Access variable group values from Python. Note for sensitive variables ensure the variable group is linked to key vault. 
+See https://learn.microsoft.com/en-us/azure/devops/pipelines/library/link-variable-groups-to-key-vaults?view=azure-devops
 2. Use of Service Principal Name (SPN) with a Secret credential flow, leveraging the ClientSecretCredential class. 
 3. Use the Fabric reset APIs to lookup the workspace ID based on workspace name
 4. Using enable_shortcut_publish feature flag to deploy Lakehouse shortcuts
@@ -57,9 +58,10 @@ item_types_in_scope = args.items_in_scope
 #get the token#
 print('Obtaining token...')
 # Use Service Principal for the most secure access
-#token_credential = ClientSecretCredential(client_id=args.azclientid, client_secret=args.azspsecret, tenant_id=args.aztenantid)
+token_credential = ClientSecretCredential(client_id=args.azclientid, client_secret=args.azspsecret, tenant_id=args.aztenantid)
 # Alternatively, use DefaultAzureCredential() for quick test - Do not use in production
-token_credential = DefaultAzureCredential()         # Comment if using ClientSecretCredential
+# NOTE: you still need to add az login in the YAML file to authenticate using this flow during the deployment process
+#token_credential = DefaultAzureCredential()         # Comment if using ClientSecretCredential
 
 # get target environment name
 tgtenv = args.target_env
