@@ -9,7 +9,7 @@
 # META   "dependencies": {
 # META     "lakehouse": {
 # META       "default_lakehouse": "eb342914-631b-4005-bfe1-b37604c8d00b",
-# META       "default_lakehouse_name": "Supply_Chain_Lakehouse",
+# META       "default_lakehouse_name": "OmniRoute_Lakehouse",
 # META       "default_lakehouse_workspace_id": "904870c3-1d7b-491b-be30-5fe1782f818f",
 # META       "known_lakehouses": [
 # META         {
@@ -246,7 +246,7 @@ display(df_location)
 
 # CELL ********************
 
-suppliers_df = spark.sql("SELECT * FROM Supply_Chain_Lakehouse.dbo.DimSupplier LIMIT 1000")
+suppliers_df = spark.sql("SELECT * FROM OmniRoute_Lakehouse.dbo.DimSupplier LIMIT 1000")
 suppliers = suppliers_df.collect()
 
 # METADATA ********************
