@@ -56,10 +56,10 @@ item_types_in_scope = args.items_in_scope
 #get the token#
 print('Obtaining token...')
 # Use Service Principal for the most secure access
-token_credential = ClientSecretCredential(client_id=args.azclientid, client_secret=args.azspsecret, tenant_id=args.aztenantid)
+#token_credential = ClientSecretCredential(client_id=args.azclientid, client_secret=args.azspsecret, tenant_id=args.aztenantid)
 # Alternatively, use DefaultAzureCredential() for quick test - Do not use in production
 # from azure.identity import DefaultAzureCredential   # Comment if using ClientSecretCredential
-# token_credential = DefaultAzureCredential()         # Comment if using ClientSecretCredential
+token_credential = DefaultAzureCredential()         # Comment if using ClientSecretCredential
 
 # get target environment name
 tgtenv = args.target_env
