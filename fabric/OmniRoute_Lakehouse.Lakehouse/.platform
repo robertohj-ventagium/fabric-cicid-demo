@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Lakehouse",
+    "displayName": "OmniRoute_Lakehouse",
+    "description": "Supply Chain demo Lakehouse"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "04c8d00b-b376-bfe1-4005-631beb342914"
+  }
+}

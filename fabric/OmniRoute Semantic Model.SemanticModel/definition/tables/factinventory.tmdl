@@ -1,0 +1,189 @@
+table factinventory
+	lineageTag: d85ca058-0472-4c5d-a8a1-12911fe33d08
+	sourceLineageTag: [dbo].[factinventory]
+
+	measure 'Total Inventory Value' =
+			
+			SUM(FactInventory[InventoryValue])
+		lineageTag: 675aabed-f1de-4cec-aa58-de151321d9b4
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Units On Hand' =
+			
+			SUM(FactInventory[QuantityOnHand])
+		formatString: 0
+		lineageTag: 68dfdee4-f3df-429d-bf17-613285660843
+
+		changedProperty = Name
+
+	measure Stockouts =
+			
+			SUM(FactInventory[StockoutFlag])
+		formatString: 0
+		lineageTag: 58082ed1-eed2-45d8-9353-8a46b4621bd2
+
+		changedProperty = Name
+
+	measure 'Below Reorder Point' =
+			
+			COUNTROWS(
+			    FILTER(
+			        FactInventory,
+			        FactInventory[QuantityOnHand] < FactInventory[ReorderPoint]
+			    )
+			)
+		formatString: 0
+		lineageTag: 9cda7658-017f-4271-9146-c775f9fdf4cb
+
+		changedProperty = Name
+
+	measure 'Average Supplier Reliability' =
+			
+			AVERAGE(DimSupplier[ReliabilityPct])
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: f1a62480-56e1-4930-82c8-14cd917a2c56
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	measure 'Safety Stock Units' =
+			
+			SUM(FactInventory[SafetyStock])
+		formatString: 0
+		lineageTag: ad8f0461-f006-4c34-b4af-b515427c7cbb
+
+		changedProperty = Name
+
+	column Date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: c7a1f0e8-8506-46a5-ad6a-5c63b26ceb9b
+		sourceLineageTag: Date
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 86d5b811-5830-4964-a664-b4a4ccc1c3e7
+		sourceLineageTag: ProductKey
+		summarizeBy: none
+		sourceColumn: ProductKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column LocationKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 65fb6a40-b2bf-42e7-9c2f-22f263f1846f
+		sourceLineageTag: LocationKey
+		summarizeBy: none
+		sourceColumn: LocationKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column SupplierKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 42ae851e-e02a-4d7b-9569-584a58ac4b72
+		sourceLineageTag: SupplierKey
+		summarizeBy: none
+		sourceColumn: SupplierKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column QuantityOnHand
+		dataType: int64
+		formatString: 0
+		lineageTag: 4a74c17c-fcc0-4f95-a892-d97b86e65ae7
+		sourceLineageTag: QuantityOnHand
+		summarizeBy: sum
+		sourceColumn: QuantityOnHand
+
+		annotation SummarizationSetBy = Automatic
+
+	column SafetyStock
+		dataType: int64
+		formatString: 0
+		lineageTag: 061550b5-96f8-484c-b6fe-c8b9b77ccf00
+		sourceLineageTag: SafetyStock
+		summarizeBy: sum
+		sourceColumn: SafetyStock
+
+		annotation SummarizationSetBy = Automatic
+
+	column ReorderPoint
+		dataType: int64
+		formatString: 0
+		lineageTag: 7e7d3cc9-b5ad-44d2-823b-1c762f22219b
+		sourceLineageTag: ReorderPoint
+		summarizeBy: sum
+		sourceColumn: ReorderPoint
+
+		annotation SummarizationSetBy = Automatic
+
+	column UnitsReceived
+		dataType: int64
+		formatString: 0
+		lineageTag: ceb2f81f-4c17-4d7b-94cb-3d5422864026
+		sourceLineageTag: UnitsReceived
+		summarizeBy: sum
+		sourceColumn: UnitsReceived
+
+		annotation SummarizationSetBy = Automatic
+
+	column UnitsConsumed
+		dataType: int64
+		formatString: 0
+		lineageTag: 2f0be8c4-e9df-4466-ac12-0f7dff845ff7
+		sourceLineageTag: UnitsConsumed
+		summarizeBy: sum
+		sourceColumn: UnitsConsumed
+
+		annotation SummarizationSetBy = Automatic
+
+	column StockoutFlag
+		dataType: int64
+		formatString: 0
+		lineageTag: eca8e612-1ca1-4bc7-a521-3bbf657673eb
+		sourceLineageTag: StockoutFlag
+		summarizeBy: sum
+		sourceColumn: StockoutFlag
+
+		annotation SummarizationSetBy = Automatic
+
+	column UnitCost
+		dataType: double
+		lineageTag: 8a57cd0b-49e4-4d22-96c1-9ab88547e93c
+		sourceLineageTag: UnitCost
+		summarizeBy: sum
+		sourceColumn: UnitCost
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column InventoryValue
+		dataType: double
+		lineageTag: 98559292-4a6c-4102-bff8-da19e236df96
+		sourceLineageTag: InventoryValue
+		summarizeBy: sum
+		sourceColumn: InventoryValue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition factinventory = entity
+		mode: directLake
+		source
+			entityName: factinventory
+			schemaName: dbo
+			expressionSource: 'DirectLake - Supply_Chain_Lakehouse'
+
