@@ -70,7 +70,7 @@
               },
               "schema": [],
               "linkedService": {
-                "name": "Supply_Chain_Lakehouse",
+                "name": "OmniRoute_Lakehouse",
                 "properties": {
                   "type": "Lakehouse",
                   "typeProperties": {
@@ -104,34 +104,6 @@
         "name": "DimSuppliers",
         "description": "Copies DimSuppliers from the Spreadsheet",
         "dependsOn": []
-      },
-      {
-        "type": "PBISemanticModelRefresh",
-        "typeProperties": {
-          "method": "POST",
-          "groupId": "904870c3-1d7b-491b-be30-5fe1782f818f",
-          "commitMode": "Transactional",
-          "waitOnCompletion": true,
-          "operationType": "SemanticModelRefresh"
-        },
-        "policy": {
-          "timeout": "0.00:10:00",
-          "retry": 0,
-          "retryIntervalInSeconds": 30,
-          "secureInput": false,
-          "secureOutput": false
-        },
-        "name": "Refresh Supply Chain Semantic Model",
-        "state": "Inactive",
-        "onInactiveMarkAs": "Succeeded",
-        "dependsOn": [
-          {
-            "activity": "Supply Chain Data Generation",
-            "dependencyConditions": [
-              "Succeeded"
-            ]
-          }
-        ]
       }
     ]
   }
